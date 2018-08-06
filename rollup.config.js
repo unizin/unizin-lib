@@ -5,18 +5,10 @@ const { terser } = require('rollup-plugin-terser');
 
 const { readdirSync } = require('fs');
 
-const includeSrc = ['actions', 'components', 'reducers'];
-
 export default {
     experimentalCodeSplitting: true,
-    input: includeSrc.reduce(
-        (acc, pathName) => [
-            ...acc,
-            ...readdirSync(`./src/${pathName}`).map(fileName => `./src/${pathName}/${fileName}`),
-        ],
-        []
-    ),
-    external: ['react', 'react-dom', 'redux', 'react-redux'],
+    input: readdirSync('./src/exports').map(file => `./src/exports/${file}`),
+    external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
         dir: './dist',
         format: 'esm',
