@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "react-app",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "react/no-unescaped-entities": "off",
+        "default-case": "off",
+        "no-console": "error",
+        "eqeqeq": "off",
+        "radix": ["error", "as-needed"]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx"]
+            }
+        }
+    }
+}

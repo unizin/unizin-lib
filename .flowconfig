@@ -1,0 +1,12 @@
+[ignore]
+.*/src/deleteMe/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
