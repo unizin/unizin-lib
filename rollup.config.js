@@ -12,6 +12,7 @@ export default ['cjs', 'esm'].map(format => ({
     output: {
         dir: `./dist/${format}`,
         format,
+        exports: 'named',
     },
     plugins: [
         resolve(),
