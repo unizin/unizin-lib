@@ -5,13 +5,13 @@ const { terser } = require('rollup-plugin-terser');
 
 const { readdirSync } = require('fs');
 
-export default {
+export default ['cjs', 'esm'].map(format => ({
     experimentalCodeSplitting: true,
     input: readdirSync('./src/exports').map(file => `./src/exports/${file}`),
     external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
-        dir: './dist',
-        format: 'cjs',
+        dir: `./dist/${format}`,
+        format,
     },
     plugins: [
         resolve(),
@@ -25,4 +25,4 @@ export default {
         }),
         terser(),
     ],
-};
+}));

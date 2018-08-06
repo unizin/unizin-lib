@@ -2,7 +2,8 @@
   "name": "unizin-lib",
   "version": "1.0.0",
   "description": "Shared component library for Unizin",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
@@ -47,7 +48,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rm -f dist/* && rollup -c"
+    "build": "rm -fr dist/* && rollup -c"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
