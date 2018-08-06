@@ -11,7 +11,7 @@ export default {
     external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
         dir: './dist',
-        format: 'esm',
+        format: 'cjs',
     },
     plugins: [
         resolve(),

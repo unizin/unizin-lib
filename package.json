@@ -2,7 +2,7 @@
   "name": "unizin-lib",
   "version": "1.0.0",
   "description": "Shared component library for Unizin",
-  "module": "dist",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
