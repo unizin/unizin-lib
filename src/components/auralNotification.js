@@ -1,15 +1,15 @@
+/* @flow */
 import React, { PureComponent } from 'react';
-import { func, string, number } from 'prop-types';
 import { connect } from 'react-redux';
 import { removeAural } from '../actions/auralNotificationActions';
 
-export class AuralNotification extends PureComponent {
-    static propTypes = {
-        notification: string,
-        removeAural: func.isRequired,
-        duration: number,
-    };
+type Props = {
+    notification: string,
+    removeAural: () => void,
+    duration: number,
+};
 
+export class AuralNotification extends PureComponent<Props> {
     static defaultProps = {
         duration: 5000,
     };

@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Button from '../src/exports/button-add-remove';
+import Button from '../src/components/button-add-remove';
 
 class StateContainer extends React.PureComponent<Object, { boolean: boolean }> {
     state = { boolean: false };

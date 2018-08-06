@@ -3,11 +3,9 @@ const commonjs = require('rollup-plugin-commonjs');
 const resolve = require('rollup-plugin-node-resolve');
 const { terser } = require('rollup-plugin-terser');
 
-const { readdirSync } = require('fs');
-
 export default ['cjs', 'esm'].map(format => ({
     experimentalCodeSplitting: true,
-    input: readdirSync('./src/exports').map(file => `./src/exports/${file}`),
+    input: './src/index.js',
     external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
         dir: `./dist/${format}`,

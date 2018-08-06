@@ -1,1 +1,0 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var pagination=require("./pagination-32bf0c4f.js");require("./chunk-54837f9c.js"),require("react"),require("styled-components"),exports.default=pagination.Pagination;

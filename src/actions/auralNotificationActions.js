@@ -1,3 +1,4 @@
+/* @flow */
 import { createAction } from 'redux-actions';
 
 export const ADD_AURAL_NOTIFICATION = 'ADD_AURAL_NOTIFICATION';
