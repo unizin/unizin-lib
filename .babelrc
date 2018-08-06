@@ -1,9 +1,15 @@
 {
-    "presets": [
-        ["env", {
-            "modules": false
-        }],
-        "react"
-    ],
-    "plugins": ["external-helpers", "transform-class-properties"]
+  "env": {
+    "test": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-class-properties", "transform-es2015-modules-commonjs"]
+    },
+    "build": {
+      "presets": [
+          ["env", { "modules": false} ],
+          "react"
+      ],
+      "plugins": ["external-helpers", "transform-class-properties"]
+    }
+  }
 }
