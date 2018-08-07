@@ -42,6 +42,7 @@ class Pagination extends React.Component<Props> {
 
 const PaginationWrapper = styled.div`
     align-items: center;
+    display: flex;
 
     &:last-child {
         margin-bottom: ${theme.spacing.large};

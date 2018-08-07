@@ -20,6 +20,6 @@ class StateContainer extends React.PureComponent<Object, { boolean: boolean }> {
     }
 }
 
-storiesOf('Add Remove Button').add('Button', () => (
+storiesOf('Add Remove Button', module).add('Button', () => (
     <StateContainer isSmall={false} title="Bork bork bork" />
 ));
