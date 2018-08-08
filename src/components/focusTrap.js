@@ -33,7 +33,7 @@ export default class FocusTrap extends PureComponent<{
             });
     };
 
-    tabListener = (e: SyntheticKeyboardEvent<HTMLElement>) => {
+    tabListener = (e: KeyboardEvent) => {
         const { current } = this.focusTrap;
         if (current && e.key === 'Tab') {
             const [firstFocusableElement, lastFocusableElement] = getFocusBounds(current);

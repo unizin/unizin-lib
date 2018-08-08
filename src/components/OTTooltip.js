@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Tooltip from 'react-aria-tooltip';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
 import styled from 'styled-components';
 

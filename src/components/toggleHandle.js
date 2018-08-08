@@ -1,5 +1,4 @@
 /* @flow */
-// This is a component that should be exported in the component library
 import React, { type Node } from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
@@ -13,7 +12,6 @@ const ToggleHandle = ({
     onClick?: (SyntheticEvent<*>) => void,
 }): Node => <Triangle className={classnames({ expanded: expanded })} onClick={onClick} />;
 
-// TODO animate
 const Triangle = styled.div`
     border-right: ${theme.spacing.tiny} solid ${theme.colors.grey.dark};
     border-top: ${theme.spacing.tiny} solid transparent;

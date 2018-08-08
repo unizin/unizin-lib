@@ -17,11 +17,7 @@ export default function Initials(props: Props) {
         initials = `${initials[0]}${initials[initials.length - 1]}`;
     }
 
-    return (
-        <Wrapper aria-hidden className="initials">
-            {initials}
-        </Wrapper>
-    );
+    return <Wrapper aria-hidden>{initials}</Wrapper>;
 }
 
 const Wrapper = styled.div`

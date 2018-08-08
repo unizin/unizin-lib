@@ -3,6 +3,8 @@ import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { removeAural } from '../actions/auralNotificationActions';
 
+import styled from 'styled-components';
+
 type Props = {
     notification: string,
     removeAural: () => void,
@@ -22,12 +24,23 @@ export class AuralNotification extends PureComponent<Props> {
     render() {
         const { notification } = this.props;
         return (
-            <div className="aural aural-notification" aria-live="assertive" aria-atomic>
+            <AuralNotificationArea aria-live="assertive" aria-atomic>
                 {notification && <span>{notification}</span>}
-            </div>
+            </AuralNotificationArea>
         );
     }
 }
+
+const AuralNotificationArea = styled.div`
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+`;
 
 export default connect(
     ({ auralNotification }) => ({ notification: auralNotification }),

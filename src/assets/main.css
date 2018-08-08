@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Lato");
-@import url("./overlay-modal.css");
 body {
-  width: 100%; }
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  width: 75%; }
 
 body,
 html {
@@ -31,6 +33,7 @@ h1 {
 .notification.is-danger,
 .tag.is-danger {
   background-color: #d53a60; }
+
 .button.is-primary,
 .notification.is-primary,
 .tag.is-primary {
@@ -44,6 +47,7 @@ h1 {
 .input:focus {
   border-color: #ef8c0a;
   box-shadow: 0 0 6px rgba(239, 140, 10, 0.8); }
+
 .button.is-danger.is-active, .button.is-danger.is-focused, .button.is-danger:active, .button.is-danger:focus, .button.is-primary.is-active, .button.is-primary.is-focused, .button.is-primary:active, .button.is-primary:focus,
 .input.is-danger.is-active,
 .input.is-danger.is-focused,
@@ -55,6 +59,7 @@ h1 {
 .input.is-primary:focus {
   border-color: #ef8c0a;
   box-shadow: 0 0 6px rgba(239, 140, 10, 0.8); }
+
 .button.is-link,
 .input.is-link {
   color: #0079cb;
@@ -105,6 +110,7 @@ button:focus {
   .container {
     margin: 0 auto;
     max-width: 95vw !important; } }
+
 /* End responsive */
 /* Notifications */
 .notifications-wrapper .notification {
@@ -132,5 +138,3 @@ button:focus {
         font-weight: bold; }
 
 /* end tabs */
-
-/*# sourceMappingURL=main.css.map */

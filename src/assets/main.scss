@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Karla|Lato");
-@import url("./overlay-modal.css");
 $headerHeight: 75px;
 $footerHeight: 45px;
 $paginationHeight: 65px;
@@ -10,7 +9,10 @@ $blue: #0079cb;
 $green: #00c4a7;
 
 body {
-  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  width: 75%;
 }
 
 body,

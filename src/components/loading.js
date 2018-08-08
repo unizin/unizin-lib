@@ -9,7 +9,12 @@ export type Props = { message?: string };
 class Loading extends Component<Props> {
     render() {
         const { message } = this.props;
-        return <Wrapper>{message ? message : 'Loading'}...</Wrapper>;
+        return (
+            <Wrapper>
+                {message ? message : 'Loading'}
+                ...
+            </Wrapper>
+        );
     }
 }
 

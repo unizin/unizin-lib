@@ -1,7 +1,8 @@
 /* @flow */
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
+import Aural from './aural';
 import theme from '../theme';
 
 export type Props = {
@@ -9,31 +10,31 @@ export type Props = {
     offerPrice?: string,
 };
 
-class Pricing extends Component<Props> {
-    renderOfferPrice = () => {
-        const { listPrice: listPriceString, offerPrice: offerPriceString } = this.props;
+export default function Pricing(props: Props) {
+    const { listPrice: listPriceString, offerPrice: offerPriceString } = props;
 
-        if (!offerPriceString) {
-            return (
-                <div>
-                    <div aria-hidden>N/A</div>
-                    <div className="aural">Pricing not available</div>
-                </div>
-            );
-        }
-
-        const listPrice = parseFloat(listPriceString);
-        const offerPrice = parseFloat(offerPriceString);
-        if (listPrice === 0 && offerPrice === 0) {
-            return <Free>Free</Free>;
-        }
-
-        const savingsPercent = Math.round((listPrice - offerPrice) / listPrice * 100);
-
+    if (!offerPriceString) {
         return (
             <div>
+                <div aria-hidden>N/A</div>
+                <div className="aural">Pricing not available</div>
+            </div>
+        );
+    }
+
+    const listPrice = parseFloat(listPriceString);
+    const offerPrice = parseFloat(offerPriceString);
+    if (listPrice === 0 && offerPrice === 0) {
+        return <Free>Free</Free>;
+    }
+
+    const savingsPercent = Math.round(((listPrice - offerPrice) / listPrice) * 100);
+
+    return (
+        <Wrapper>
+            <div>
                 <Price>
-                    <span className="heading aural">Your price</span>{' '}
+                    <Aural>Your price</Aural>{' '}
                     <Cost>{offerPrice ? `$${offerPrice.toFixed(2)}` : 'Free'}</Cost>
                 </Price>
                 {listPrice ? (
@@ -43,11 +44,8 @@ class Pricing extends Component<Props> {
                     </Percent>
                 ) : null}
             </div>
-        );
-    };
-    render() {
-        return <Wrapper>{this.renderOfferPrice()}</Wrapper>;
-    }
+        </Wrapper>
+    );
 }
 
 const Wrapper = styled.div`
@@ -59,8 +57,12 @@ const Wrapper = styled.div`
 const Price = styled.div`
     text-align: right;
 
-    .heading {
+    span {
+        display: block;
+        font-size: 11px;
+        letter-spacing: 1px;
         margin-bottom: 0;
+        text-transform: uppercase;
     }
 `;
 
@@ -78,7 +80,9 @@ const Cost = styled.span`
     font-weight: bold;
 `;
 
-const StrikeThrough = styled.span`text-decoration: line-through;`;
+const StrikeThrough = styled.span`
+    text-decoration: line-through;
+`;
 
 const Percent = styled.div`
     font-size: ${theme.fonts.sizes.discrete};
@@ -86,5 +90,3 @@ const Percent = styled.div`
     text-align: right;
     color: ${theme.colors.grey.medium};
 `;
-
-export default Pricing;
