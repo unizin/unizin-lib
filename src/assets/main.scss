@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Lato");
+$headerHeight: 75px;
+$footerHeight: 45px;
+$paginationHeight: 65px;
+$orderHeader: 45px;
+$main-offset: $headerHeight + $footerHeight;
+$orange: #ef8c0a;
+$blue: #0079cb;
+$green: #00c4a7;
+
+body {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  width: 75%;
+}
+
+body,
+html {
+  font-family: "Lato";
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+}
+
+footer {
+  background: #fff;
+  bottom: 0;
+  height: $footerHeight;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: $blue;
+}
+
+h1 {
+  font-weight: bold;
+
+  &.title {
+    font-size: 2.5rem;
+  }
+}
+
+.button,
+.notification,
+.tag {
+  &.is-danger {
+    background-color: #d53a60;
+  }
+
+  &.is-primary {
+    background-color: $blue;
+  }
+}
+/* Focus overrides */
+.button,
+.input {
+  &.is-active,
+  &.is-focused,
+  &:active,
+  &:focus {
+    border-color: $orange;
+    box-shadow: 0 0 6px rgba($orange, 0.8);
+  }
+
+  &.is-danger,
+  &.is-primary {
+    &.is-active,
+    &.is-focused,
+    &:active,
+    &:focus {
+      border-color: $orange;
+      box-shadow: 0 0 6px rgba($orange, 0.8);
+    }
+  }
+
+  &.is-link {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+[type="checkbox"],
+[role="button"],
+a,
+button {
+  &:focus {
+    box-shadow: 0 0 8px $orange;
+    outline: none;
+  }
+}
+/* End focus overrides */
+/* Progress Wizard override */
+.progress-indicator {
+  margin: 0;
+  padding: 30px 0;
+
+  > li {
+    color: #435560;
+    font-family: "Karla";
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    .bubble {
+      background: #ededed;
+      border: 0;
+      height: 24px;
+      width: 24px;
+
+      &:after,
+      &:before {
+        background: #ededed;
+      }
+    }
+
+    &.active,
+    &.completed {
+      color: #435560;
+
+      .bubble {
+        background-color: #337ab7;
+        border: 0;
+
+        &:after,
+        &:before {
+          background-color: #337ab7;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+/* End Progress Wizard override */
+/* Responsive */
+.columns {
+  display: flex;
+}
+
+.is-narrow {
+  flex: 0;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 95vw !important;
+  }
+}
+/* End responsive */
+/* Notifications */
+.notifications-wrapper {
+  .notification {
+    background: #fff !important;
+
+    &.notification-success {
+      border-top-color: $green;
+      box-shadow: $green 0 0 1px;
+    }
+  }
+}
+/* End notifications */
+/* tabs */
+.tabs {
+  &.columns {
+    margin: 0;
+
+    .column {
+      background: #f5f5f5;
+      box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+      padding: 0;
+
+      &:last-child {
+        box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        padding: 1rem;
+      }
+
+      &[aria-selected="true"] {
+        background: #fff;
+        box-shadow: none;
+
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+/* end tabs */

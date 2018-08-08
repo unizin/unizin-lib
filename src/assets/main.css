@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Lato");
+body {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  width: 75%; }
+
+body,
+html {
+  font-family: "Lato";
+  height: 100%; }
+
+html {
+  overflow: hidden; }
+
+footer {
+  background: #fff;
+  bottom: 0;
+  height: 45px;
+  left: 0;
+  position: fixed;
+  width: 100%; }
+
+a {
+  color: #0079cb; }
+
+h1 {
+  font-weight: bold; }
+  h1.title {
+    font-size: 2.5rem; }
+
+.button.is-danger,
+.notification.is-danger,
+.tag.is-danger {
+  background-color: #d53a60; }
+
+.button.is-primary,
+.notification.is-primary,
+.tag.is-primary {
+  background-color: #0079cb; }
+
+/* Focus overrides */
+.button.is-active, .button.is-focused, .button:active, .button:focus,
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus {
+  border-color: #ef8c0a;
+  box-shadow: 0 0 6px rgba(239, 140, 10, 0.8); }
+
+.button.is-danger.is-active, .button.is-danger.is-focused, .button.is-danger:active, .button.is-danger:focus, .button.is-primary.is-active, .button.is-primary.is-focused, .button.is-primary:active, .button.is-primary:focus,
+.input.is-danger.is-active,
+.input.is-danger.is-focused,
+.input.is-danger:active,
+.input.is-danger:focus,
+.input.is-primary.is-active,
+.input.is-primary.is-focused,
+.input.is-primary:active,
+.input.is-primary:focus {
+  border-color: #ef8c0a;
+  box-shadow: 0 0 6px rgba(239, 140, 10, 0.8); }
+
+.button.is-link,
+.input.is-link {
+  color: #0079cb;
+  text-decoration: none; }
+
+[type="checkbox"]:focus,
+[role="button"]:focus,
+a:focus,
+button:focus {
+  box-shadow: 0 0 8px #ef8c0a;
+  outline: none; }
+
+/* End focus overrides */
+/* Progress Wizard override */
+.progress-indicator {
+  margin: 0;
+  padding: 30px 0; }
+  .progress-indicator > li {
+    color: #435560;
+    font-family: "Karla";
+    font-size: 0.8rem;
+    letter-spacing: 1px; }
+    .progress-indicator > li .bubble {
+      background: #ededed;
+      border: 0;
+      height: 24px;
+      width: 24px; }
+      .progress-indicator > li .bubble:after, .progress-indicator > li .bubble:before {
+        background: #ededed; }
+    .progress-indicator > li.active, .progress-indicator > li.completed {
+      color: #435560; }
+      .progress-indicator > li.active .bubble, .progress-indicator > li.completed .bubble {
+        background-color: #337ab7;
+        border: 0; }
+        .progress-indicator > li.active .bubble:after, .progress-indicator > li.active .bubble:before, .progress-indicator > li.completed .bubble:after, .progress-indicator > li.completed .bubble:before {
+          background-color: #337ab7;
+          border: 0; }
+
+/* End Progress Wizard override */
+/* Responsive */
+.columns {
+  display: flex; }
+
+.is-narrow {
+  flex: 0; }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 95vw !important; } }
+
+/* End responsive */
+/* Notifications */
+.notifications-wrapper .notification {
+  background: #fff !important; }
+  .notifications-wrapper .notification.notification-success {
+    border-top-color: #00c4a7;
+    box-shadow: #00c4a7 0 0 1px; }
+
+/* End notifications */
+/* tabs */
+.tabs.columns {
+  margin: 0; }
+  .tabs.columns .column {
+    background: #f5f5f5;
+    box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0; }
+    .tabs.columns .column:last-child {
+      box-shadow: inset 2px -2px 4px rgba(0, 0, 0, 0.1); }
+    .tabs.columns .column a {
+      padding: 1rem; }
+    .tabs.columns .column[aria-selected="true"] {
+      background: #fff;
+      box-shadow: none; }
+      .tabs.columns .column[aria-selected="true"] a {
+        font-weight: bold; }
+
+/* end tabs */

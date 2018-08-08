@@ -1,11 +1,16 @@
 /* @flow */
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import faAngleLeft from '@fortawesome/fontawesome-free-solid/faAngleLeft';
+import faAngleRight from '@fortawesome/fontawesome-free-solid/faAngleRight';
 
+import Aural from './aural';
 import theme from '../theme';
 
 export type Props = {
     page: number,
+    pageCount: number,
     hasNext: boolean,
     changePage: Function,
 };
@@ -18,21 +23,23 @@ class Pagination extends React.Component<Props> {
         this.props.changePage(this.props.page - 1);
     };
     render = () => {
-        const { page, hasNext } = this.props;
+        const { page, hasNext, pageCount } = this.props;
         if (page === 1 && !hasNext) return null;
         return (
-            <PaginationWrapper className="columns">
-                <div className="column is-narrow">
+            <PaginationWrapper>
+                <div>
                     <Button onClick={this.handleClickPrevious} disabled={page === 1}>
-                        <i className="fa fa-angle-left" aria-hidden />
-                        <span className="aural">Previous page</span>
+                        <FontAwesomeIcon aria-hidden icon={faAngleLeft} />
+                        <Aural>Previous page</Aural>
                     </Button>
                 </div>
-                <div className="column is-narrow">Page {page}</div>
-                <div className="column is-narrow">
+                <div>
+                    Page {page} of {pageCount}
+                </div>
+                <div>
                     <Button onClick={this.handleClickNext} disabled={!hasNext}>
-                        <i className="fa fa-angle-right" aria-hidden />
-                        <span className="aural">Next page</span>
+                        <FontAwesomeIcon aria-hidden icon={faAngleRight} />
+                        <Aural>Next page</Aural>
                     </Button>
                 </div>
             </PaginationWrapper>
@@ -41,15 +48,26 @@ class Pagination extends React.Component<Props> {
 }
 
 const PaginationWrapper = styled.div`
+    display: flex;
     align-items: center;
+
+    > div {
+        padding: 0.75rem;
+    }
 
     &:last-child {
         margin-bottom: ${theme.spacing.large};
     }
 
-    .column:nth-child(2) {
+    > :nth-child(2) {
         min-width: 70px;
         text-align: center;
+    }
+
+    > :not(:nth-child(2)) {
+        button {
+            font-size: 21px;
+        }
     }
 `;
 

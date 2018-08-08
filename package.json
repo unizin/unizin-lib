@@ -8,6 +8,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
     "@storybook/addon-links": "^3.4.10",
+    "@storybook/addon-storyshots": "^3.4.10",
     "@storybook/addons": "^3.4.10",
     "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
@@ -33,7 +34,9 @@
     "eslint-plugin-react": "^7.10.0",
     "flow-bin": "^0.77.0",
     "flow-copy-source": "^2.0.2",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.4.2",
+    "node-sass": "^4.9.2",
     "prettier": "^1.14.0",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.4",
@@ -42,10 +45,16 @@
     "storybook": "^1.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/react-fontawesome": "^0.1.1",
     "classnames": "^2.2.6",
     "color-js": "^1.0.4",
+    "crypto-js": "^3.1.9-1",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
+    "react-aria-tooltip": "^1.2.4",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
@@ -53,9 +62,10 @@
     "styled-components": "^3.4.1"
   },
   "scripts": {
-    "storybook": "BABEL_ENV=test start-storybook -p 6006",
+    "storybook": "./scripts/storybook.sh",
     "build-storybook": "build-storybook",
-    "build": "rm -fr dist/* && BABEL_ENV=build rollup -c"
+    "build": "rm -fr dist/* && BABEL_ENV=build rollup -c",
+    "test": "BABEL_ENV=test jest --watch"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
@@ -66,6 +76,10 @@
     "styled-components": "^3.4.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
   }
 }

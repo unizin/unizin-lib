@@ -3,6 +3,8 @@ import React from 'react';
 import classNames from 'classnames';
 import styled from 'styled-components';
 
+import Aural from './aural';
+
 type Props = {
     triggerBoolean: boolean,
     isSmall: boolean,
@@ -20,9 +22,9 @@ const ButtonAddRemove = (props: Props) => {
     return (
         <Button className={buttonClasses} onClick={handleOnClick}>
             <span className="cross" />
-            <span className="aural">
+            <Aural>
                 {triggerBoolean ? 'Remove' : 'Add'} {title}
-            </span>
+            </Aural>
         </Button>
     );
 };
