@@ -24,8 +24,8 @@ module.exports = {
     FocusTrap,
     Initials,
     Loading,
-    OTTooltip,
     messageNames,
+    OTTooltip,
     Pagination,
     ToggleHandle,
 };
