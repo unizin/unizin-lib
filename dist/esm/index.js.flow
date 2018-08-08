@@ -9,7 +9,7 @@ const ContentPricing = require('./components/content-pricing');
 const FocusTrap = require('./components/focusTrap');
 const Initials = require('./components/initials');
 const Loading = require('./components/loading');
-const OTTooltip = require('./components/OTTooltip');
+const { default: OTTooltip, messageNames } = require('./components/OTTooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
 
@@ -25,6 +25,7 @@ module.exports = {
     Initials,
     Loading,
     OTTooltip,
+    messageNames,
     Pagination,
     ToggleHandle,
 };

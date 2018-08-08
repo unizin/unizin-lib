@@ -1,10 +1,10 @@
 /* @flow */
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import ToggleHandle from '../src/components/toggleHandle';
 
-class ToggleHandleContainer extends React.PureComponent<void, { expanded: boolean }> {
+class ToggleHandleContainer extends PureComponent<{}, { expanded: boolean }> {
     state = { expanded: false };
 
     toggleExpanded = () => this.setState(({ expanded }) => ({ expanded: !expanded }));
