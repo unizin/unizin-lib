@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import crypto from 'crypto';
+import md5 from 'crypto-js/md5';
 import styled from 'styled-components';
 
 import theme from '../theme';
@@ -17,10 +17,7 @@ export default function Avatar(props: Props) {
     // have contacted too many websites about broken implementations for us to
     // make the same mistake
     const email = props.email.toLowerCase();
-    const hash = crypto
-        .createHash('md5')
-        .update(email)
-        .digest('hex');
+    const hash = md5(email);
 
     const src = `https://www.gravatar.com/avatar/${hash}?d=blank`;
     const altValue = `Gravatar image for ${email}`;
