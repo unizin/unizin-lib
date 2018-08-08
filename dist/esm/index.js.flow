@@ -2,6 +2,7 @@
 const { addAural } = require('./actions/auralNotificationActions');
 const AuralNotification = require('./components/auralNotification');
 const auralNotificationReducer = require('./reducers/auralNotificationReducer');
+const Avatar = require('./components/avatar');
 const AvatarOption = require('./components/avatar-option');
 const ButtonAddRemove = require('./components/button-add-remove');
 const ContentPricing = require('./components/content-pricing');
@@ -16,6 +17,7 @@ module.exports = {
     addAural,
     AuralNotification,
     auralNotificationReducer,
+    Avatar,
     AvatarOption,
     ButtonAddRemove,
     ContentPricing,
