@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import theme from '../theme';
 
-const Tooltip = require('react-aria-tooltip').default;
+const Tooltip = require('react-aria-tooltip').default; // This is wonky but we have to do it
 
 export const messages = {
     CONTENT_REQUEST:

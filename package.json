@@ -65,7 +65,8 @@
     "storybook": "./scripts/storybook.sh",
     "build-storybook": "build-storybook",
     "build": "rm -fr dist/* && BABEL_ENV=build rollup -c",
-    "test": "BABEL_ENV=test jest --watch"
+    "test": "BABEL_ENV=test jest --watch",
+    "prepublish": "./scripts/prepublish.sh"
   },
   "peerDependencies": {
     "react": "^16.4.2",

@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AvatarOption } from '../dist/esm';
+import AvatarOption from '../src/components/avatar-option';
 
 const elvisPresley = {
     name: 'Elvis Presley',
