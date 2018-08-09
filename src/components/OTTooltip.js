@@ -1,18 +1,14 @@
 /* @flow */
-
 import React from 'react';
-import Tooltip from 'react-aria-tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
 import styled from 'styled-components';
 
 import theme from '../theme';
 
-export const messageNames = {
-    CONTENT_REQUEST: 'CONTENT_REQUEST',
-};
+const Tooltip = require('react-aria-tooltip').default;
 
-const messages = {
+export const messages = {
     CONTENT_REQUEST:
         'A content request is a way to submit a title for consideration to be added to the catalog.',
 };
