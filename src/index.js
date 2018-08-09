@@ -12,6 +12,7 @@ const Loading = require('./components/loading');
 const OTTooltip = require('./components/OTTooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
+const theme = require('./theme');
 
 module.exports = {
     addAural,
@@ -27,4 +28,5 @@ module.exports = {
     OTTooltip,
     Pagination,
     ToggleHandle,
+    theme,
 };
