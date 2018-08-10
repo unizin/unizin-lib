@@ -204,6 +204,88 @@ exports[`Storyshots Loading Loading 1`] = `
 </div>
 `;
 
+exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
+<div
+  className="sc-cSHVUG hUIgmO"
+  tabIndex="0"
+>
+  <main
+    className="sc-kAzzGY ejqPxt"
+  >
+    <button
+      aria-label="Close"
+      className="sc-chPdSV gzRpJx"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-kGXeez kfohyH"
+    >
+      <h1>
+        Would you like a cookie?
+      </h1>
+      <p>
+        They are very tasty
+      </p>
+    </div>
+    <div
+      className="sc-kgoBCf cpBZLm"
+    >
+      <button
+        onClick={[Function]}
+      >
+        No
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Yes
+      </button>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
+<div
+  className="sc-cSHVUG hUIgmO"
+  tabIndex="0"
+>
+  <main
+    className="sc-kAzzGY ejqPxt"
+  >
+    <button
+      aria-label="Close"
+      className="sc-chPdSV gzRpJx"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-kGXeez kfohyH"
+    >
+      <h1>
+        Would you like a cookie?
+      </h1>
+      <p>
+        They are very tasty
+      </p>
+    </div>
+    <div
+      className="sc-kgoBCf cpBZLm"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Bork
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        Bork bork bork
+      </button>
+    </div>
+  </main>
+</div>
+`;
+
 exports[`Storyshots Order Tool Tooltip We hardcoded this text for some reason 1`] = `
 <div
   className="sc-bxivhb fBaQSp"
@@ -252,11 +334,11 @@ exports[`Storyshots Order Tool Tooltip We hardcoded this text for some reason 1`
 
 exports[`Storyshots Pagination On Page 1 1`] = `
 <div
-  className="sc-cSHVUG fHhHaz"
+  className="sc-kpOJdX lgchly"
 >
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={true}
       onClick={[Function]}
     >
@@ -291,7 +373,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
   </div>
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={false}
       onClick={[Function]}
     >
@@ -325,11 +407,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
 
 exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 <div
-  className="sc-cSHVUG fHhHaz"
+  className="sc-kpOJdX lgchly"
 >
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={false}
       onClick={[Function]}
     >
@@ -364,7 +446,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={true}
       onClick={[Function]}
     >
@@ -396,11 +478,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 
 exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 <div
-  className="sc-cSHVUG fHhHaz"
+  className="sc-kpOJdX lgchly"
 >
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={false}
       onClick={[Function]}
     >
@@ -435,7 +517,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-kAzzGY gXzlIS"
+      className="sc-dxgOiQ cflSXG"
       disabled={false}
       onClick={[Function]}
     >
@@ -474,7 +556,7 @@ exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
   }
 >
   <div
-    className="sc-chPdSV hAzGVO"
+    className="sc-ckVGcZ hYkLcI"
     onClick={[Function]}
   />
 </div>
