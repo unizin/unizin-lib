@@ -2,14 +2,14 @@
   "env": {
     "test": {
       "presets": ["env", "react"],
-      "plugins": ["transform-class-properties", "transform-es2015-modules-commonjs"]
+      "plugins": ["transform-object-rest-spread", "transform-class-properties", "transform-es2015-modules-commonjs"]
     },
     "build": {
       "presets": [
           ["env", { "modules": false} ],
           "react"
       ],
-      "plugins": ["external-helpers", "transform-class-properties"]
+      "plugins": ["external-helpers", "transform-object-rest-spread", "transform-class-properties"]
     }
   }
 }

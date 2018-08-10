@@ -67,6 +67,7 @@ const fontSizes = {
     tiny: '.8rem',
     discrete: '.9rem',
     normal: '1rem',
+    default: '1rem',
     plus1: '1.2rem',
     plus2: '1.3rem',
     plus3: '1.5rem',

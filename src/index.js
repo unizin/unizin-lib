@@ -9,6 +9,10 @@ const ContentPricing = require('./components/content-pricing');
 const FocusTrap = require('./components/focusTrap');
 const Initials = require('./components/initials');
 const Loading = require('./components/loading');
+const Modal = require('./components/modal');
+const ModalContainer = require('./components/modalContainer');
+const modalReducer = require('./reducers/modalReducer');
+const { openConfirmationModal } = require('./actions/modal');
 const OTTooltip = require('./components/OTTooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
@@ -25,6 +29,10 @@ module.exports = {
     FocusTrap,
     Initials,
     Loading,
+    Modal,
+    ModalContainer,
+    modalReducer,
+    openConfirmationModal,
     OTTooltip,
     Pagination,
     ToggleHandle,
