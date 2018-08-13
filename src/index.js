@@ -13,7 +13,7 @@ const Modal = require('./components/modal');
 const ModalContainer = require('./components/modalContainer');
 const modalReducer = require('./reducers/modalReducer');
 const { openConfirmationModal } = require('./actions/modal');
-const OTTooltip = require('./components/OTTooltip');
+const Tooltip = require('./components/Tooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
 const theme = require('./theme');
@@ -33,7 +33,7 @@ module.exports = {
     ModalContainer,
     modalReducer,
     openConfirmationModal,
-    OTTooltip,
+    Tooltip,
     Pagination,
     ToggleHandle,
     theme,
