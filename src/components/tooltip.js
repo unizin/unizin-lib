@@ -6,19 +6,14 @@ import styled from 'styled-components';
 
 import theme from '../theme';
 
-const Tooltip = require('react-aria-tooltip').default; // This is wonky but we have to do it
+const RATooltip = require('react-aria-tooltip').default; // This is wonky but we have to do it
 
-export const messages = {
-    CONTENT_REQUEST:
-        'A content request is a way to submit a title for consideration to be added to the catalog.',
-};
-
-export default function OTTooltip({ message }: { message: $Keys<typeof messages> }) {
+export default function Tooltip({ message }: { message: string }) {
     return (
         <ToolTipContainer>
-            <Tooltip eventType="hover" message={messages[message]} direction="bottom">
+            <RATooltip eventType="hover" message={message} direction="bottom">
                 <FontAwesomeIcon icon={faQuestionCircle} tabIndex={0} />
-            </Tooltip>
+            </RATooltip>
         </ToolTipContainer>
     );
 }

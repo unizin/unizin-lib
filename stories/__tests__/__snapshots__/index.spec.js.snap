@@ -2,14 +2,14 @@
 
 exports[`Storyshots Add Remove Button Button 1`] = `
 <button
-  className="is-primary sc-dnqmqq chRfrq"
+  className="is-primary sc-EHOje idiwCv"
   onClick={[Function]}
 >
   <span
     className="cross"
   />
   <span
-    className="sc-htoDjs cwgOKV"
+    className="sc-ifAKCX izpMtP"
   >
     Add
      
@@ -20,19 +20,19 @@ exports[`Storyshots Add Remove Button Button 1`] = `
 
 exports[`Storyshots AvatarOption Elvis 1`] = `
 <div
-  className="sc-gzVnrw icItGV"
+  className="sc-bxivhb ivbKJD"
 >
   <div
-    className="sc-EHOje kezrng"
+    className="sc-bwzfXH iQOhsx"
   >
     <img
       alt="Gravatar image for elvis@example.com"
-      className="avatar sc-bZQynM fISQDW"
+      className="avatar sc-htpNat iCxrQH"
       src="https://www.gravatar.com/avatar/73bd673a3291d9a3ea9857b773f75440?d=blank"
     />
     <div
       aria-hidden={true}
-      className="sc-ifAKCX fpssdM"
+      className="sc-bdVaJa fnrRkl"
     >
       EP
     </div>
@@ -45,29 +45,29 @@ exports[`Storyshots AvatarOption Elvis 1`] = `
 
 exports[`Storyshots Content Pricing Free content 1`] = `
 <div
-  className="sc-iwsKbI cOgVcU"
+  className="sc-bZQynM Agekg"
 >
   <div>
     <div
-      className="sc-gZMcBi efiAfs"
+      className="sc-gzVnrw hsEcyB"
     >
       <span
-        className="sc-htoDjs cwgOKV"
+        className="sc-ifAKCX izpMtP"
       >
         Your price
       </span>
        
       <span
-        className="sc-VigVT dNwqKl"
+        className="sc-dnqmqq cdIqsh"
       >
         Free
       </span>
     </div>
     <div
-      className="sc-fjdhpX qOSTm"
+      className="sc-gZMcBi hBmVNX"
     >
       <span
-        className="sc-jTzLTM cCWbUt"
+        className="sc-iwsKbI jMxFSW"
       >
         $
         174.95
@@ -82,20 +82,20 @@ exports[`Storyshots Content Pricing Free content 1`] = `
 
 exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
 <div
-  className="sc-iwsKbI cOgVcU"
+  className="sc-bZQynM Agekg"
 >
   <div>
     <div
-      className="sc-gZMcBi efiAfs"
+      className="sc-gzVnrw hsEcyB"
     >
       <span
-        className="sc-htoDjs cwgOKV"
+        className="sc-ifAKCX izpMtP"
       >
         Your price
       </span>
        
       <span
-        className="sc-VigVT dNwqKl"
+        className="sc-dnqmqq cdIqsh"
       >
         Free
       </span>
@@ -106,29 +106,29 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
 
 exports[`Storyshots Content Pricing Has all information 1`] = `
 <div
-  className="sc-iwsKbI cOgVcU"
+  className="sc-bZQynM Agekg"
 >
   <div>
     <div
-      className="sc-gZMcBi efiAfs"
+      className="sc-gzVnrw hsEcyB"
     >
       <span
-        className="sc-htoDjs cwgOKV"
+        className="sc-ifAKCX izpMtP"
       >
         Your price
       </span>
        
       <span
-        className="sc-VigVT dNwqKl"
+        className="sc-dnqmqq cdIqsh"
       >
         $74.99
       </span>
     </div>
     <div
-      className="sc-fjdhpX qOSTm"
+      className="sc-gZMcBi hBmVNX"
     >
       <span
-        className="sc-jTzLTM cCWbUt"
+        className="sc-iwsKbI jMxFSW"
       >
         $
         174.95
@@ -158,20 +158,20 @@ exports[`Storyshots Content Pricing Missing both prices (why do we allow this?) 
 
 exports[`Storyshots Content Pricing Missing list price 1`] = `
 <div
-  className="sc-iwsKbI cOgVcU"
+  className="sc-bZQynM Agekg"
 >
   <div>
     <div
-      className="sc-gZMcBi efiAfs"
+      className="sc-gzVnrw hsEcyB"
     >
       <span
-        className="sc-htoDjs cwgOKV"
+        className="sc-ifAKCX izpMtP"
       >
         Your price
       </span>
        
       <span
-        className="sc-VigVT dNwqKl"
+        className="sc-dnqmqq cdIqsh"
       >
         $74.99
       </span>
@@ -197,7 +197,7 @@ exports[`Storyshots Content Pricing Missing offer price 1`] = `
 
 exports[`Storyshots Loading Loading 1`] = `
 <div
-  className="sc-jzJRlG bcBVzQ"
+  className="sc-gqjmRU fYdCyB"
 >
   Loading
   ...
@@ -206,19 +206,19 @@ exports[`Storyshots Loading Loading 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
 <div
-  className="sc-cSHVUG hUIgmO"
+  className="sc-VigVT HsfvX"
   tabIndex="0"
 >
   <main
-    className="sc-kAzzGY ejqPxt"
+    className="sc-jTzLTM dsbvVX"
   >
     <button
       aria-label="Close"
-      className="sc-chPdSV gzRpJx"
+      className="sc-fjdhpX rwnzY"
       onClick={[Function]}
     />
     <div
-      className="sc-kGXeez kfohyH"
+      className="sc-cSHVUG hioeqj"
     >
       <h1>
         Would you like a cookie?
@@ -228,7 +228,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
       </p>
     </div>
     <div
-      className="sc-kgoBCf cpBZLm"
+      className="sc-jzJRlG dJUzpC"
     >
       <button
         onClick={[Function]}
@@ -247,19 +247,19 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
 <div
-  className="sc-cSHVUG hUIgmO"
+  className="sc-VigVT HsfvX"
   tabIndex="0"
 >
   <main
-    className="sc-kAzzGY ejqPxt"
+    className="sc-jTzLTM dsbvVX"
   >
     <button
       aria-label="Close"
-      className="sc-chPdSV gzRpJx"
+      className="sc-fjdhpX rwnzY"
       onClick={[Function]}
     />
     <div
-      className="sc-kGXeez kfohyH"
+      className="sc-cSHVUG hioeqj"
     >
       <h1>
         Would you like a cookie?
@@ -269,7 +269,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
       </p>
     </div>
     <div
-      className="sc-kgoBCf cpBZLm"
+      className="sc-jzJRlG dJUzpC"
     >
       <button
         onClick={[Function]}
@@ -286,12 +286,242 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
 </div>
 `;
 
-exports[`Storyshots Order Tool Tooltip We hardcoded this text for some reason 1`] = `
+exports[`Storyshots Pagination On Page 1 1`] = `
 <div
-  className="sc-bxivhb fBaQSp"
+  className="sc-kAzzGY icuhxZ"
+>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-left fa-w-8 "
+        data-icon="angle-left"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Previous page
+      </span>
+    </button>
+  </div>
+  <div>
+    Page 
+    1
+     of 
+    2
+  </div>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-right fa-w-8 "
+        data-icon="angle-right"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Next page
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
+
+exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
+<div
+  className="sc-kAzzGY icuhxZ"
+>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-left fa-w-8 "
+        data-icon="angle-left"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Previous page
+      </span>
+    </button>
+  </div>
+  <div>
+    Page 
+    2
+     of 
+    2
+  </div>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-right fa-w-8 "
+        data-icon="angle-right"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Next page
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
+<div
+  className="sc-kAzzGY icuhxZ"
+>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-left fa-w-8 "
+        data-icon="angle-left"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Previous page
+      </span>
+    </button>
+  </div>
+  <div>
+    Page 
+    2
+     of 
+    3
+  </div>
+  <div>
+    <button
+      className="sc-chPdSV tIcdi"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden={true}
+        className="svg-inline--fa fa-angle-right fa-w-8 "
+        data-icon="angle-right"
+        data-prefix="fas"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 256 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Next page
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
 >
   <div
-    className="ra-tooltip-wrapper sc-htpNat fBuvaI"
+    className="sc-kgoBCf iFIKUK"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
+<div
+  className="sc-ckVGcZ ljEDRT"
+>
+  <div
+    className="ra-tooltip-wrapper sc-dxgOiQ imqTTy"
     id="ra-tooltip-1"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -300,13 +530,13 @@ exports[`Storyshots Order Tool Tooltip We hardcoded this text for some reason 1`
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-bwzfXH hTcOXv"
+      className="bottom ra-tooltip sc-kpOJdX fBwjfn"
     >
       <div
-        className="sc-bdVaJa hYeCwI ra-tooltip-message"
+        className="sc-kGXeez hXNJmp ra-tooltip-message"
       >
         <p>
-          A content request is a way to submit a title for consideration to be added to the catalog.
+          UA text goes here.
         </p>
       </div>
     </div>
@@ -329,235 +559,5 @@ exports[`Storyshots Order Tool Tooltip We hardcoded this text for some reason 1`
       />
     </svg>
   </div>
-</div>
-`;
-
-exports[`Storyshots Pagination On Page 1 1`] = `
-<div
-  className="sc-kpOJdX lgchly"
->
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={true}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-left fa-w-8 "
-        data-icon="angle-left"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Previous page
-      </span>
-    </button>
-  </div>
-  <div>
-    Page 
-    1
-     of 
-    2
-  </div>
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-right fa-w-8 "
-        data-icon="angle-right"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Next page
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
-
-exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
-<div
-  className="sc-kpOJdX lgchly"
->
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-left fa-w-8 "
-        data-icon="angle-left"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Previous page
-      </span>
-    </button>
-  </div>
-  <div>
-    Page 
-    2
-     of 
-    2
-  </div>
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={true}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-right fa-w-8 "
-        data-icon="angle-right"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Next page
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
-<div
-  className="sc-kpOJdX lgchly"
->
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-left fa-w-8 "
-        data-icon="angle-left"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Previous page
-      </span>
-    </button>
-  </div>
-  <div>
-    Page 
-    2
-     of 
-    3
-  </div>
-  <div>
-    <button
-      className="sc-dxgOiQ cflSXG"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <svg
-        aria-hidden={true}
-        className="svg-inline--fa fa-angle-right fa-w-8 "
-        data-icon="angle-right"
-        data-prefix="fas"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 256 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="sc-htoDjs cwgOKV"
-      >
-        Next page
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-block",
-    }
-  }
->
-  <div
-    className="sc-ckVGcZ hYkLcI"
-    onClick={[Function]}
-  />
 </div>
 `;
