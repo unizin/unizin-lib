@@ -17,6 +17,7 @@ const Tooltip = require('./components/tooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
 const theme = require('./theme');
+const ZingTouch = require('./components/zingTouch');
 
 module.exports = {
     addAural,
@@ -37,4 +38,5 @@ module.exports = {
     Pagination,
     ToggleHandle,
     theme,
+    ZingTouch,
 };
