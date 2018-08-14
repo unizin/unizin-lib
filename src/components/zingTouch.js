@@ -25,13 +25,19 @@ const doubleTap = new Tap({
     numInputs: 2,
 });
 
+function shouldPassRegionToChild(child) {
+    return typeof child.type === 'function';
+}
+
 export default class ZingTouch extends PureComponent<Props, State> {
     state = { region: null };
     touchContainer = createRef();
 
-    get shouldPassRegion() {
-        return typeof this.props.children.type === 'function';
-    }
+    processChild = (child: Node) => {
+        return shouldPassRegionToChild(child)
+            ? cloneElement(child, { zingTouchRegion: this.state.region })
+            : child;
+    };
 
     componentDidMount() {
         const { current } = this.touchContainer;
@@ -52,9 +58,10 @@ export default class ZingTouch extends PureComponent<Props, State> {
     }
 
     render() {
-        const children = this.shouldPassRegion
-            ? cloneElement(this.props.children, { zingTouchRegion: this.state.region })
-            : this.props.children;
-        return <div ref={this.touchContainer}>{children}</div>;
+        const { children } = this.props;
+        const processedChildren = Array.isArray(children)
+            ? children.map(this.processChild)
+            : this.processChild(children);
+        return <div ref={this.touchContainer}>{processedChildren}</div>;
     }
 }
