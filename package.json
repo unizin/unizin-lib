@@ -63,7 +63,7 @@
     "prop-types": "^15.6.2",
     "react-aria-tooltip": "^1.3",
     "redux-actions": "^2.6.1",
-    "zingtouch": "^1.0.6"
+    "zingtouch": "1.0.5"
   },
   "scripts": {
     "storybook": "./scripts/storybook.sh",

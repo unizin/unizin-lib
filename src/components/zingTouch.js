@@ -46,7 +46,7 @@ export default class ZingTouch extends PureComponent<Props, State> {
                 const { region } = this.state;
                 if (region) {
                     region.register('doubleTap', doubleTap);
-                    ['swipe', 'tap', 'doubleTap', 'pinch', 'expand'].forEach(eventName => {
+                    ['swipe', 'tap', 'doubleTap', 'expand', 'pinch'].forEach(eventName => {
                         const callback = this.props[`on${capitalize(eventName)}`];
                         if (callback) {
                             region.bind(current, eventName, callback, true);

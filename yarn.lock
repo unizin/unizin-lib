@@ -10001,6 +10001,6 @@ yauzl@2.4.1:
   dependencies:
     fd-slicer "~1.0.1"
 
-zingtouch@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/zingtouch/-/zingtouch-1.0.6.tgz#456cf2b0a69f91a5ffbd8a83b18033c671f1096d"
+zingtouch@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/zingtouch/-/zingtouch-1.0.5.tgz#1a746438e6b2bd169a59a2df5b03099faea43559"
