@@ -16,6 +16,7 @@ describe('Confirmation Modal', () => {
     let dispatch;
 
     beforeEach(() => {
+        // $FlowFixMe redux types suck.
         store = createStore(
             combineReducers({ modal: modalReducer }),
             { modal: null },
