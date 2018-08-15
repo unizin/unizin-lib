@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent, cloneElement, createRef, type Node } from 'react';
-import { Region, Tap } from 'zingtouch';
+import { Region } from 'zingtouch';
 import capitalize from '../util/capitalize';
 
 type ZingTouchCallback = CustomEvent => void;
@@ -9,7 +9,6 @@ type Props = {
     children: Node,
     onSwipe?: ZingTouchCallback,
     onTap?: ZingTouchCallback,
-    onDoubleTap?: ZingTouchCallback,
     onPinch?: ZingTouchCallback,
     onExpand?: ZingTouchCallback,
 };
@@ -20,10 +19,6 @@ type State = {
         register: (string, any) => void,
     },
 };
-
-const doubleTap = new Tap({
-    numInputs: 2,
-});
 
 function shouldPassRegionToChild(child) {
     return typeof child.type === 'function';
@@ -45,8 +40,7 @@ export default class ZingTouch extends PureComponent<Props, State> {
             this.setState({ region: new Region(current) }, () => {
                 const { region } = this.state;
                 if (region) {
-                    region.register('doubleTap', doubleTap);
-                    ['swipe', 'tap', 'doubleTap', 'expand', 'pinch'].forEach(eventName => {
+                    ['swipe', 'tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
                         const callback = this.props[`on${capitalize(eventName)}`];
                         if (callback) {
                             region.bind(current, eventName, callback, true);

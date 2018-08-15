@@ -7,7 +7,7 @@ import capitalize from '../src/util/capitalize';
 
 storiesOf('ZingTouch', module)
     .add('Gesture handlers', () => {
-        const props = ['swipe', 'tap', 'doubleTap', 'pinch', 'expand'].reduce((acc, eventName) => {
+        const props = ['swipe', 'tap', 'pan', 'pinch', 'expand'].reduce((acc, eventName) => {
             acc[`on${capitalize(eventName)}`] = action(eventName);
             return acc;
         }, {});
