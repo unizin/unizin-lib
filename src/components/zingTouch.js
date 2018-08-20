@@ -7,10 +7,11 @@ type ZingTouchCallback = CustomEvent => void;
 
 type Props = {
     children: Node,
+    onExpand?: ZingTouchCallback,
+    onPan?: ZingTouchCallback,
+    onPinch?: ZingTouchCallback,
     onSwipe?: ZingTouchCallback,
     onTap?: ZingTouchCallback,
-    onPinch?: ZingTouchCallback,
-    onExpand?: ZingTouchCallback,
 };
 
 type State = {
@@ -55,10 +56,14 @@ export default class ZingTouch extends PureComponent<Props, State> {
     }
 
     render() {
-        const { children } = this.props;
+        const { children, onSwipe, onTap, onPan, onExpand, onPinch, ...props } = this.props;
         const processedChildren = Array.isArray(children)
             ? children.map(this.processChild)
             : this.processChild(children);
-        return <div ref={this.touchContainer}>{processedChildren}</div>;
+        return (
+            <div ref={this.touchContainer} {...props}>
+                {processedChildren}
+            </div>
+        );
     }
 }
