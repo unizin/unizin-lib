@@ -16,7 +16,7 @@ type Props = {
 
 type State = {
     region: ?{
-        bind: (HTMLElement, string, Function, boolean) => void,
+        bind: (HTMLElement, string, Function, ?boolean) => void,
         register: (string, any) => void,
     },
 };
@@ -47,7 +47,7 @@ export default class ZingTouch extends PureComponent<Props, State> {
                     ['swipe', 'tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
                         const callback = this.props[`on${capitalize(eventName)}`];
                         if (callback) {
-                            region.bind(current, eventName, callback, true);
+                            region.bind(current, eventName, callback);
                         }
                     });
                 }
