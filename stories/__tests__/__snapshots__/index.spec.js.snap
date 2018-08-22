@@ -563,10 +563,7 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
 `;
 
 exports[`Storyshots ZingTouch Allow native zoom 1`] = `
-<div
-  capture={false}
-  preventDefault={false}
->
+<div>
   <div
     style={
       Object {
@@ -580,10 +577,7 @@ exports[`Storyshots ZingTouch Allow native zoom 1`] = `
 `;
 
 exports[`Storyshots ZingTouch Gesture handlers 1`] = `
-<div
-  capture={false}
-  preventDefault={false}
->
+<div>
   <div
     style={
       Object {
@@ -597,10 +591,7 @@ exports[`Storyshots ZingTouch Gesture handlers 1`] = `
 `;
 
 exports[`Storyshots ZingTouch Pass zingTouchRegion prop 1`] = `
-<div
-  capture={false}
-  preventDefault={false}
->
+<div>
   <div
     style={
       Object {

@@ -63,7 +63,17 @@ export default class ZingTouch extends PureComponent<Props, State> {
     }
 
     render() {
-        const { children, onSwipe, onTap, onPan, onExpand, onPinch, ...props } = this.props;
+        const {
+            children,
+            onSwipe,
+            onTap,
+            onPan,
+            onExpand,
+            onPinch,
+            capture,
+            preventDefault,
+            ...props
+        } = this.props;
         const processedChildren = Array.isArray(children)
             ? children.map(this.processChild)
             : this.processChild(children);
