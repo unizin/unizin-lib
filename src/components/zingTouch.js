@@ -12,6 +12,8 @@ type Props = {
     onPinch?: ZingTouchCallback,
     onSwipe?: ZingTouchCallback,
     onTap?: ZingTouchCallback,
+    capture?: boolean,
+    preventDefault?: boolean,
 };
 
 type State = {
@@ -26,6 +28,10 @@ function shouldPassRegionToChild(child) {
 }
 
 export default class ZingTouch extends PureComponent<Props, State> {
+    static defaultProps = {
+        capture: false,
+        preventDefault: false,
+    };
     state = { region: null };
     touchContainer = createRef();
 
@@ -40,8 +46,9 @@ export default class ZingTouch extends PureComponent<Props, State> {
 
     componentDidMount() {
         const { current } = this.touchContainer;
+        const { capture, preventDefault } = this.props;
         if (current) {
-            this.setState({ region: new Region(current, false, false) }, () => {
+            this.setState({ region: new Region(current, capture, preventDefault) }, () => {
                 const { region } = this.state;
                 if (region) {
                     ['swipe', 'tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
