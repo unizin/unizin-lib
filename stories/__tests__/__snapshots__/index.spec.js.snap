@@ -562,6 +562,20 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
 </div>
 `;
 
+exports[`Storyshots ZingTouch Allow native zoom 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "yellow",
+        "height": 400,
+        "width": 400,
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots ZingTouch Gesture handlers 1`] = `
 <div>
   <div

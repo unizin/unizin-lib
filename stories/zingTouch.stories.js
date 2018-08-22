@@ -29,4 +29,11 @@ storiesOf('ZingTouch', module)
                 <SomeComponent />
             </ZingTouch>
         );
+    })
+    .add('Allow native zoom', () => {
+        return (
+            <ZingTouch onSwipe={() => {}}>
+                <div style={{ backgroundColor: 'yellow', width: 400, height: 400 }} />
+            </ZingTouch>
+        );
     });

@@ -41,7 +41,7 @@ export default class ZingTouch extends PureComponent<Props, State> {
     componentDidMount() {
         const { current } = this.touchContainer;
         if (current) {
-            this.setState({ region: new Region(current) }, () => {
+            this.setState({ region: new Region(current, false, false) }, () => {
                 const { region } = this.state;
                 if (region) {
                     ['swipe', 'tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
