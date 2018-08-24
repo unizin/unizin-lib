@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent, cloneElement, createRef, type Node } from 'react';
-import { Region } from 'zingtouch';
+import { Region, Swipe } from 'zingtouch';
 import capitalize from '../util/capitalize';
 
 type ZingTouchCallback = CustomEvent => void;
@@ -46,17 +46,21 @@ export default class ZingTouch extends PureComponent<Props, State> {
 
     componentDidMount() {
         const { current } = this.touchContainer;
-        const { capture, preventDefault } = this.props;
+        const { capture, preventDefault, onSwipe } = this.props;
         if (current) {
             this.setState({ region: new Region(current, capture, preventDefault) }, () => {
                 const { region } = this.state;
                 if (region) {
-                    ['swipe', 'tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
+                    ['tap', 'pan', 'expand', 'pinch'].forEach(eventName => {
                         const callback = this.props[`on${capitalize(eventName)}`];
                         if (callback) {
                             region.bind(current, eventName, callback);
                         }
                     });
+                    if (onSwipe) {
+                        region.register('quickswipe', new Swipe({ escapeVelocity: 0.25 }));
+                        region.bind(current, 'quickswipe', onSwipe);
+                    }
                 }
             });
         }
