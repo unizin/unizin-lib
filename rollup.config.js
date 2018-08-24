@@ -20,7 +20,7 @@ export default ['cjs', 'esm'].map(format => ({
         commonjs({
             namedExports: {
                 'node_modules/react-is/index.js': ['isValidElementType'],
-                'node_modules/zingtouch/index.js': ['Tap', 'Region'],
+                'node_modules/zingtouch/index.js': ['Tap', 'Swipe', 'Region'],
             },
         }),
         terser(),
