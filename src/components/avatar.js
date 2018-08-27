@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import md5 from 'crypto-js/md5';
+import md5 from 'md5';
 import styled from 'styled-components';
 
 import theme from '../theme';
