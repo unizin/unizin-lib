@@ -23,6 +23,8 @@ type State = {
     },
 };
 
+const escapeVelocity = /Chrome/.test(navigator.userAgent) ? 0.15 : 0.25;
+
 function shouldPassRegionToChild(child) {
     return typeof child.type === 'function';
 }
@@ -58,7 +60,7 @@ export default class ZingTouch extends PureComponent<Props, State> {
                         }
                     });
                     if (onSwipe) {
-                        region.register('quickswipe', new Swipe({ escapeVelocity: 0.25 }));
+                        region.register('quickswipe', new Swipe({ escapeVelocity }));
                         region.bind(current, 'quickswipe', onSwipe);
                     }
                 }
