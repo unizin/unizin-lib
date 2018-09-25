@@ -18,6 +18,9 @@ const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
 const theme = require('./theme');
 const ZingTouch = require('./components/zingTouch');
+const NotificationContainer = require('./components/notificationContainer');
+const notificationReducer = require('./reducers/notificationReducer');
+const notificationActions = require('./actions/notificationActions');
 
 module.exports = {
     addAural,
@@ -33,6 +36,9 @@ module.exports = {
     Modal,
     ModalContainer,
     modalReducer,
+    notificationActions,
+    NotificationContainer,
+    notificationReducer,
     openConfirmationModal,
     Tooltip,
     Pagination,

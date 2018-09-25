@@ -1,7 +1,6 @@
 /* @flow */
-export const OPEN_MODAL = 'OPEN_MODAL';
-export const CANCEL_MODAL = 'CANCEL_MODAL';
-export const SET_MODAL_ONCLOSE = 'SET_MODAL_ONCLOSE';
+import { modalActions } from '../const';
+const { OPEN_MODAL, CANCEL_MODAL, SET_MODAL_ONCLOSE } = modalActions;
 
 const _cancelModal = { type: CANCEL_MODAL };
 export function cancelModal(): ThunkAction<> {

@@ -1,6 +1,8 @@
 /* @flow */
-import { OPEN_MODAL, CANCEL_MODAL, SET_MODAL_ONCLOSE } from '../actions/modal';
+import { modalActions } from '../const';
 import createReducer from './createReducer';
+
+const { OPEN_MODAL, CANCEL_MODAL, SET_MODAL_ONCLOSE } = modalActions;
 
 export default createReducer(null, {
     [OPEN_MODAL]: (_, { type, ...modalState }: Action<ConfirmationModal>) => modalState,

@@ -26,6 +26,7 @@ const grey = color('#615B69');
 const red = color('#D53A60');
 const green = color('#198346');
 const blue = color('#0079CB');
+const yellow = color('#FFD740');
 const colors = {
     grey: {
         default: grey.toString(),
@@ -49,6 +50,10 @@ const colors = {
     blue: {
         default: blue.toString(),
         medium: blue.darkenByAmount(0.05).toString(),
+    },
+    yellow: {
+        default: yellow,
+        medium: yellow.darkenByAmount(0.05).toString(),
     },
     borders: {
         light: color('#E1DFE4').toString(),

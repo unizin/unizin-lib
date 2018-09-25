@@ -1,9 +1,9 @@
 /* @flow */
-declare type Action<T: {} = {}> = {
+declare type Action<J: {} = {}> = J & {
     type: string,
-} & T;
+};
 
-declare type ThunkAction<T = void> = (
-    dispatch: (Action<{}> | ThunkAction<T>) => Promise<any> | void,
+declare type ThunkAction<L: Promise<any> | void = void> = (
+    dispatch: (Action<{}> | ThunkAction<>) => Promise<any> | void,
     getState: () => Object
-) => T | Promise<T> | void;
+) => L;

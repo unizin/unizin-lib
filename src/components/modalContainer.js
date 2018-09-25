@@ -8,6 +8,7 @@ import { CSSTransition } from 'react-transition-group';
 import { setModalOnClose } from '../actions/modal';
 import theme from '../theme';
 import FocusTrap from './focusTrap';
+import CloseButton from './closeButton';
 
 const mapStateToProps = ({ modal }) => ({ ...modal });
 
@@ -56,7 +57,7 @@ export const ModalPortal = ({
               <ModalWrapper onCancel={onCancel} setModalOnClose={setModalOnClose}>
                   <CSSTransition in={true} classNames="modal-body" timeout={330} appear>
                       <ModalBody>
-                          <CloseButton onClick={onCancel} aria-label="Close" />
+                          <PositionedCloseButton onClick={onCancel} aria-label="Close" />
                           {modalContent}
                           <ModalButtons>
                               {showCancel ? (
@@ -113,39 +114,10 @@ const ModalBody = styled.main`
     }
 `;
 
-const CloseButton = styled.button`
-    position: relative;
-    border-radius: 50%;
-    border-color: transparent;
-    width: 26px;
-    height: 26px;
-    background: ${theme.colors.grey.default};
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;
+const PositionedCloseButton = styled(CloseButton)`
     position: absolute;
     right: ${theme.spacing.small};
     top: ${theme.spacing.small};
-
-    &:hover {
-        background: ${theme.colors.grey.dark};
-        transform: scale(1.1);
-    }
-
-    &:before,
-    &:after {
-        content: '';
-        width: 13px;
-        height: 2px;
-        background: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    &:after {
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
 `;
 
 const ModalButtons = styled.div`
