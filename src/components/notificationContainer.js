@@ -37,7 +37,6 @@ export class NotificationContainer extends PureComponent<Props> {
 }
 
 const Notifications = styled.div`
-    background-color: white;
     left: 0;
     position: absolute;
     top: 0;

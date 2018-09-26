@@ -324,10 +324,10 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
 
 exports[`Storyshots Notifications All three notifications 1`] = `
 <div
-  className="sc-kGXeez euJFVv"
+  className="sc-kGXeez hosvEQ"
 >
   <div
-    className="sc-chPdSV kusTLA"
+    className="sc-chPdSV hDsGwT"
     role="status"
   >
     <div
@@ -364,7 +364,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     />
   </div>
   <div
-    className="sc-chPdSV kusTLA"
+    className="sc-chPdSV hDsGwT"
     role="status"
   >
     <div
@@ -401,7 +401,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     />
   </div>
   <div
-    className="sc-chPdSV kusTLA"
+    className="sc-chPdSV hDsGwT"
     role="status"
   >
     <div
@@ -442,10 +442,10 @@ exports[`Storyshots Notifications All three notifications 1`] = `
 
 exports[`Storyshots Notifications Call to action 1`] = `
 <div
-  className="sc-kGXeez euJFVv"
+  className="sc-kGXeez hosvEQ"
 >
   <div
-    className="sc-chPdSV kusTLA"
+    className="sc-chPdSV hDsGwT"
     role="status"
   >
     <div
@@ -492,10 +492,10 @@ exports[`Storyshots Notifications Call to action 1`] = `
 exports[`Storyshots Notifications Connected notification 1`] = `
 Array [
   <div
-    className="sc-kGXeez euJFVv"
+    className="sc-kGXeez hosvEQ"
   >
     <div
-      className="sc-chPdSV kusTLA"
+      className="sc-chPdSV hDsGwT"
       role="status"
     >
       <div
@@ -542,10 +542,10 @@ Array [
 
 exports[`Storyshots Notifications No dismiss 1`] = `
 <div
-  className="sc-kGXeez euJFVv"
+  className="sc-kGXeez hosvEQ"
 >
   <div
-    className="sc-chPdSV kusTLA"
+    className="sc-chPdSV hDsGwT"
     role="alert"
   >
     <div

@@ -77,6 +77,7 @@ const slideIn = keyframes`
 
 const NotificationWrapper = styled.div`
     align-items: center;
+    background-color: white;
     display: flex;
     padding: ${theme.spacing.medium};
     justify-content: space-between;
