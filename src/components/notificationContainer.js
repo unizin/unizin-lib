@@ -42,8 +42,9 @@ const Notifications = styled.div`
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1052;
 `;
+// Modals created with react-aria-modal have a z-index of 1050, and unizin-lib modals have a z-index of 1051
 
 export default connect(
     ({ notification }) => ({ notification }),
