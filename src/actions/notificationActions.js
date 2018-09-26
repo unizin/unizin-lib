@@ -16,13 +16,16 @@ export const removeNotification = (id: number) => ({
     payload: { id },
 });
 
-export const showNotification = (payload: NotificationParam): ThunkAction<> => dispatch => {
+export const showNotification = (
+    payload: NotificationParam
+): ThunkAction<Promise<number>> => dispatch => {
     const id = performance.now();
     dispatch({
         type: notificationActions.SHOW_NOTIFICATION,
-        payload: { ...payload, id, removeNotification: dispatch(removeNotification(id)) },
+        payload: { ...payload, id },
     });
     if (payload.timeout) {
         setTimeout(() => dispatch(removeNotification(id)), payload.timeout);
     }
+    return Promise.resolve(id);
 };

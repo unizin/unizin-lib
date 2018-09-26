@@ -19,7 +19,7 @@ const baseProps = {
 const checkNotification = {
     dismissable: true,
     icon: 'CHECK',
-    id: 1,
+    id: performance.now(),
     text: 'Check Notification',
     timeout: 0,
 };
@@ -27,7 +27,7 @@ const checkNotification = {
 const cancelNotification = {
     dismissable: true,
     icon: 'CANCEL',
-    id: 1,
+    id: performance.now() + 1,
     text: 'Cancel Notification',
     timeout: 0,
 };
@@ -35,7 +35,7 @@ const cancelNotification = {
 const exclamationNotification = {
     dismissable: true,
     icon: 'EXCLAMATION',
-    id: 1,
+    id: performance.now() + 2,
     text: 'Exclamation Notification',
     timeout: 0,
 };

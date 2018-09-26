@@ -45,5 +45,5 @@ const Notifications = styled.div`
 
 export default connect(
     ({ notification }) => ({ notification }),
-    { removeNotification }
+    dispatch => ({ removeNotification: id => dispatch(removeNotification(id)) })
 )(NotificationContainer);

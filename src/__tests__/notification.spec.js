@@ -15,7 +15,6 @@ Enzyme.configure({ adapter: new Adapter() });
 const cancelNotification = {
     dismissable: true,
     icon: 'CANCEL',
-    id: 1,
     text: 'Cancel Notification',
     timeout: 0,
     callToAction: 'Do something',
@@ -66,9 +65,9 @@ describe('Notifications', () => {
         ).toHaveLength(1);
     });
 
-    it('should remove a notification', () => {
+    it('should remove a notification', async () => {
         const wrapper = mount(<TestContainer />);
-        dispatch(showNotification(cancelNotification));
+        const id = await dispatch(showNotification(cancelNotification));
         wrapper.update();
         expect(
             wrapper
@@ -76,7 +75,7 @@ describe('Notifications', () => {
                 .first()
                 .children()
         ).toHaveLength(1);
-        dispatch(removeNotification(1));
+        dispatch(removeNotification(id));
         wrapper.update();
         expect(
             wrapper
