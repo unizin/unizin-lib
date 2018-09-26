@@ -324,7 +324,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
 
 exports[`Storyshots Notifications All three notifications 1`] = `
 <div
-  className="sc-kGXeez dfNwSf"
+  className="sc-kGXeez gNtGVY"
 >
   <div
     className="sc-kgoBCf kCAiLg"
@@ -442,7 +442,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
 
 exports[`Storyshots Notifications Call to action 1`] = `
 <div
-  className="sc-kGXeez dfNwSf"
+  className="sc-kGXeez gNtGVY"
 >
   <div
     className="sc-kgoBCf kCAiLg"
@@ -491,7 +491,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
 
 exports[`Storyshots Notifications No dismiss 1`] = `
 <div
-  className="sc-kGXeez dfNwSf"
+  className="sc-kGXeez gNtGVY"
 >
   <div
     className="sc-kgoBCf kCAiLg"

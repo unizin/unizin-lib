@@ -37,10 +37,12 @@ export class NotificationContainer extends PureComponent<Props> {
 }
 
 const Notifications = styled.div`
+    background-color: white;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 100;
 `;
 
 export default connect(
