@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/Cellar/node/10.0.0/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js add babel-transform-object-rest-spread
+  /usr/local/Cellar/node/10.0.0/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade fontawesome@latest fontawesome-free-solid@latest
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin:/Users/danielsato/Library/Python/2.7/bin:./node_modules/.bin:/Users/danielsato/Library/Python/2.7/bin
+  /Users/danielsato/gcloud/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/danielsato/gcloud/google-cloud-sdk/bin:./node_modules/.bin:/Users/danielsato/Library/Python/2.7/bin:./node_modules/.bin:/Users/danielsato/Library/Python/2.7/bin
 
 Yarn version: 
   1.6.0
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/babel-transform-object-rest-spread: Not found
+  Error: https://registry.yarnpkg.com/fontawesome-free-solid: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.6.0/libexec/lib/cli.js:65327:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.6.0/libexec/lib/cli.js:133155:22)
       at Request.emit (events.js:180:13)
@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
     "name": "unizin-lib",
-    "version": "1.0.7",
+    "version": "1.1.18",
     "description": "Shared component library for Unizin",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
@@ -46,6 +46,7 @@ npm manifest:
       "babel-plugin-external-helpers": "^6.22.0",
       "babel-plugin-transform-class-properties": "^6.24.1",
       "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
       "babel-preset-env": "^1.7.0",
       "babel-preset-flow": "^6.23.0",
       "babel-preset-react": "^6.24.1",
@@ -72,6 +73,7 @@ npm manifest:
       "react-dom": "^16.4.2",
       "react-redux": "^5.0.7",
       "redux": "^4.0.0",
+      "redux-thunk": "^2.3.0",
       "rollup-plugin-babel": "^3.0.7",
       "rollup-plugin-commonjs": "^9.1.4",
       "rollup-plugin-node-resolve": "^3.3.0",
@@ -86,10 +88,11 @@ npm manifest:
       "@fortawesome/react-fontawesome": "^0.1.1",
       "classnames": "^2.2.6",
       "color-js": "^1.0.4",
-      "crypto-js": "^3.1.9-1",
+      "md5": "^2.2.1",
       "prop-types": "^15.6.2",
       "react-aria-tooltip": "^1.3",
-      "redux-actions": "^2.6.1"
+      "redux-actions": "^2.6.1",
+      "zingtouch": "1.0.5"
     },
     "scripts": {
       "storybook": "./scripts/storybook.sh",
@@ -103,6 +106,7 @@ npm manifest:
       "react-dom": "^16.4.2",
       "react-redux": "^5.0.7",
       "redux": "^4.0.0",
+      "redux-thunk": "^2.3.0",
       "styled-components": "^3.4.0"
     },
     "jest": {
@@ -1703,7 +1707,7 @@ Lockfile:
     version "6.9.4"
     resolved "https://registry.yarnpkg.com/babel-plugin-transform-minify-booleans/-/babel-plugin-transform-minify-booleans-6.9.4.tgz#acbb3e56a3555dd23928e4b582d285162dd2b198"
   
-  babel-plugin-transform-object-rest-spread@6.26.0, babel-plugin-transform-object-rest-spread@^6.22.0:
+  babel-plugin-transform-object-rest-spread@6.26.0, babel-plugin-transform-object-rest-spread@^6.22.0, babel-plugin-transform-object-rest-spread@^6.26.0:
     version "6.26.0"
     resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.26.0.tgz#0f36692d50fef6b7e2d4b3ac1478137a963b7b06"
     dependencies:
@@ -2501,6 +2505,10 @@ Lockfile:
     version "0.4.2"
     resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
   
+  charenc@~0.0.1:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+  
   cheerio@^1.0.0-rc.2:
     version "1.0.0-rc.2"
     resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
@@ -2914,6 +2922,10 @@ Lockfile:
       lru-cache "^4.0.1"
       which "^1.2.9"
   
+  crypt@~0.0.1:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+  
   cryptiles@2.x.x:
     version "2.0.5"
     resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
@@ -2935,10 +2947,6 @@ Lockfile:
       public-encrypt "^4.0.0"
       randombytes "^2.0.0"
       randomfill "^1.0.3"
-  
-  crypto-js@^3.1.9-1:
-    version "3.1.9-1"
-    resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.1.9-1.tgz#fda19e761fc077e01ffbfdc6e9fdfc59e8806cd8"
   
   crypto-random-string@^1.0.0:
     version "1.0.0"
@@ -5094,7 +5102,7 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/is-boolean-object/-/is-boolean-object-1.0.0.tgz#98f8b28030684219a95f375cfbd88ce3405dff93"
   
-  is-buffer@^1.1.5:
+  is-buffer@^1.1.5, is-buffer@~1.1.1:
     version "1.1.6"
     resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   
@@ -6280,6 +6288,14 @@ Lockfile:
     dependencies:
       hash-base "^3.0.0"
       inherits "^2.0.1"
+  
+  md5@^2.2.1:
+    version "2.2.1"
+    resolved "https://registry.yarnpkg.com/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
+    dependencies:
+      charenc "~0.0.1"
+      crypt "~0.0.1"
+      is-buffer "~1.1.1"
   
   media-typer@0.3.0:
     version "0.3.0"
@@ -8168,6 +8184,10 @@ Lockfile:
       lodash.camelcase "^4.3.0"
       lodash.curry "^4.1.1"
       reduce-reducers "^0.1.0"
+  
+  redux-thunk@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
   
   redux@^3.7.2:
     version "3.7.2"
@@ -10116,3 +10136,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-2.4.1.tgz#9528f442dab1b2284e58b4379bb194e22e0c4005"
     dependencies:
       fd-slicer "~1.0.1"
+  
+  zingtouch@1.0.5:
+    version "1.0.5"
+    resolved "https://registry.yarnpkg.com/zingtouch/-/zingtouch-1.0.5.tgz#1a746438e6b2bd169a59a2df5b03099faea43559"

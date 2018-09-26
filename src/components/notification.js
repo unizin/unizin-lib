@@ -2,9 +2,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import faCheckCircle from '@fortawesome/fontawesome-free-solid/faCheckCircle';
-import faExclamationTriangle from '@fortawesome/fontawesome-free-solid/faExclamationTriangle';
-import faTimesCircle from '@fortawesome/fontawesome-free-solid/faTimesCircle';
+import {
+    faCheckCircle,
+    faExclamationTriangle,
+    faTimesCircle,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { icons as iconNames } from '../const';
 

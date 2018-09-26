@@ -2,8 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import faAngleLeft from '@fortawesome/fontawesome-free-solid/faAngleLeft';
-import faAngleRight from '@fortawesome/fontawesome-free-solid/faAngleRight';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 import Aural from './aural';
 import theme from '../theme';

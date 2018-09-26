@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 import theme from '../theme';
