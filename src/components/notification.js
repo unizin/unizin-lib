@@ -129,7 +129,7 @@ const NotificationWrapper = styled.div`
     }
 
     &.notification-exit-done {
-        display: none;
+        visibility: hidden;
     }
 `;
 

@@ -88,17 +88,23 @@ storiesOf('Notifications', module)
             { notification: {} },
             applyMiddleware(thunk)
         );
-        store.dispatch(
-            showNotification({
-                dismissable: true,
-                icon: 'CHECK',
-                text: 'Check Notification',
-                timeout: 0,
-            })
-        );
+        function show() {
+            store.dispatch(
+                showNotification({
+                    dismissable: true,
+                    icon: 'CHECK',
+                    text: 'Check Notification',
+                    timeout: 0,
+                })
+            );
+        }
+        show();
         return (
             <Provider store={store}>
-                <ConnectedNotificationContainer />
+                <React.Fragment>
+                    <ConnectedNotificationContainer />
+                    <button onClick={show}>Show</button>
+                </React.Fragment>
             </Provider>
         );
     });
