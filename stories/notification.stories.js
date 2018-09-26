@@ -2,8 +2,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-
-import { NotificationContainer } from '../src/components/notificationContainer';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import notification from '../src/reducers/notificationReducer';
+import ConnectedNotificationContainer, {
+    NotificationContainer,
+} from '../src/components/notificationContainer';
+import { showNotification } from '../src/actions/notificationActions';
 
 type Props = {
     notification: any,
@@ -75,4 +81,24 @@ storiesOf('Notifications', module)
                 },
             }}
         />
-    ));
+    ))
+    .add('Connected notification', () => {
+        const store = createStore(
+            combineReducers({ notification }),
+            { notification: {} },
+            applyMiddleware(thunk)
+        );
+        store.dispatch(
+            showNotification({
+                dismissable: true,
+                icon: 'CHECK',
+                text: 'Check Notification',
+                timeout: 0,
+            })
+        );
+        return (
+            <Provider store={store}>
+                <ConnectedNotificationContainer />
+            </Provider>
+        );
+    });

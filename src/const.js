@@ -14,4 +14,7 @@ export const modalActions = {
 export const notificationActions = {
     SHOW_NOTIFICATION: 'SHOW_NOTIFICATION',
     REMOVE_NOTIFICATION: 'REMOVE_NOTIFICATION',
+    TRANSITION_NOTIFICATION: 'TRANSITION_NOTIFICATION',
 };
+
+export const NOTIFICATION_TIMEOUT = 330;

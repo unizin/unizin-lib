@@ -1,14 +1,15 @@
 /* @flow */
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCheckCircle,
     faExclamationTriangle,
     faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons';
+import { CSSTransition } from 'react-transition-group';
 
-import { icons as iconNames } from '../const';
+import { icons as iconNames, NOTIFICATION_TIMEOUT } from '../const';
 
 import theme from '../theme';
 
@@ -29,34 +30,47 @@ const colors = {
     [EXCLAMATION]: theme.colors.yellow.medium,
 };
 
-type Props = NotificationParam & { id: number, removeNotification: (id: number) => void };
+type Props = NotificationParam & {
+    id: number,
+    removeNotification: (id: number) => void,
+    exit?: boolean,
+};
 
 export default function Notification(props: Props) {
-    const { callToAction, onCallToAction, icon, removeNotification, dismissable } = props;
+    const { callToAction, onCallToAction, icon, removeNotification, dismissable, exit } = props;
     const button = callToAction ? <button onClick={onCallToAction}>{callToAction}</button> : null;
     const dismiss = dismissable ? (
         <CloseNotification label="Dismiss" onClick={removeNotification} />
     ) : null;
     const role = dismissable ? 'status' : 'alert';
     return (
-        <NotificationWrapper role={role}>
-            <div style={{ color: colors[icon] }}>
-                <FontAwesomeIcon icon={icons[icon]} />
-            </div>
-            <span>{props.text}</span>
-            {button}
-            {dismiss}
-        </NotificationWrapper>
+        <CSSTransition
+            classNames="notification"
+            in={!exit}
+            appear={true}
+            timeout={NOTIFICATION_TIMEOUT}
+        >
+            <NotificationWrapper role={role}>
+                <div style={{ color: colors[icon] }}>
+                    <FontAwesomeIcon icon={icons[icon]} />
+                </div>
+                <span>{props.text}</span>
+                {button}
+                {dismiss}
+            </NotificationWrapper>
+        </CSSTransition>
     );
 }
 
-const CloseNotification = styled(CloseButton)`
-    border-color: ${theme.colors.grey.light};
-    background-color: white;
+const slideIn = keyframes`
+    from {
+        opacity: 0.15;
+        transform: translateY(-100px);
+    }
 
-    &:before,
-    &:after {
-        background-color: ${theme.colors.grey.medium};
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 `;
 
@@ -104,5 +118,27 @@ const NotificationWrapper = styled.div`
             color: ${theme.colors.blue.default};
             padding: ${theme.spacing.tiny} ${theme.spacing.small};
         }
+    }
+
+    &.notification-appear {
+        animation: ${slideIn} ${theme.animationDuration} ease-in;
+    }
+
+    &.notification-exit {
+        animation: ${slideIn} ${theme.animationDuration} ease-in reverse;
+    }
+
+    &.notification-exit-done {
+        display: none;
+    }
+`;
+
+const CloseNotification = styled(CloseButton)`
+    border-color: ${theme.colors.grey.light};
+    background-color: white;
+
+    &:before,
+    &:after {
+        background-color: ${theme.colors.grey.medium};
     }
 `;

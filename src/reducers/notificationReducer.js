@@ -8,6 +8,9 @@ export default createReducer(({}: { [string]: NotificationParam & { id: number }
     [notificationActions.SHOW_NOTIFICATION]: (state, { payload }) => {
         return { ...state, [payload.id]: payload };
     },
+    [notificationActions.TRANSITION_NOTIFICATION]: (state, { payload }) => {
+        return { ...state, [payload.id]: { ...state[payload.id], exit: true } };
+    },
     [notificationActions.REMOVE_NOTIFICATION]: (state, { payload }) => {
         const newState = { ...state };
         delete newState[payload.id];

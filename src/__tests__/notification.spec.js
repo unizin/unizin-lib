@@ -22,6 +22,7 @@ const cancelNotification = {
 };
 
 describe('Notifications', () => {
+    jest.useFakeTimers();
     let store;
     let dispatch;
 
@@ -76,6 +77,7 @@ describe('Notifications', () => {
                 .children()
         ).toHaveLength(1);
         dispatch(removeNotification(id));
+        jest.runAllTimers();
         wrapper.update();
         expect(
             wrapper

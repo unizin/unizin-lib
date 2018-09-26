@@ -1,5 +1,5 @@
 /* @flow */
-import { icons, notificationActions } from '../const';
+import { icons, notificationActions, NOTIFICATION_TIMEOUT } from '../const';
 
 export type NotificationParam = {
     callToAction?: string,
@@ -11,10 +11,18 @@ export type NotificationParam = {
     timeout: number,
 };
 
-export const removeNotification = (id: number) => ({
-    type: notificationActions.REMOVE_NOTIFICATION,
-    payload: { id },
-});
+export const removeNotification = (id: number): ThunkAction<> => dispatch => {
+    dispatch({
+        type: notificationActions.TRANSITION_NOTIFICATION,
+        payload: { id },
+    });
+    setTimeout(() => {
+        dispatch({
+            type: notificationActions.REMOVE_NOTIFICATION,
+            payload: { id },
+        });
+    }, NOTIFICATION_TIMEOUT);
+};
 
 export const showNotification = (
     payload: NotificationParam

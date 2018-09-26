@@ -24,7 +24,7 @@ export class NotificationContainer extends PureComponent<Props> {
                 return (
                     <Notification
                         key={`ul-notification-${id}`}
-                        removeNotification={removeNotification}
+                        removeNotification={() => removeNotification(id)}
                         {...currentNotification}
                     />
                 );
