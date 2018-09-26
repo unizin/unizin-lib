@@ -327,7 +327,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
   className="sc-kGXeez gNtGVY"
 >
   <div
-    className="sc-chPdSV ilKimp"
+    className="sc-chPdSV kusTLA"
     role="status"
   >
     <div
@@ -364,7 +364,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     />
   </div>
   <div
-    className="sc-chPdSV ilKimp"
+    className="sc-chPdSV kusTLA"
     role="status"
   >
     <div
@@ -401,7 +401,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     />
   </div>
   <div
-    className="sc-chPdSV ilKimp"
+    className="sc-chPdSV kusTLA"
     role="status"
   >
     <div
@@ -445,7 +445,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
   className="sc-kGXeez gNtGVY"
 >
   <div
-    className="sc-chPdSV ilKimp"
+    className="sc-chPdSV kusTLA"
     role="status"
   >
     <div
@@ -495,7 +495,7 @@ Array [
     className="sc-kGXeez gNtGVY"
   >
     <div
-      className="sc-chPdSV ilKimp"
+      className="sc-chPdSV kusTLA"
       role="status"
     >
       <div
@@ -545,7 +545,7 @@ exports[`Storyshots Notifications No dismiss 1`] = `
   className="sc-kGXeez gNtGVY"
 >
   <div
-    className="sc-chPdSV ilKimp"
+    className="sc-chPdSV kusTLA"
     role="alert"
   >
     <div

@@ -45,10 +45,11 @@ export default function Notification(props: Props) {
     const role = dismissable ? 'status' : 'alert';
     return (
         <CSSTransition
+            appear={true}
             classNames="notification"
             in={!exit}
-            appear={true}
             timeout={NOTIFICATION_TIMEOUT}
+            unmountOnExit={true}
         >
             <NotificationWrapper role={role}>
                 <div style={{ color: colors[icon] }}>
@@ -121,15 +122,11 @@ const NotificationWrapper = styled.div`
     }
 
     &.notification-appear {
-        animation: ${slideIn} ${theme.animationDuration} ease-in;
+        animation: ${slideIn} ${theme.animationDuration} ease-in forwards;
     }
 
     &.notification-exit {
-        animation: ${slideIn} ${theme.animationDuration} ease-in reverse;
-    }
-
-    &.notification-exit-done {
-        visibility: hidden;
+        animation: ${slideIn} ${theme.animationDuration} ease-in reverse forwards;
     }
 `;
 
