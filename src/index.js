@@ -19,7 +19,6 @@ const ToggleHandle = require('./components/toggleHandle');
 const theme = require('./theme');
 const ZingTouch = require('./components/zingTouch');
 const NotificationContainer = require('./components/notificationContainer');
-const NotificationBase = require('./components/notificationContainer').NotificationContainer;
 const notificationReducer = require('./reducers/notificationReducer');
 const notificationActions = require('./actions/notificationActions');
 
@@ -39,7 +38,6 @@ module.exports = {
     modalReducer,
     notificationActions,
     NotificationContainer,
-    NotificationBase,
     notificationReducer,
     openConfirmationModal,
     Tooltip,
