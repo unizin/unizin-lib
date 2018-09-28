@@ -49,7 +49,7 @@ exports[`Storyshots Content Pricing Free content 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw hsEcyB"
+      className="sc-gzVnrw oeFWR"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -86,7 +86,7 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw hsEcyB"
+      className="sc-gzVnrw oeFWR"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -110,7 +110,7 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw hsEcyB"
+      className="sc-gzVnrw oeFWR"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -162,7 +162,7 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw hsEcyB"
+      className="sc-gzVnrw oeFWR"
     >
       <span
         className="sc-ifAKCX izpMtP"

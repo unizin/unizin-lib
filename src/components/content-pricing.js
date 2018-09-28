@@ -59,10 +59,13 @@ const Price = styled.div`
 
     span {
         display: block;
-        font-size: 11px;
         letter-spacing: 1px;
         margin-bottom: 0;
         text-transform: uppercase;
+
+        &:first-child {
+            font-size: 11px;
+        }
     }
 `;
 
