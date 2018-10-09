@@ -5,6 +5,7 @@ const auralNotificationReducer = require('./reducers/auralNotificationReducer');
 const Avatar = require('./components/avatar');
 const AvatarOption = require('./components/avatar-option');
 const ButtonAddRemove = require('./components/button-add-remove');
+const CloseButton = require('./components/closeButton');
 const ContentPricing = require('./components/content-pricing');
 const FocusTrap = require('./components/focusTrap');
 const Initials = require('./components/initials');
@@ -29,6 +30,7 @@ module.exports = {
     Avatar,
     AvatarOption,
     ButtonAddRemove,
+    CloseButton,
     ContentPricing,
     FocusTrap,
     Initials,
