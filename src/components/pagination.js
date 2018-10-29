@@ -75,6 +75,12 @@ const Button = styled.button`
     height: 35px;
     background: #fff;
     border: ${theme.borders.default};
+    cursor: pointer;
+
+    &[disabled] {
+        color: ${theme.colors.grey.light};
+        cursor: not-allowed;
+    }
 `;
 
 export default Pagination;
