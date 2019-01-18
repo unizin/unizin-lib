@@ -956,6 +956,19 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 </div>
 `;
 
+exports[`Storyshots Spinner Defaults 1`] = `
+<div
+  className="sc-iAyFgw vFwGq"
+>
+  <div
+    className="sc-kkGfuU fiCSPI"
+  />
+  <div
+    className="sc-hSdWYo cyfscu"
+  />
+</div>
+`;
+
 exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
 <div
   style={
