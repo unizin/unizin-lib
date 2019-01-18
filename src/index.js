@@ -22,6 +22,7 @@ const ZingTouch = require('./components/zingTouch');
 const NotificationContainer = require('./components/notificationContainer');
 const notificationReducer = require('./reducers/notificationReducer');
 const notificationActions = require('./actions/notificationActions');
+const Spinner = require('./components/spinner');
 
 module.exports = {
     addAural,
@@ -42,9 +43,10 @@ module.exports = {
     NotificationContainer,
     notificationReducer,
     openConfirmationModal,
-    Tooltip,
     Pagination,
-    ToggleHandle,
+    Spinner,
     theme,
+    ToggleHandle,
+    Tooltip,
     ZingTouch,
 };
