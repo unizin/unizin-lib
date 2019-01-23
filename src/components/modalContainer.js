@@ -102,7 +102,7 @@ const ModalBody = styled.main`
     box-shadow: ${theme.shadows.default};
     margin: auto;
     position: relative;
-    width: 30%;
+    min-width: 30%;
     z-index: 4;
 
     &.modal-body-appear {
