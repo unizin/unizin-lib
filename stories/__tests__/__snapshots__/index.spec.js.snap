@@ -210,7 +210,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
@@ -251,7 +251,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
@@ -292,7 +292,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
