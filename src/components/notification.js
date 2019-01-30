@@ -34,10 +34,21 @@ type Props = NotificationParam & {
     id: number,
     removeNotification: (id: number) => void,
     exit?: boolean,
+    text: string,
+    subText?: string,
 };
 
 export default function Notification(props: Props) {
-    const { callToAction, onCallToAction, icon, removeNotification, dismissable, exit } = props;
+    const {
+        callToAction,
+        onCallToAction,
+        icon,
+        removeNotification,
+        dismissable,
+        exit,
+        text,
+        subText,
+    } = props;
     const button = callToAction ? <button onClick={onCallToAction}>{callToAction}</button> : null;
     const dismiss = dismissable ? (
         <CloseNotification label="Dismiss" onClick={removeNotification} />
@@ -52,12 +63,15 @@ export default function Notification(props: Props) {
             unmountOnExit={true}
         >
             <NotificationWrapper role={role}>
-                <div style={{ color: colors[icon] }}>
-                    <FontAwesomeIcon icon={icons[icon]} />
+                <div>
+                    <div style={{ color: colors[icon] }}>
+                        <FontAwesomeIcon icon={icons[icon]} />
+                    </div>
+                    <span>{text}</span>
+                    {button}
+                    {dismiss}
                 </div>
-                <span>{props.text}</span>
-                {button}
-                {dismiss}
+                {subText && <p>{subText}</p>}
             </NotificationWrapper>
         </CSSTransition>
     );
@@ -76,11 +90,9 @@ const slideIn = keyframes`
 `;
 
 const NotificationWrapper = styled.div`
-    align-items: center;
     background-color: white;
-    display: flex;
     padding: ${theme.spacing.medium};
-    justify-content: space-between;
+    font-size: ${theme.fontSizes.plus4};
 
     &:not(:first-of-type) {
         border-top: ${theme.borders.default};
@@ -90,8 +102,20 @@ const NotificationWrapper = styled.div`
         box-shadow: ${theme.shadows.down};
     }
 
-    div {
-        font-size: ${theme.fontSizes.plus4};
+    > div {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        > :nth-child(-n + 2) {
+            text-align: left;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: ${theme.fontSizes.normal};
+        text-align: left;
     }
 
     span {
@@ -99,10 +123,6 @@ const NotificationWrapper = styled.div`
         margin-left: ${theme.spacing.medium};
         font-size: ${theme.fontSizes.plus3};
         font-weight: 600;
-    }
-
-    > :nth-child(-n + 2) {
-        text-align: left;
     }
 
     button {

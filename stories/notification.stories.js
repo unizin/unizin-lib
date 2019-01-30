@@ -82,6 +82,36 @@ storiesOf('Notifications', module)
             }}
         />
     ))
+    .add('Subtext', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': {
+                        ...checkNotification,
+                        dismissable: true,
+                        subText: "I think there's a bear in my house.",
+                    },
+                },
+            }}
+        />
+    ))
+    .add('Subtext and C2A', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': {
+                        ...checkNotification,
+                        dismissable: true,
+                        subText: "I think there's a bear in my house.",
+                        callToAction: 'Poke the bear',
+                        onCallToAction: action('poke'),
+                    },
+                },
+            }}
+        />
+    ))
     .add('Connected notification', () => {
         const store = createStore(
             combineReducers({ notification }),
