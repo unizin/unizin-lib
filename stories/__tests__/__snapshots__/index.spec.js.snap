@@ -961,10 +961,23 @@ exports[`Storyshots Spinner Defaults 1`] = `
   className="sc-iAyFgw vFwGq"
 >
   <div
-    className="sc-kkGfuU fiCSPI"
+    className="sc-kkGfuU dwhyQO"
   />
   <div
-    className="sc-hSdWYo cyfscu"
+    className="sc-hSdWYo fMWFZa"
+  />
+</div>
+`;
+
+exports[`Storyshots Spinner Order tool version 1`] = `
+<div
+  className="sc-cvbbAY hjwwvd"
+>
+  <div
+    className="sc-eHgmQL dqIjaL"
+  />
+  <div
+    className="sc-jWBwVP hWhiQf"
   />
 </div>
 `;
