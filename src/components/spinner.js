@@ -5,8 +5,9 @@ import styled, { keyframes } from 'styled-components';
 import theme from '../theme';
 
 type Props = {
-    width?: 'string',
-    color?: 'string',
+    color?: string,
+    stroke?: string,
+    width?: string,
 };
 
 const rotation = keyframes`
@@ -18,11 +19,13 @@ const rotation = keyframes`
     }
 `;
 
-export default function Spinner({ width = '4rem', color = theme.colors.yellow.medium }: Props) {
+export default function Spinner({
+    width = '4rem',
+    stroke = '10px',
+    color = theme.colors.grey.ultraDark,
+}: Props) {
     const Gradient = styled.div`
         &:after {
-            position: absolute;
-            content: '';
             background-image: linear-gradient(
                 to right,
                 ${Color(color)
@@ -31,15 +34,15 @@ export default function Spinner({ width = '4rem', color = theme.colors.yellow.me
                     20%,
                 ${Color(color).toString()}
             );
-            height: calc(${width} / 2);
-            width: ${width};
             border-radius: ${width} ${width} 0 0;
+            content: '';
+            height: 50%;
             left: 0;
+            position: absolute;
+            width: 100%;
         }
 
         &:before {
-            position: absolute;
-            content: '';
             background-image: linear-gradient(
                 to left,
                 transparent 0,
@@ -48,11 +51,13 @@ export default function Spinner({ width = '4rem', color = theme.colors.yellow.me
                         .toString()}
                     80%
             );
-            height: calc(${width} / 2);
-            width: ${width};
             border-radius: 0 0 ${width} ${width};
-            top: 50%;
+            content: '';
+            height: 50%;
             left: 0;
+            position: absolute;
+            top: 50%;
+            width: 100%;
         }
     `;
 
@@ -66,11 +71,12 @@ export default function Spinner({ width = '4rem', color = theme.colors.yellow.me
     const Mask = styled.div`
         background: white;
         border-radius: 50%;
+        height: calc(${width} - (2 * ${stroke}));
+        left: 50%;
         position: absolute;
-        width: calc(${width} * (2 / 3));
-        height: calc(${width} * (2 / 3));
-        top: calc(50% - (${width} * (2 / 3)) / 2);
-        left: calc((${width} * (2 / 3)) / 4);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(${width} - (2 * ${stroke}));
     `;
 
     return (

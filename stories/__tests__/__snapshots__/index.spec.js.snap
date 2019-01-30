@@ -210,7 +210,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
@@ -251,7 +251,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
@@ -292,7 +292,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
   tabIndex="0"
 >
   <main
-    className="sc-fjdhpX kxXcJy"
+    className="sc-fjdhpX bhRuQ"
   >
     <button
       aria-label="Close"
@@ -961,10 +961,23 @@ exports[`Storyshots Spinner Defaults 1`] = `
   className="sc-iAyFgw vFwGq"
 >
   <div
-    className="sc-kkGfuU fiCSPI"
+    className="sc-kkGfuU dwhyQO"
   />
   <div
-    className="sc-hSdWYo cyfscu"
+    className="sc-hSdWYo fMWFZa"
+  />
+</div>
+`;
+
+exports[`Storyshots Spinner Order tool version 1`] = `
+<div
+  className="sc-cvbbAY hjwwvd"
+>
+  <div
+    className="sc-eHgmQL dqIjaL"
+  />
+  <div
+    className="sc-jWBwVP hWhiQf"
   />
 </div>
 `;
