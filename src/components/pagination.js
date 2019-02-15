@@ -75,7 +75,8 @@ const PaginationWrapper = styled.div`
     align-items: center;
 
     > div {
-        padding: 0.75rem;
+        padding: ${theme.spacing.wee} ${theme.spacing.tiny};
+        font-size: ${theme.fonts.sizes.discrete};
     }
 
     &:last-child {
@@ -88,7 +89,8 @@ const PaginationWrapper = styled.div`
     }
 
     button {
-        font-size: 21px;
+        font-size: 16px;
+        border-radius: ${theme.borders.radius.small};
 
         &:first-child {
             margin-right: ${theme.spacing.tiny};
@@ -97,11 +99,12 @@ const PaginationWrapper = styled.div`
 `;
 
 const Button = styled.button`
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background: #fff;
     border: ${theme.borders.default};
     cursor: pointer;
+    padding: 0;
 
     &[disabled] {
         color: ${theme.colors.grey.light};
