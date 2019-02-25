@@ -704,11 +704,11 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
 
 exports[`Storyshots Pagination On Page 1 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -736,7 +736,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -772,7 +772,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -800,7 +800,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -835,11 +835,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
 
 exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -867,7 +867,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -903,7 +903,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -931,7 +931,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -964,11 +964,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 
 exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -996,7 +996,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -1032,7 +1032,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -1060,7 +1060,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
