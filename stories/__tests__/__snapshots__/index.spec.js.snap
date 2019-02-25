@@ -343,6 +343,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-times-circle fa-w-16 "
           data-icon="times-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -382,6 +383,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -421,6 +423,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
           data-icon="exclamation-triangle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 576 512"
@@ -467,6 +470,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -519,6 +523,7 @@ Array [
             className="svg-inline--fa fa-check-circle fa-w-16 "
             data-icon="check-circle"
             data-prefix="fas"
+            focusable="false"
             role="img"
             style={Object {}}
             viewBox="0 0 512 512"
@@ -571,6 +576,7 @@ exports[`Storyshots Notifications No dismiss 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -612,6 +618,7 @@ exports[`Storyshots Notifications Subtext 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -661,6 +668,7 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -696,11 +704,11 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
 
 exports[`Storyshots Pagination On Page 1 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -709,6 +717,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -727,7 +736,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -736,6 +745,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -762,7 +772,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -771,6 +781,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -789,7 +800,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -798,6 +809,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -823,11 +835,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
 
 exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -836,6 +848,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -854,7 +867,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -863,6 +876,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -889,7 +903,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -898,6 +912,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -916,7 +931,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={true}
       onClick={[Function]}
     >
@@ -925,6 +940,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -948,11 +964,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 
 exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX fRNxka"
+  className="sc-kpOJdX kDrPtv"
 >
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -961,6 +977,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -979,7 +996,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -988,6 +1005,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -1014,7 +1032,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -1023,6 +1041,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -1041,7 +1060,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ feuNIE"
+      className="sc-dxgOiQ dMgZIu"
       disabled={false}
       onClick={[Function]}
     >
@@ -1050,6 +1069,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -1142,6 +1162,7 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
       className="svg-inline--fa fa-question-circle fa-w-16 "
       data-icon="question-circle"
       data-prefix="fas"
+      focusable="false"
       role="img"
       style={Object {}}
       tabIndex={0}
