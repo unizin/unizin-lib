@@ -209,8 +209,9 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <section
+  <aside
     className="sc-fjdhpX bhRuQ"
+    role="application"
   >
     <button
       aria-label="Close"
@@ -241,7 +242,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
         Yes
       </button>
     </div>
-  </section>
+  </aside>
 </div>
 `;
 
@@ -250,8 +251,9 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <section
+  <aside
     className="sc-fjdhpX bhRuQ"
+    role="application"
   >
     <button
       aria-label="Close"
@@ -282,7 +284,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
         Bork bork bork
       </button>
     </div>
-  </section>
+  </aside>
 </div>
 `;
 
@@ -291,8 +293,9 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <section
+  <aside
     className="sc-fjdhpX bhRuQ"
+    role="application"
   >
     <button
       aria-label="Close"
@@ -318,7 +321,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
         Yes
       </button>
     </div>
-  </section>
+  </aside>
 </div>
 `;
 
@@ -343,6 +346,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-times-circle fa-w-16 "
           data-icon="times-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -383,6 +387,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -423,6 +428,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
           className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
           data-icon="exclamation-triangle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 576 512"
@@ -470,6 +476,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -523,6 +530,7 @@ Array [
             className="svg-inline--fa fa-check-circle fa-w-16 "
             data-icon="check-circle"
             data-prefix="fas"
+            focusable="false"
             role="img"
             style={Object {}}
             viewBox="0 0 512 512"
@@ -576,6 +584,7 @@ exports[`Storyshots Notifications No dismiss 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -617,6 +626,7 @@ exports[`Storyshots Notifications Subtext 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -667,6 +677,7 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
           className="svg-inline--fa fa-check-circle fa-w-16 "
           data-icon="check-circle"
           data-prefix="fas"
+          focusable="false"
           role="img"
           style={Object {}}
           viewBox="0 0 512 512"
@@ -716,6 +727,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -743,6 +755,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -778,6 +791,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -805,6 +819,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -843,6 +858,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -870,6 +886,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -905,6 +922,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -932,6 +950,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -968,6 +987,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-left fa-w-14 "
         data-icon="angle-double-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -995,6 +1015,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-left fa-w-8 "
         data-icon="angle-left"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -1030,6 +1051,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-right fa-w-8 "
         data-icon="angle-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 256 512"
@@ -1057,6 +1079,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
         className="svg-inline--fa fa-angle-double-right fa-w-14 "
         data-icon="angle-double-right"
         data-prefix="fas"
+        focusable="false"
         role="img"
         style={Object {}}
         viewBox="0 0 448 512"
@@ -1149,6 +1172,7 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
       className="svg-inline--fa fa-question-circle fa-w-16 "
       data-icon="question-circle"
       data-prefix="fas"
+      focusable="false"
       role="img"
       style={Object {}}
       tabIndex={0}

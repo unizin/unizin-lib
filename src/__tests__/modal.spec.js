@@ -35,10 +35,10 @@ describe('Confirmation Modal', () => {
 
     it('should render a modal when openConfirmationModal is called', () => {
         const modalWrapper = renderModal();
-        expect(modalWrapper.find('section')).toHaveLength(0);
+        expect(modalWrapper.find('aside')).toHaveLength(0);
         dispatch(openConfirmationModal({ modalContent: <div />, element: null }));
         modalWrapper.update();
-        expect(modalWrapper.find('section')).toHaveLength(1);
+        expect(modalWrapper.find('aside')).toHaveLength(1);
     });
 
     it('should close the modal and the promise should resolve when onConfirm is called', done => {
@@ -49,7 +49,7 @@ describe('Confirmation Modal', () => {
             .last()
             .simulate('click');
         modalWrapper.update();
-        expect(modalWrapper.find('section')).toHaveLength(0);
+        expect(modalWrapper.find('aside')).toHaveLength(0);
     });
 
     it('should return focus to the calling element when the modal is closed', done => {
@@ -61,7 +61,7 @@ describe('Confirmation Modal', () => {
             done();
         });
         const modalWrapper = renderModal();
-        expect(modalWrapper.find('section')).toHaveLength(1);
+        expect(modalWrapper.find('aside')).toHaveLength(1);
         modalWrapper
             .find('button')
             .last()
@@ -77,7 +77,7 @@ describe('Confirmation Modal', () => {
             })
         ).then(() => {}, done);
         const modalWrapper = renderModal();
-        expect(modalWrapper.find('section')).toHaveLength(1);
+        expect(modalWrapper.find('aside')).toHaveLength(1);
         modalWrapper
             .find('button')
             .first()

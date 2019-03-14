@@ -56,7 +56,7 @@ export const ModalPortal = ({
         ? createPortal(
               <ModalWrapper onCancel={onCancel} setModalOnClose={setModalOnClose}>
                   <CSSTransition in={true} classNames="modal-body" timeout={330} appear>
-                      <ModalBody>
+                      <ModalBody role="application">
                           <PositionedCloseButton onClick={onCancel} aria-label="Close" />
                           {modalContent}
                           <ModalButtons>
@@ -95,7 +95,7 @@ const fadeModal = keyframes`
     to { transform: none; }
 `;
 
-const ModalBody = styled.section`
+const ModalBody = styled.aside`
     background-color: white;
     border-radius: ${theme.borderRadius.medium};
     border: ${theme.borders.default};
