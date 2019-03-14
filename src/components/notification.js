@@ -51,7 +51,7 @@ export default function Notification(props: Props) {
     } = props;
     const button = callToAction ? <button onClick={onCallToAction}>{callToAction}</button> : null;
     const dismiss = dismissable ? (
-        <CloseNotification label="Dismiss" onClick={removeNotification} />
+        <CloseNotification aria-label="Dismiss" title="Dismiss" onClick={removeNotification} />
     ) : null;
     const role = dismissable ? 'status' : 'alert';
     return (
