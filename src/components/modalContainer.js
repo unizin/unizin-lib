@@ -95,7 +95,7 @@ const fadeModal = keyframes`
     to { transform: none; }
 `;
 
-const ModalBody = styled.aside`
+const ModalBody = styled.article`
     background-color: white;
     border-radius: ${theme.borderRadius.medium};
     border: ${theme.borders.default};

@@ -209,7 +209,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <aside
+  <article
     className="sc-fjdhpX bhRuQ"
     role="application"
   >
@@ -242,7 +242,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
         Yes
       </button>
     </div>
-  </aside>
+  </article>
 </div>
 `;
 
@@ -251,7 +251,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <aside
+  <article
     className="sc-fjdhpX bhRuQ"
     role="application"
   >
@@ -284,7 +284,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
         Bork bork bork
       </button>
     </div>
-  </aside>
+  </article>
 </div>
 `;
 
@@ -293,7 +293,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
   className="sc-jTzLTM ccDZgE"
   tabIndex="0"
 >
-  <aside
+  <article
     className="sc-fjdhpX bhRuQ"
     role="application"
   >
@@ -321,7 +321,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
         Yes
       </button>
     </div>
-  </aside>
+  </article>
 </div>
 `;
 
