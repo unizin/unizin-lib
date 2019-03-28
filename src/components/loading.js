@@ -27,16 +27,15 @@ const fadeInOut = keyframes`
     }
 `;
 const Wrapper = styled.div`
+    align-items: center;
     animation: ${fadeInOut} 1.5s infinite;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: ${theme.fonts.sizes.small};
     display: flex;
-    width: 100%;
+    font-size: ${theme.fonts.sizes.small};
     height: 100%;
     justify-content: center;
-    align-items: center;
+    letter-spacing: 1px;
     padding: ${theme.spacing.medium};
+    text-transform: uppercase;
 `;
 
 export default Loading;
