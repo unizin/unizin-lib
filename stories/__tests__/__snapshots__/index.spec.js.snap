@@ -1147,7 +1147,7 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
   className="sc-kEYyzF kDpGAm"
 >
   <div
-    className="ra-tooltip-wrapper sc-hMqMXs dwxBtC"
+    className="ra-tooltip-wrapper sc-hMqMXs cYzHwF"
     id="ra-tooltip-2"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -1156,7 +1156,7 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-eNQAEJ eEqcsN"
+      className="bottom ra-tooltip sc-eNQAEJ dAuCcT"
     >
       <div
         className="sc-jKJlTe cFdvXR ra-tooltip-message"
@@ -1194,7 +1194,7 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
   className="sc-kEYyzF kDpGAm"
 >
   <div
-    className="ra-tooltip-wrapper sc-hMqMXs dwxBtC"
+    className="ra-tooltip-wrapper sc-hMqMXs cYzHwF"
     id="ra-tooltip-1"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -1203,7 +1203,7 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-eNQAEJ eEqcsN"
+      className="bottom ra-tooltip sc-eNQAEJ dAuCcT"
     >
       <div
         className="sc-jKJlTe cFdvXR ra-tooltip-message"
