@@ -8963,10 +8963,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-aria-tooltip@^1.3:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/react-aria-tooltip/-/react-aria-tooltip-1.3.0.tgz#b92881f157abe489a641d80b9e73c19751642c88"
-  integrity sha512-sXgU91xHWoiJP6QVQLhoCDViMnjSKZWuXNNCVv9qiU8GjjhMLNa7C2ddL5a+dtxx+66mbiSH/NVgn3rhuYycwg==
+react-aria-tooltip@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-aria-tooltip/-/react-aria-tooltip-1.4.0.tgz#0bf5fff0b9bc9bc099a6069ca5af572b60e11e4d"
+  integrity sha512-1ljuXY2CEwBNnhSJAloz0haywiR3GKV+Yasx1kqaph+zJgiT0OzzNYn7r23KhZYozHoXoJB7TclNlb/+tgqx1w==
   dependencies:
     prop-types "15.6.0"
 
