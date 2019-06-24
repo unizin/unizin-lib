@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { type Element } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
@@ -8,7 +8,7 @@ import theme from '../theme';
 
 const RATooltip = require('react-aria-tooltip').default; // This is wonky but we have to do it
 
-export default function Tooltip({ message }: { message: string }) {
+export default function Tooltip({ message }: { message: string | Element<any> }) {
     return (
         <ToolTipContainer>
             <RATooltip eventType="hover" message={message} direction="bottom">
