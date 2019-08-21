@@ -7,9 +7,9 @@ export default class FocusTrap extends PureComponent<{
     className?: string,
     setModalOnClose?: ((HTMLElement) => void) => void,
 }> {
-    pauseFocus: ?boolean;
+    pauseFocus: ? boolean;
 
-    focusTrap = createRef();
+    focusTrap = createRef<HTMLDivElement>();
 
     componentDidMount() {
         document.addEventListener('keydown', this.tabListener);

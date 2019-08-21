@@ -35,14 +35,14 @@ export default class ZingTouch extends PureComponent<Props, State> {
         preventDefault: false,
     };
     state = { region: null };
-    touchContainer = createRef();
+    touchContainer = createRef<HTMLDivElement>();
 
     processChild = (child: Node, index: number = 0) => {
         return shouldPassRegionToChild(child)
             ? cloneElement(child, {
-                  zingTouchRegion: this.state.region,
-                  key: `zingtouch-child-${index}`,
-              })
+                zingTouchRegion: this.state.region,
+                key: `zingtouch-child-${index}`,
+            })
             : child;
     };
 

@@ -113,7 +113,7 @@ storiesOf('Notifications', module)
         />
     ))
     .add('Connected notification', () => {
-        const store = createStore(
+        const store = createStore<any, any, any>(
             combineReducers({ notification }),
             { notification: {} },
             applyMiddleware(thunk)

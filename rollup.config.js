@@ -4,7 +4,6 @@ const resolve = require('rollup-plugin-node-resolve');
 const { terser } = require('rollup-plugin-terser');
 
 export default ['cjs', 'esm'].map(format => ({
-    experimentalCodeSplitting: true,
     input: './src/index.js',
     external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
