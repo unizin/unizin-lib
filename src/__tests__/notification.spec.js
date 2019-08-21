@@ -9,6 +9,8 @@ import { Provider } from 'react-redux';
 import { showNotification, removeNotification } from '../actions/notificationActions';
 
 import notification from '../reducers/notificationReducer';
+import { type NotificationParam } from '../actions/notificationActions';
+
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -35,7 +37,7 @@ describe('Notifications', () => {
     }
 
     beforeEach(() => {
-        store = createStore(
+        store = createStore<any, any, any>(
             combineReducers({ notification }),
             { notification: {} },
             applyMiddleware(thunk)
