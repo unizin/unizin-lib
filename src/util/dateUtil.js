@@ -48,7 +48,7 @@ export const relativeDate = (target: string | Date, now: Date = new Date()): ?st
         {
             comparison: differenceInHours,
             conditional: (x = 0) => Math.abs(x) >= 13 && Math.abs(x) < 24,
-            formatter: () => format(targetDate, 'hh:mm b')
+            formatter: () => format(targetDate, 'h:mm b')
         },
         {
             comparison: differenceInDays,
