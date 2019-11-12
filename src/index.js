@@ -23,6 +23,7 @@ const NotificationContainer = require('./components/notificationContainer');
 const notificationReducer = require('./reducers/notificationReducer');
 const notificationActions = require('./actions/notificationActions');
 const Spinner = require('./components/spinner');
+const { relativeDate } = require('./util/dateUtil');
 
 module.exports = {
     addAural,
@@ -44,6 +45,7 @@ module.exports = {
     notificationReducer,
     openConfirmationModal,
     Pagination,
+    relativeDate,
     Spinner,
     theme,
     ToggleHandle,

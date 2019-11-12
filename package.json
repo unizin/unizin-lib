@@ -1,6 +1,6 @@
 {
   "name": "unizin-lib",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "Shared component library for Unizin",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -53,6 +53,7 @@
     "@storybook/core": "^5.1.11",
     "classnames": "^2.2.6",
     "color-js": "^1.0.4",
+    "date-fns": "^2.7.0",
     "md5": "^2.2.1",
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
