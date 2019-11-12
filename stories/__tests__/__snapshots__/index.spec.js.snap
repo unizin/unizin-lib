@@ -2,7 +2,7 @@
 
 exports[`Storyshots Add Remove Button Button 1`] = `
 <button
-  className="is-primary sc-EHOje idiwCv"
+  className="sc-EHOje idiwCv is-primary"
   onClick={[Function]}
 >
   <span
@@ -27,7 +27,7 @@ exports[`Storyshots AvatarOption Elvis 1`] = `
   >
     <img
       alt="Gravatar image for elvis@example.com"
-      className="avatar sc-htpNat iCxrQH"
+      className="sc-htpNat iCxrQH avatar"
       src="https://www.gravatar.com/avatar/73bd673a3291d9a3ea9857b773f75440?d=blank"
     />
     <div
@@ -238,6 +238,48 @@ exports[`Storyshots Content Pricing Missing offer price 1`] = `
     Pricing not available
   </div>
 </div>
+`;
+
+exports[`Storyshots Future Dates < 13 hours 1`] = `
+<span>
+  in 12 hours
+</span>
+`;
+
+exports[`Storyshots Future Dates < 24 hours 1`] = `
+<span>
+  10:43 AM
+</span>
+`;
+
+exports[`Storyshots Future Dates > 7 days 1`] = `
+<span>
+  Mar 29, 2019
+</span>
+`;
+
+exports[`Storyshots Future Dates > 24 hours, < 7 days 1`] = `
+<span>
+  in 6 days
+</span>
+`;
+
+exports[`Storyshots Future Dates 1 hour 1`] = `
+<span>
+  in 1 hour
+</span>
+`;
+
+exports[`Storyshots Future Dates 1 minute 1`] = `
+<span>
+  in 1 minute
+</span>
+`;
+
+exports[`Storyshots Future Dates 59 minutes 1`] = `
+<span>
+  in 59 minutes
+</span>
 `;
 
 exports[`Storyshots Loading Loading 1`] = `
@@ -1146,6 +1188,48 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 </div>
 `;
 
+exports[`Storyshots Past Dates < 13 hours 1`] = `
+<span>
+   12 hours ago
+</span>
+`;
+
+exports[`Storyshots Past Dates < 24 hours 1`] = `
+<span>
+  10:45 AM
+</span>
+`;
+
+exports[`Storyshots Past Dates > 7 days 1`] = `
+<span>
+  Mar 13, 2019
+</span>
+`;
+
+exports[`Storyshots Past Dates > 24 hours, < 7 days 1`] = `
+<span>
+   6 days ago
+</span>
+`;
+
+exports[`Storyshots Past Dates 1 hour 1`] = `
+<span>
+   1 hour ago
+</span>
+`;
+
+exports[`Storyshots Past Dates 1 minute 1`] = `
+<span>
+   1 minute ago
+</span>
+`;
+
+exports[`Storyshots Past Dates 59 minutes 1`] = `
+<span>
+   59 minutes ago
+</span>
+`;
+
 exports[`Storyshots Spinner Defaults 1`] = `
 <div
   className="sc-iAyFgw vFwGq"
@@ -1286,6 +1370,7 @@ exports[`Storyshots Welcome to Storybook 1`] = `
   style={
     Object {
       "backgroundColor": "#fff",
+      "color": "#000",
       "fontFamily": "\\"Helvetica Neue\\", Helvetica, \\"Segoe UI\\", Arial, freesans, sans-serif",
       "lineHeight": 1.4,
       "padding": 15,
