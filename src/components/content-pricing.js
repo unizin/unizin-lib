@@ -24,7 +24,7 @@ export default function Pricing(props: Props) {
 
     const listPrice = parseFloat(listPriceString);
     const offerPrice = parseFloat(offerPriceString);
-    const waived = Number.isNaN(offerPrice)
+    const waived = Number.isNaN(offerPrice);
     if (listPrice === 0 && offerPrice === 0) {
         return <Free>Free</Free>;
     }
@@ -34,10 +34,12 @@ export default function Pricing(props: Props) {
     return (
         <Wrapper>
             <div>
-                {!waived && <Price>
-                    <Aural>Your price</Aural>{' '}
-                    <Cost>{offerPrice ? `$${offerPrice.toFixed(2)}` : 'Free'}</Cost>
-                </Price>}
+                {!waived && (
+                    <Price>
+                        <Aural>Your price</Aural>{' '}
+                        <Cost>{offerPrice ? `$${offerPrice.toFixed(2)}` : 'Free'}</Cost>
+                    </Price>
+                )}
                 {listPrice ? (
                     <Percent>
                         <StrikeThrough>${listPrice.toFixed(2)}</StrikeThrough> ({savingsPercent}%
