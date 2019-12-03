@@ -13,4 +13,5 @@ storiesOf('Content Pricing', module)
     .add('Missing offer price', () => <Pricing {...{ listPrice }} />)
     .add('Free content', () => <Pricing {...{ offerPrice: '0', listPrice }} />)
     .add('Free content, missing list price', () => <Pricing {...{ offerPrice: '0' }} />)
+    .add('Content with a payment waiver', () => <Pricing {...{ offerPrice: 'waived', listPrice }} />)
     .add('Missing both prices (why do we allow this?)', () => <Pricing />);
