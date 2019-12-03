@@ -88,6 +88,28 @@ exports[`Storyshots Button with text 1`] = `
 </button>
 `;
 
+exports[`Storyshots Content Pricing Content with a payment waiver 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gZMcBi hBmVNX"
+    >
+      <span
+        className="sc-iwsKbI jMxFSW"
+      >
+        $
+        174.95
+      </span>
+       (
+      100
+      % savings)
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Content Pricing Free content 1`] = `
 <div
   className="sc-bZQynM Agekg"

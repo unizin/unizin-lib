@@ -24,19 +24,20 @@ export default function Pricing(props: Props) {
 
     const listPrice = parseFloat(listPriceString);
     const offerPrice = parseFloat(offerPriceString);
+    const waived = Number.isNaN(offerPrice)
     if (listPrice === 0 && offerPrice === 0) {
         return <Free>Free</Free>;
     }
 
-    const savingsPercent = Math.round(((listPrice - offerPrice) / listPrice) * 100);
+    const savingsPercent = waived ? 100 : Math.round(((listPrice - offerPrice) / listPrice) * 100);
 
     return (
         <Wrapper>
             <div>
-                <Price>
+                {!waived && <Price>
                     <Aural>Your price</Aural>{' '}
                     <Cost>{offerPrice ? `$${offerPrice.toFixed(2)}` : 'Free'}</Cost>
-                </Price>
+                </Price>}
                 {listPrice ? (
                     <Percent>
                         <StrikeThrough>${listPrice.toFixed(2)}</StrikeThrough> ({savingsPercent}%
