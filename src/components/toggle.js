@@ -8,7 +8,6 @@ type Props = {
     color?: string,
     disabled?: boolean,
     height?: string | number,
-    id?: string,
     onChange?: boolean => void,
 };
 
@@ -17,7 +16,6 @@ export default function Toggle({
     color = theme.colors.green.medium,
     disabled = false,
     height = theme.spacing.small,
-    id = null,
     onChange,
     ...rest
 }: Props) {
@@ -39,7 +37,6 @@ export default function Toggle({
             color={color}
             disabled={disabled}
             height={height}
-            id={id}
             onClick={onClick}
             onKeyDown={onKeyDown}
             role="checkbox"

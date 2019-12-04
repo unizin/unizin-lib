@@ -1287,7 +1287,6 @@ exports[`Storyshots Toggle Arbitrary props 1`] = `
   color="#45DC85"
   disabled={false}
   height="10px"
-  id={null}
   onClick={[Function]}
   onKeyDown={[Function]}
   role="checkbox"
@@ -1309,7 +1308,6 @@ exports[`Storyshots Toggle Controlled (default checked) 1`] = `
     color="#45DC85"
     disabled={false}
     height="10px"
-    id={null}
     onClick={[Function]}
     onKeyDown={[Function]}
     role="checkbox"
@@ -1331,7 +1329,6 @@ exports[`Storyshots Toggle Controlled (default unchecked) 1`] = `
     color="#45DC85"
     disabled={false}
     height="10px"
-    id={null}
     onClick={[Function]}
     onKeyDown={[Function]}
     role="checkbox"
@@ -1352,7 +1349,6 @@ exports[`Storyshots Toggle Custom attributes 1`] = `
   color="magenta"
   disabled={false}
   height="40px"
-  id={null}
   onClick={[Function]}
   onKeyDown={[Function]}
   role="checkbox"
@@ -1369,7 +1365,6 @@ Array [
     color="#45DC85"
     disabled={true}
     height="10px"
-    id={null}
     onClick={[Function]}
     onKeyDown={[Function]}
     role="checkbox"
@@ -1381,7 +1376,6 @@ Array [
     color="#45DC85"
     disabled={true}
     height="10px"
-    id={null}
     onClick={[Function]}
     onKeyDown={[Function]}
     role="checkbox"
@@ -1397,7 +1391,6 @@ exports[`Storyshots Toggle Uncontrolled 1`] = `
   color="#45DC85"
   disabled={false}
   height="10px"
-  id={null}
   onClick={[Function]}
   onKeyDown={[Function]}
   role="checkbox"
@@ -1416,19 +1409,19 @@ exports[`Storyshots Toggle With label 1`] = `
 >
   <div
     aria-checked={false}
+    aria-labelledby="storybook-toggle"
     checked={false}
     className="sc-ckVGcZ fMfnUd"
     color="#45DC85"
     disabled={false}
     height="10px"
-    id="storybook-toggle"
     onClick={[Function]}
     onKeyDown={[Function]}
     role="checkbox"
     tabIndex={0}
   />
   <label
-    htmlFor="storybook-toggle"
+    id="storybook-toggle"
   >
     Toggle me
   </label>

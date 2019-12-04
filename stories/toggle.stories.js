@@ -40,8 +40,8 @@ storiesOf('Toggle', module)
     ))
     .add('With label', () => (
         <div style={{ alignItems: 'center', display: 'flex' }}>
-            <Toggle id="storybook-toggle" />
-            <label htmlFor="storybook-toggle">Toggle me</label>
+            <Toggle aria-labelledby="storybook-toggle" />
+            <label id="storybook-toggle">Toggle me</label>
         </div>
     ))
     .add('Custom attributes', () => <Toggle color="magenta" height="40px" />)
