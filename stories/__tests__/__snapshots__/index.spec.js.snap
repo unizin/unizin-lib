@@ -1254,27 +1254,184 @@ exports[`Storyshots Past Dates 59 minutes 1`] = `
 
 exports[`Storyshots Spinner Defaults 1`] = `
 <div
-  className="sc-iAyFgw vFwGq"
+  className="sc-hSdWYo bBJHEo"
 >
   <div
-    className="sc-kkGfuU dwhyQO"
+    className="sc-iAyFgw ejnHOj"
   />
   <div
-    className="sc-hSdWYo fMWFZa"
+    className="sc-eHgmQL eDkvEC"
   />
 </div>
 `;
 
 exports[`Storyshots Spinner Order tool version 1`] = `
 <div
-  className="sc-cvbbAY hjwwvd"
+  className="sc-jWBwVP iMtSXN"
 >
   <div
-    className="sc-eHgmQL dqIjaL"
+    className="sc-cvbbAY hPlkcT"
   />
   <div
-    className="sc-jWBwVP hWhiQf"
+    className="sc-brqgnP jvhnCI"
   />
+</div>
+`;
+
+exports[`Storyshots Toggle Arbitrary props 1`] = `
+<div
+  aria-checked={false}
+  aria-label="An arbitrary label"
+  checked={false}
+  className="sc-ckVGcZ fMfnUd"
+  color="#45DC85"
+  disabled={false}
+  height="10px"
+  id={null}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="checkbox"
+  style={
+    Object {
+      "transform": "rotate(45deg)",
+    }
+  }
+  tabIndex={0}
+/>
+`;
+
+exports[`Storyshots Toggle Controlled (default checked) 1`] = `
+<div>
+  <div
+    aria-checked={true}
+    checked={true}
+    className="sc-ckVGcZ kCSQMk"
+    color="#45DC85"
+    disabled={false}
+    height="10px"
+    id={null}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    tabIndex={0}
+  />
+  <span>
+    Checked: 
+    true
+  </span>
+</div>
+`;
+
+exports[`Storyshots Toggle Controlled (default unchecked) 1`] = `
+<div>
+  <div
+    aria-checked={false}
+    checked={false}
+    className="sc-ckVGcZ fMfnUd"
+    color="#45DC85"
+    disabled={false}
+    height="10px"
+    id={null}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    tabIndex={0}
+  />
+  <span>
+    Checked: 
+    false
+  </span>
+</div>
+`;
+
+exports[`Storyshots Toggle Custom attributes 1`] = `
+<div
+  aria-checked={false}
+  checked={false}
+  className="sc-ckVGcZ cfWAWy"
+  color="magenta"
+  disabled={false}
+  height="40px"
+  id={null}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="checkbox"
+  tabIndex={0}
+/>
+`;
+
+exports[`Storyshots Toggle Disabled 1`] = `
+Array [
+  <div
+    aria-checked={true}
+    checked={true}
+    className="sc-ckVGcZ cDMDwi"
+    color="#45DC85"
+    disabled={true}
+    height="10px"
+    id={null}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+  />,
+  <div
+    aria-checked={false}
+    checked={false}
+    className="sc-ckVGcZ gZyslV"
+    color="#45DC85"
+    disabled={true}
+    height="10px"
+    id={null}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+  />,
+]
+`;
+
+exports[`Storyshots Toggle Uncontrolled 1`] = `
+<div
+  aria-checked={false}
+  checked={false}
+  className="sc-ckVGcZ fMfnUd"
+  color="#45DC85"
+  disabled={false}
+  height="10px"
+  id={null}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="checkbox"
+  tabIndex={0}
+/>
+`;
+
+exports[`Storyshots Toggle With label 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+    }
+  }
+>
+  <div
+    aria-checked={false}
+    checked={false}
+    className="sc-ckVGcZ fMfnUd"
+    color="#45DC85"
+    disabled={false}
+    height="10px"
+    id="storybook-toggle"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="checkbox"
+    tabIndex={0}
+  />
+  <label
+    htmlFor="storybook-toggle"
+  >
+    Toggle me
+  </label>
 </div>
 `;
 
@@ -1287,7 +1444,7 @@ exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
   }
 >
   <div
-    className="sc-ckVGcZ hYkLcI"
+    className="sc-jKJlTe bIZvWN"
     onClick={[Function]}
   />
 </div>
@@ -1295,10 +1452,10 @@ exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
 
 exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
 <div
-  className="sc-kEYyzF kDpGAm"
+  className="sc-kkGfuU kTtxxZ"
 >
   <div
-    className="ra-tooltip-wrapper sc-hMqMXs bojxCc"
+    className="ra-tooltip-wrapper sc-kEYyzF kpqtWB"
     id="ra-tooltip-2"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -1307,10 +1464,10 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-eNQAEJ dAuCcT"
+      className="bottom ra-tooltip sc-hMqMXs bgzNCe"
     >
       <div
-        className="sc-jKJlTe cFdvXR ra-tooltip-message"
+        className="sc-eNQAEJ jBoHMs ra-tooltip-message"
       >
         <span>
           &lt;span /&gt;
@@ -1342,10 +1499,10 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
 
 exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
 <div
-  className="sc-kEYyzF kDpGAm"
+  className="sc-kkGfuU kTtxxZ"
 >
   <div
-    className="ra-tooltip-wrapper sc-hMqMXs bojxCc"
+    className="ra-tooltip-wrapper sc-kEYyzF kpqtWB"
     id="ra-tooltip-1"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -1354,10 +1511,10 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-eNQAEJ dAuCcT"
+      className="bottom ra-tooltip sc-hMqMXs bgzNCe"
     >
       <div
-        className="sc-jKJlTe cFdvXR ra-tooltip-message"
+        className="sc-eNQAEJ jBoHMs ra-tooltip-message"
       >
         <p>
           UA text goes here.
