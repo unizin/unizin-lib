@@ -24,6 +24,7 @@ const notificationReducer = require('./reducers/notificationReducer');
 const notificationActions = require('./actions/notificationActions');
 const Spinner = require('./components/spinner');
 const { relativeDate } = require('./util/dateUtil');
+const Toggle = require('./components/toggle');
 
 module.exports = {
     addAural,
@@ -48,6 +49,7 @@ module.exports = {
     relativeDate,
     Spinner,
     theme,
+    Toggle,
     ToggleHandle,
     Tooltip,
     ZingTouch,
