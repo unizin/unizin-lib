@@ -42,7 +42,6 @@ const AuralNotificationArea = styled.div`
     text-transform: capitalize;
 `;
 
-export default connect(
-    ({ auralNotification }) => ({ notification: auralNotification }),
-    { removeAural }
-)(AuralNotification);
+export default connect(({ auralNotification }) => ({ notification: auralNotification }), {
+    removeAural,
+})(AuralNotification);

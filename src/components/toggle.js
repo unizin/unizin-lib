@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
 
+type OnChangeParam = SyntheticEvent<HTMLElement> | SyntheticKeyboardEvent<HTMLDivElement>;
+type OnChange = OnChangeParam => void | Promise<any>;
 type Props = {
     checked?: boolean,
     color?: string,
     disabled?: boolean,
     height?: string | number,
-    onChange?: boolean => void,
+    onChange?: OnChange,
 };
 
 export default function Toggle({
@@ -20,14 +22,16 @@ export default function Toggle({
     ...rest
 }: Props) {
     const [isChecked, setChecked] = useState(checked || false);
-    const onClick = () => {
+    const onClick = async (e: OnChangeParam) => {
         if (disabled) return;
+        if (onChange) {
+            await onChange(e);
+        }
         setChecked(!isChecked);
-        onChange && onChange(!isChecked);
     };
-    const onKeyDown = ({ key }: SyntheticKeyboardEvent<HTMLDivElement>) => {
-        if (key === 'Enter' || key === ' ') {
-            onClick();
+    const onKeyDown = (e: SyntheticKeyboardEvent<HTMLDivElement>) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            onClick(e);
         }
     };
     return (

@@ -1,5 +1,5 @@
 /* @flow */
-import { differenceInMinutes, differenceInHours, differenceInDays, format } from 'date-fns'
+import { differenceInMinutes, differenceInHours, differenceInDays, format } from 'date-fns';
 
 // Less than 1 hour
 // Time should be expressed in minutes:
@@ -30,7 +30,7 @@ import { differenceInMinutes, differenceInHours, differenceInDays, format } from
 const _pluralize = (unit: string) => (x: number = 0): string => {
     const absX = Math.abs(x);
     return `${x < 0 ? 'in' : ''} ${absX} ${unit}${absX === 1 ? '' : 's'}${x > 0 ? ' ago' : ''}`;
-}
+};
 
 export const relativeDate = (target: string | Date, now: Date = new Date()): ?string => {
     const targetDate = new Date(target);
@@ -38,37 +38,36 @@ export const relativeDate = (target: string | Date, now: Date = new Date()): ?st
         {
             comparison: differenceInMinutes,
             conditional: (x = 0) => Math.abs(x) < 60,
-            formatter: _pluralize('minute')
+            formatter: _pluralize('minute'),
         },
         {
             comparison: differenceInHours,
             conditional: (x = 0) => Math.abs(x) < 13,
-            formatter: _pluralize('hour')
+            formatter: _pluralize('hour'),
         },
         {
             comparison: differenceInHours,
             conditional: (x = 0) => Math.abs(x) >= 13 && Math.abs(x) < 24,
-            formatter: () => format(targetDate, 'h:mm b')
+            formatter: () => format(targetDate, 'h:mm b'),
         },
         {
             comparison: differenceInDays,
             conditional: (x = 0) => Math.abs(x) >= 1 && Math.abs(x) < 7,
-            formatter: _pluralize('day')
+            formatter: _pluralize('day'),
         },
         {
-            comparison: () => { },
+            comparison: () => {},
             conditional: () => true,
-            formatter: () => format(targetDate, 'LLL dd, yyyy')
-        }
+            formatter: () => format(targetDate, 'LLL dd, yyyy'),
+        },
     ]: Array<{
         comparison: (Date, Date) => number | void,
         conditional: (x?: number) => boolean,
-        formatter: (x?: number) => string
+        formatter: (x?: number) => string,
     }>)) {
         const diff = comparison(now, targetDate);
         if (conditional(diff)) {
-            return formatter(diff)
+            return formatter(diff);
         }
     }
-}
-
+};
