@@ -7,7 +7,7 @@ export default class FocusTrap extends PureComponent<{
     className?: string,
     setModalOnClose?: ((HTMLElement) => void) => void,
 }> {
-    pauseFocus: ? boolean;
+    pauseFocus: ?boolean;
 
     focusTrap = createRef<HTMLDivElement>();
 

@@ -73,10 +73,7 @@ export const ModalPortal = ({
         : null;
 };
 
-export default connect(
-    mapStateToProps,
-    { setModalOnClose }
-)(ModalPortal);
+export default connect(mapStateToProps, { setModalOnClose })(ModalPortal);
 
 const ModalWrapperDiv = styled(FocusTrap)`
     align-items: center;

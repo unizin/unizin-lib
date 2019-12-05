@@ -40,9 +40,9 @@ export default class ZingTouch extends PureComponent<Props, State> {
     processChild = (child: Node, index: number = 0) => {
         return shouldPassRegionToChild(child)
             ? cloneElement(child, {
-                zingTouchRegion: this.state.region,
-                key: `zingtouch-child-${index}`,
-            })
+                  zingTouchRegion: this.state.region,
+                  key: `zingtouch-child-${index}`,
+              })
             : child;
     };
 

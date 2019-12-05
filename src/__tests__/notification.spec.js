@@ -11,7 +11,6 @@ import { showNotification, removeNotification } from '../actions/notificationAct
 import notification from '../reducers/notificationReducer';
 import { type NotificationParam } from '../actions/notificationActions';
 
-
 Enzyme.configure({ adapter: new Adapter() });
 
 const cancelNotification = {
