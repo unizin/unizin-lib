@@ -1428,6 +1428,21 @@ exports[`Storyshots Toggle With label 1`] = `
 </div>
 `;
 
+exports[`Storyshots Toggle onChange return a Promise 1`] = `
+<div
+  aria-checked={false}
+  checked={false}
+  className="sc-ckVGcZ fMfnUd"
+  color="#45DC85"
+  disabled={false}
+  height="10px"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="checkbox"
+  tabIndex={0}
+/>
+`;
+
 exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
 <div
   style={
