@@ -64,14 +64,16 @@ export default function Notification(props: Props) {
         >
             <NotificationWrapper role={role}>
                 <div>
-                    <div style={{ color: colors[icon] }}>
-                        <FontAwesomeIcon icon={icons[icon]} />
+                    <div>
+                        <span style={{ color: colors[icon] }}>
+                            <FontAwesomeIcon icon={icons[icon]} />
+                        </span>
+                        <span>{text}</span>
+                        {subText && <p>{subText}</p>}
                     </div>
-                    <span>{text}</span>
                     {button}
                     {dismiss}
                 </div>
-                {subText && <p>{subText}</p>}
             </NotificationWrapper>
         </CSSTransition>
     );
@@ -80,7 +82,7 @@ export default function Notification(props: Props) {
 const slideIn = keyframes`
     from {
         opacity: 0.15;
-        transform: translateY(-100px);
+        transform: translateY(100%);
     }
 
     to {
@@ -91,16 +93,10 @@ const slideIn = keyframes`
 
 const NotificationWrapper = styled.div`
     background-color: white;
-    padding: ${theme.spacing.medium};
-    font-size: ${theme.fontSizes.plus4};
-
-    &:not(:first-of-type) {
-        border-top: ${theme.borders.default};
-    }
-
-    &:last-of-type {
-        box-shadow: ${theme.shadows.down};
-    }
+    padding: ${theme.spacing.small};
+    font-size: ${theme.fontSizes.small};
+    margin-top: ${theme.spacing.small};
+    box-shadow: ${theme.shadows.shallow};
 
     > div {
         align-items: center;
@@ -114,15 +110,20 @@ const NotificationWrapper = styled.div`
 
     p {
         margin: 0;
-        font-size: ${theme.fontSizes.normal};
+        font-size: ${theme.fontSizes.discrete};
         text-align: left;
+        color: ${theme.colors.grey.medium};
     }
 
     span {
         flex-grow: 1;
-        margin-left: ${theme.spacing.medium};
-        font-size: ${theme.fontSizes.plus3};
+        font-size: ${theme.fontSizes.plus1};
         font-weight: 600;
+        margin-left: ${theme.spacing.small};
+
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 
     button {
@@ -152,11 +153,15 @@ const NotificationWrapper = styled.div`
 `;
 
 const CloseNotification = styled(CloseButton)`
-    border-color: ${theme.colors.grey.light};
-    background-color: white;
+    background: white;
+    border: 1px solid ${theme.colors.grey.light};
+
+    &:hover {
+        background: ${theme.colors.grey.ultraLight};
+    }
 
     &:before,
     &:after {
-        background-color: ${theme.colors.grey.medium};
+        background: ${theme.colors.grey.medium};
     }
 `;

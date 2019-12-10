@@ -37,11 +37,15 @@ export class NotificationContainer extends PureComponent<Props> {
 }
 
 const Notifications = styled.div`
-    left: 0;
+    left: 50%;
     position: absolute;
-    top: 0;
-    width: 100%;
+    bottom: 20px;
+    width: auto;
     z-index: 1052;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-50%);
+    display: flex;
 `;
 // Modals created with react-aria-modal have a z-index of 1050, and unizin-lib modals have a z-index of 1051
 
