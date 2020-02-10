@@ -1,14 +1,15 @@
 import type { Node } from 'react';
 
 declare type ConfirmationModal = {
-    showCancel?: boolean,
     cancelText?: string,
     confirmText?: string,
     element: ?HTMLElement,
     modalContent: Node,
-    onConfirm: () => void,
     onCancel: () => void,
     onClose?: HTMLElement => void,
+    onConfirm: () => void,
+    showCancel?: boolean,
+    showConfirm?: boolean,
 };
 
 declare type ModalState = ?ConfirmationModal;

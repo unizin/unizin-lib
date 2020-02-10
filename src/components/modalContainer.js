@@ -48,6 +48,7 @@ export const ModalPortal = ({
     onConfirm,
     onCancel,
     showCancel = true,
+    showConfirm = true,
     setModalOnClose,
 }: Props) => {
     // For compatibility with react-aria-modal
@@ -59,12 +60,16 @@ export const ModalPortal = ({
                       <ModalBody role="application">
                           <PositionedCloseButton onClick={onCancel} aria-label="Close" />
                           {modalContent}
-                          <ModalButtons>
-                              {showCancel ? (
-                                  <button onClick={onCancel}>{cancelText || 'No'}</button>
-                              ) : null}
-                              <button onClick={onConfirm}>{confirmText || 'Yes'}</button>
-                          </ModalButtons>
+                          {(showCancel || showConfirm) && (
+                              <ModalButtons>
+                                  {showCancel && (
+                                      <button onClick={onCancel}>{cancelText || 'No'}</button>
+                                  )}
+                                  {showConfirm && (
+                                      <button onClick={onConfirm}>{confirmText || 'Yes'}</button>
+                                  )}
+                              </ModalButtons>
+                          )}
                       </ModalBody>
                   </CSSTransition>
               </ModalWrapper>,

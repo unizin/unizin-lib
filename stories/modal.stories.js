@@ -19,4 +19,8 @@ storiesOf('ModalPortal (Confirm modal)', module)
     .add('With custom labeling', () => (
         <ModalPortal {...{ ...props, cancelText: 'Bork', confirmText: 'Bork bork bork' }} />
     ))
-    .add('Without cancel', () => <ModalPortal {...{ ...props, showCancel: false }} />);
+    .add('Without cancel', () => <ModalPortal {...{ ...props, showCancel: false }} />)
+    .add('Without confirm', () => <ModalPortal {...{ ...props, showConfirm: false }} />)
+    .add('Without buttons', () => (
+        <ModalPortal {...{ ...props, showCancel: false, showConfirm: false }} />
+    ));
