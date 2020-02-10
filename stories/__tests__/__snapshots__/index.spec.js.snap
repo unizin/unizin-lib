@@ -397,6 +397,34 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
 </div>
 `;
 
+exports[`Storyshots ModalPortal (Confirm modal) Without buttons 1`] = `
+<div
+  className="sc-jTzLTM ccDZgE"
+  tabIndex="0"
+>
+  <article
+    className="sc-fjdhpX bhRuQ"
+    role="application"
+  >
+    <button
+      aria-label="Close"
+      className="sc-VigVT sc-jzJRlG GtXiy"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-kAzzGY gDahZl"
+    >
+      <h1>
+        Would you like a cookie?
+      </h1>
+      <p>
+        They are very tasty
+      </p>
+    </div>
+  </article>
+</div>
+`;
+
 exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
 <div
   className="sc-jTzLTM ccDZgE"
@@ -428,6 +456,43 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
         onClick={[Function]}
       >
         Yes
+      </button>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Storyshots ModalPortal (Confirm modal) Without confirm 1`] = `
+<div
+  className="sc-jTzLTM ccDZgE"
+  tabIndex="0"
+>
+  <article
+    className="sc-fjdhpX bhRuQ"
+    role="application"
+  >
+    <button
+      aria-label="Close"
+      className="sc-VigVT sc-jzJRlG GtXiy"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-kAzzGY gDahZl"
+    >
+      <h1>
+        Would you like a cookie?
+      </h1>
+      <p>
+        They are very tasty
+      </p>
+    </div>
+    <div
+      className="sc-cSHVUG lcKYNk"
+    >
+      <button
+        onClick={[Function]}
+      >
+        No
       </button>
     </div>
   </article>
