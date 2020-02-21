@@ -270,13 +270,13 @@ exports[`Storyshots Future Dates < 13 hours 1`] = `
 
 exports[`Storyshots Future Dates < 24 hours 1`] = `
 <span>
-  10:43 AM
+  at 10:43 AM
 </span>
 `;
 
 exports[`Storyshots Future Dates > 7 days 1`] = `
 <span>
-  Mar 29, 2019
+  on Mar 29, 2019
 </span>
 `;
 
@@ -1283,13 +1283,13 @@ exports[`Storyshots Past Dates < 13 hours 1`] = `
 
 exports[`Storyshots Past Dates < 24 hours 1`] = `
 <span>
-  10:45 AM
+  at 10:45 AM
 </span>
 `;
 
 exports[`Storyshots Past Dates > 7 days 1`] = `
 <span>
-  Mar 13, 2019
+  on Mar 13, 2019
 </span>
 `;
 

@@ -48,7 +48,7 @@ export const relativeDate = (target: string | Date, now: Date = new Date()): ?st
         {
             comparison: differenceInHours,
             conditional: (x = 0) => Math.abs(x) >= 13 && Math.abs(x) < 24,
-            formatter: () => format(targetDate, 'h:mm b'),
+            formatter: () => `at ${format(targetDate, 'h:mm b')}`,
         },
         {
             comparison: differenceInDays,
@@ -58,7 +58,7 @@ export const relativeDate = (target: string | Date, now: Date = new Date()): ?st
         {
             comparison: () => {},
             conditional: () => true,
-            formatter: () => format(targetDate, 'LLL dd, yyyy'),
+            formatter: () => `on ${format(targetDate, 'LLL dd, yyyy')}`,
         },
     ]: Array<{
         comparison: (Date, Date) => number | void,
