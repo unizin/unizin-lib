@@ -1,4 +1,5 @@
 /* @flow */
+require('babel-polyfill');
 const { addAural } = require('./actions/auralNotificationActions');
 const AuralNotification = require('./components/auralNotification');
 const auralNotificationReducer = require('./reducers/auralNotificationReducer');
