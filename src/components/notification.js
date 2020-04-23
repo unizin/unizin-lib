@@ -8,6 +8,7 @@ import {
     faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
+import classNames from 'classnames';
 
 import { icons as iconNames, NOTIFICATION_TIMEOUT } from '../const';
 
@@ -36,6 +37,8 @@ type Props = NotificationParam & {
     exit?: boolean,
     text: string,
     subText?: string,
+    isBottom?: Boolean,
+    isSmall?: Boolean,
 };
 
 export default function Notification(props: Props) {
@@ -48,12 +51,15 @@ export default function Notification(props: Props) {
         exit,
         text,
         subText,
+        isBottom,
+        isSmall,
     } = props;
     const button = callToAction ? <button onClick={onCallToAction}>{callToAction}</button> : null;
     const dismiss = dismissable ? (
         <CloseNotification aria-label="Dismiss" title="Dismiss" onClick={removeNotification} />
     ) : null;
     const role = dismissable ? 'status' : 'alert';
+    const classnames = classNames({ 'is-small': isSmall }, { 'is-bottom': isBottom });
     return (
         <CSSTransition
             appear={true}
@@ -62,7 +68,7 @@ export default function Notification(props: Props) {
             timeout={NOTIFICATION_TIMEOUT}
             unmountOnExit={true}
         >
-            <NotificationWrapper role={role}>
+            <NotificationWrapper role={role} className={classnames}>
                 <div>
                     <div>
                         <span style={{ color: colors[icon] }}>
@@ -79,7 +85,7 @@ export default function Notification(props: Props) {
     );
 }
 
-const slideIn = keyframes`
+const bottomSlideIn = keyframes`
     from {
         opacity: 0.15;
         transform: translateY(100%);
@@ -91,12 +97,48 @@ const slideIn = keyframes`
     }
 `;
 
+const topSlideIn = keyframes`
+    from {
+        opacity: 0.15;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+
 const NotificationWrapper = styled.div`
     background-color: white;
-    padding: ${theme.spacing.small};
-    font-size: ${theme.fontSizes.small};
-    margin-top: ${theme.spacing.small};
-    box-shadow: ${theme.shadows.shallow};
+    padding: ${theme.spacing.medium};
+    font-size: ${theme.fontSizes.plus4};
+
+    &:not(.is-small):not(.is-bottom) {
+        &:not(:first-of-type) {
+            border-top: ${theme.borders.default};
+        }
+        &:last-of-type {
+            box-shadow: ${theme.shadows.down};
+        }
+    }
+
+    &.is-bottom:not(.is-small) {
+        &:not(:last-of-type) {
+            border-bottom: ${theme.borders.default};
+        }
+        &:first-of-type {
+            box-shadow: ${theme.shadows.down};
+            border-top: ${theme.borders.default};
+        }
+    }
+
+    &.is-small {
+        padding: ${theme.spacing.small};
+        font-size: ${theme.fontSizes.small};
+        margin-top: ${theme.spacing.small};
+        box-shadow: ${theme.shadows.shallow};
+    }
 
     > div {
         align-items: center;
@@ -143,12 +185,20 @@ const NotificationWrapper = styled.div`
         }
     }
 
-    &.notification-appear {
-        animation: ${slideIn} ${theme.animationDuration} ease-in forwards;
+    &.notification-appear:not(.is-bottom) {
+        animation: ${topSlideIn} ${theme.animationDuration} ease-in forwards;
     }
 
-    &.notification-exit {
-        animation: ${slideIn} ${theme.animationDuration} ease-in reverse forwards;
+    &.notification-exit:not(.is-bottom) {
+        animation: ${topSlideIn} ${theme.animationDuration} ease-in reverse forwards;
+    }
+
+    &.is-bottom.notification-appear {
+        animation: ${bottomSlideIn} ${theme.animationDuration} ease-in forwards;
+    }
+
+    &.is-bottom.notification-exit {
+        animation: ${bottomSlideIn} ${theme.animationDuration} ease-in reverse forwards;
     }
 `;
 

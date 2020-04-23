@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 import React, { PureComponent, type Node } from 'react';
 import styled from 'styled-components';
+import classNames from 'classnames';
 import { removeNotification, type NotificationParam } from '../actions/notificationActions';
 import Notification from './notification';
 
@@ -11,11 +12,19 @@ type Props = {
         [string]: NotificationParam & { id: number },
     },
     removeNotification: (id: number) => void,
+    isSmall?: Boolean,
+    isBottom?: Boolean,
 };
 
 export class NotificationContainer extends PureComponent<Props> {
     renderNotifications(): Array<Node> {
-        const { notification, removeNotification, maxNotifications } = this.props;
+        const {
+            notification,
+            removeNotification,
+            maxNotifications,
+            isBottom,
+            isSmall,
+        } = this.props;
 
         return Object.keys(notification)
             .slice(0, maxNotifications)
@@ -25,6 +34,8 @@ export class NotificationContainer extends PureComponent<Props> {
                     <Notification
                         key={`ul-notification-${id}`}
                         removeNotification={() => removeNotification(id)}
+                        isBottom={isBottom}
+                        isSmall={isSmall}
                         {...currentNotification}
                     />
                 );
@@ -32,20 +43,32 @@ export class NotificationContainer extends PureComponent<Props> {
     }
 
     render() {
-        return <Notifications>{this.renderNotifications()}</Notifications>;
+        const { isSmall, isBottom } = this.props;
+        const classnames = classNames({ 'is-small': isSmall }, { 'is-bottom': isBottom });
+        return <Notifications className={classnames}>{this.renderNotifications()}</Notifications>;
     }
 }
 
 const Notifications = styled.div`
-    left: 50%;
+    left: 0;
     position: absolute;
-    bottom: 20px;
-    width: auto;
+    top: 0;
+    width: 100%;
     z-index: 1052;
     display: flex;
     flex-direction: column;
-    transform: translateX(-50%);
     display: flex;
+
+    &.is-bottom {
+        top: auto;
+        bottom: 20px;
+    }
+
+    &.is-small {
+        left: 50%;
+        width: auto;
+        transform: translateX(-50%);
+    }
 `;
 // Modals created with react-aria-modal have a z-index of 1050, and unizin-lib modals have a z-index of 1051
 
