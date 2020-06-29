@@ -1,6 +1,6 @@
 {
   "name": "unizin-lib",
-  "version": "1.5.9",
+  "version": "1.6.0",
   "description": "Shared component library for Unizin",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
