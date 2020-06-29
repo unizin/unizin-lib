@@ -88,35 +88,13 @@ exports[`Storyshots Button with text 1`] = `
 </button>
 `;
 
-exports[`Storyshots Content Pricing Content with a payment waiver 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gZMcBi hBmVNX"
-    >
-      <span
-        className="sc-iwsKbI jMxFSW"
-      >
-        $
-        174.95
-      </span>
-       (
-      100
-      % savings)
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Content Pricing Free content 1`] = `
 <div
   className="sc-bZQynM Agekg"
 >
   <div>
     <div
-      className="sc-gzVnrw oeFWR"
+      className="sc-gzVnrw jiOEfK"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -131,17 +109,18 @@ exports[`Storyshots Content Pricing Free content 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hBmVNX"
+      className="sc-gZMcBi hzhxbq"
     >
       <span
-        className="sc-iwsKbI jMxFSW"
+        className="sc-iwsKbI icIUJf"
       >
         $
         174.95
       </span>
-       (
-      100
-      % savings)
+      <span>
+        100
+        % savings
+      </span>
     </div>
   </div>
 </div>
@@ -153,7 +132,7 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw oeFWR"
+      className="sc-gzVnrw jiOEfK"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -167,6 +146,9 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
         Free
       </span>
     </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    />
   </div>
 </div>
 `;
@@ -177,7 +159,7 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw oeFWR"
+      className="sc-gzVnrw jiOEfK"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -192,17 +174,18 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hBmVNX"
+      className="sc-gZMcBi hzhxbq"
     >
       <span
-        className="sc-iwsKbI jMxFSW"
+        className="sc-iwsKbI icIUJf"
       >
         $
         174.95
       </span>
-       (
-      57
-      % savings)
+      <span>
+        57
+        % savings
+      </span>
     </div>
   </div>
 </div>
@@ -229,7 +212,7 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw oeFWR"
+      className="sc-gzVnrw jiOEfK"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -243,6 +226,9 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
         $74.99
       </span>
     </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    />
   </div>
 </div>
 `;
@@ -258,6 +244,186 @@ exports[`Storyshots Content Pricing Missing offer price 1`] = `
     className="aural"
   >
     Pricing not available
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Pricing Text as offer price 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw jiOEfK"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        Bork bork bork
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        100
+        % savings
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Pricing With child 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw jiOEfK"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        $74.99
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        57
+        % savings
+      </span>
+      <span
+        style={
+          Object {
+            "background": "purple",
+            "borderRadius": "10px",
+            "color": "white",
+            "fontSize": "10px",
+            "margin": "0 0 0 2px",
+            "padding": "2px 5px",
+          }
+        }
+      >
+        Child Element
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Pricing With waiver 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw dgUTPT"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        $74.99
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        57
+        % savings
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Content Pricing With waiver and child 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw dgUTPT"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        $74.99
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi hzhxbq"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        57
+        % savings
+      </span>
+      <span
+        style={
+          Object {
+            "background": "purple",
+            "borderRadius": "10px",
+            "color": "white",
+            "fontSize": "10px",
+            "margin": "0 0 0 2px",
+            "padding": "2px 5px",
+          }
+        }
+      >
+        Child Element
+      </span>
+    </div>
   </div>
 </div>
 `;
