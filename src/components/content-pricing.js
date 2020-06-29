@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { type Node } from 'react';
 import styled from 'styled-components';
 
 import Aural from './aural';
@@ -8,11 +8,18 @@ import theme from '../theme';
 export type Props = {
     listPrice?: string,
     offerPrice?: string,
+    isExempt?: Boolean,
+    isWaived?: boolean,
+    children?: Node,
 };
 
-export default function Pricing(props: Props) {
-    const { listPrice: listPriceString, offerPrice: offerPriceString } = props;
-
+export default function Pricing({
+    listPrice: listPriceString,
+    offerPrice: offerPriceString,
+    isExempt,
+    isWaived,
+    children,
+}: Props) {
     if (!offerPriceString) {
         return (
             <div>
@@ -23,29 +30,40 @@ export default function Pricing(props: Props) {
     }
 
     const listPrice = parseFloat(listPriceString);
-    const offerPrice = parseFloat(offerPriceString);
-    const waived = Number.isNaN(offerPrice);
+    const offerPrice = parseFloat(offerPriceString.replace(/^\$/, ''));
+    const nonNumerical = Number.isNaN(offerPrice);
     if (listPrice === 0 && offerPrice === 0) {
         return <Free>Free</Free>;
     }
 
-    const savingsPercent = waived ? 100 : Math.round(((listPrice - offerPrice) / listPrice) * 100);
+    const savingsPercent = nonNumerical
+        ? 100
+        : Math.round(((listPrice - offerPrice) / listPrice) * 100);
 
     return (
         <Wrapper>
             <div>
-                {!waived && (
-                    <Price>
-                        <Aural>Your price</Aural>{' '}
-                        <Cost>{offerPrice ? `$${offerPrice.toFixed(2)}` : 'Free'}</Cost>
-                    </Price>
-                )}
-                {listPrice ? (
-                    <Percent>
-                        <StrikeThrough>${listPrice.toFixed(2)}</StrikeThrough> ({savingsPercent}%
-                        savings)
-                    </Percent>
-                ) : null}
+                <Price isWaived={isWaived}>
+                    <Aural>Your price</Aural>{' '}
+                    <Cost>
+                        {nonNumerical
+                            ? offerPriceString
+                            : offerPrice
+                            ? `$${offerPrice.toFixed(2)}`
+                            : 'Free'}
+                    </Cost>
+                </Price>
+                <Percent>
+                    <>
+                        {!Number.isNaN(listPrice) ? (
+                            <>
+                                <StrikeThrough>${listPrice.toFixed(2)}</StrikeThrough>
+                                <span>{savingsPercent}% savings</span>
+                            </>
+                        ) : null}
+                        {children}
+                    </>
+                </Percent>
             </div>
         </Wrapper>
     );
@@ -59,6 +77,7 @@ const Wrapper = styled.div`
 
 const Price = styled.div`
     text-align: right;
+    ${({ isWaived }) => (isWaived ? 'text-decoration: line-through;' : '')}
 
     span {
         display: block;
@@ -88,11 +107,14 @@ const Cost = styled.span`
 
 const StrikeThrough = styled.span`
     text-decoration: line-through;
+    margin-right: ${theme.spacing.tiny};
 `;
 
 const Percent = styled.div`
-    font-size: ${theme.fonts.sizes.discrete};
-    padding-left: ${theme.spacing.small};
-    text-align: right;
+    align-items: center;
     color: ${theme.colors.grey.medium};
+    display: flex;
+    font-size: ${theme.fonts.sizes.discrete};
+    justify-content: flex-end;
+    text-align: right;
 `;
