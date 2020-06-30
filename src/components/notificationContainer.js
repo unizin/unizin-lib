@@ -62,6 +62,10 @@ const Notifications = styled.div`
     &.is-bottom {
         top: auto;
         bottom: 20px;
+
+        &:not(.is-small) {
+            bottom: 0;
+        }
     }
 
     &.is-small {

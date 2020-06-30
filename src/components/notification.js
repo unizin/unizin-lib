@@ -74,8 +74,10 @@ export default function Notification(props: Props) {
                         <span style={{ color: colors[icon] }}>
                             <FontAwesomeIcon icon={icons[icon]} />
                         </span>
-                        <span>{text}</span>
-                        {subText && <p>{subText}</p>}
+                        <div>
+                            <span>{text}</span>
+                            {subText && <p>{subText}</p>}
+                        </div>
                     </div>
                     {button}
                     {dismiss}
@@ -128,7 +130,7 @@ const NotificationWrapper = styled.div`
             border-bottom: ${theme.borders.default};
         }
         &:first-of-type {
-            box-shadow: ${theme.shadows.down};
+            box-shadow: ${theme.shadows.up};
             border-top: ${theme.borders.default};
         }
     }
@@ -145,8 +147,19 @@ const NotificationWrapper = styled.div`
         display: flex;
         justify-content: space-between;
 
+        div:nth-child(1) {
+            display: flex;
+            flex: 1;
+        }
+
         > :nth-child(-n + 2) {
             text-align: left;
+        }
+
+        > div > div {
+            display: flex;
+            flex-direction: column;
+            padding-left: ${theme.spacing.small};
         }
     }
 
@@ -158,7 +171,7 @@ const NotificationWrapper = styled.div`
     }
 
     span {
-        flex-grow: 1;
+        flex-grow: 0;
         font-size: ${theme.fontSizes.plus1};
         font-weight: 600;
         margin-left: ${theme.spacing.small};
@@ -177,7 +190,7 @@ const NotificationWrapper = styled.div`
         }
 
         &:first-of-type:not(:last-of-type) {
-            background-color: none;
+            background-color: white;
             border: ${theme.borders.default};
             border-radius: ${theme.borderRadius.small};
             color: ${theme.colors.blue.default};
