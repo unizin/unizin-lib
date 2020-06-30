@@ -94,7 +94,7 @@ exports[`Storyshots Content Pricing Free content 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -109,7 +109,7 @@ exports[`Storyshots Content Pricing Free content 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -132,7 +132,7 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -147,7 +147,7 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     />
   </div>
 </div>
@@ -159,7 +159,7 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -174,7 +174,7 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -212,7 +212,7 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -227,7 +227,7 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     />
   </div>
 </div>
@@ -254,7 +254,7 @@ exports[`Storyshots Content Pricing Text as offer price 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -269,7 +269,7 @@ exports[`Storyshots Content Pricing Text as offer price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -292,7 +292,7 @@ exports[`Storyshots Content Pricing With child 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw jiOEfK"
+      className="sc-gzVnrw rtJcr"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -307,7 +307,7 @@ exports[`Storyshots Content Pricing With child 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -344,7 +344,7 @@ exports[`Storyshots Content Pricing With waiver 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw dgUTPT"
+      className="sc-gzVnrw kFSDXH"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -359,7 +359,7 @@ exports[`Storyshots Content Pricing With waiver 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -382,7 +382,7 @@ exports[`Storyshots Content Pricing With waiver and child 1`] = `
 >
   <div>
     <div
-      className="sc-gzVnrw dgUTPT"
+      className="sc-gzVnrw kFSDXH"
     >
       <span
         className="sc-ifAKCX izpMtP"
@@ -397,7 +397,7 @@ exports[`Storyshots Content Pricing With waiver and child 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hzhxbq"
+      className="sc-gZMcBi hTBEUT"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -436,7 +436,7 @@ exports[`Storyshots Future Dates < 13 hours 1`] = `
 
 exports[`Storyshots Future Dates < 24 hours 1`] = `
 <span>
-  at 10:43 AM
+  at 8:43 AM
 </span>
 `;
 
@@ -1449,7 +1449,7 @@ exports[`Storyshots Past Dates < 13 hours 1`] = `
 
 exports[`Storyshots Past Dates < 24 hours 1`] = `
 <span>
-  at 10:45 AM
+  at 8:45 AM
 </span>
 `;
 

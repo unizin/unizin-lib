@@ -81,7 +81,6 @@ const Price = styled.div`
 
     span {
         display: block;
-        letter-spacing: 1px;
         margin-bottom: 0;
         text-transform: uppercase;
 
@@ -114,7 +113,7 @@ const Percent = styled.div`
     align-items: center;
     color: ${theme.colors.grey.medium};
     display: flex;
-    font-size: ${theme.fonts.sizes.discrete};
+    font-size: ${theme.fonts.sizes.tiny};
     justify-content: flex-end;
     text-align: right;
 `;
