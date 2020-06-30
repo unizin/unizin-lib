@@ -8,6 +8,7 @@ import {
     faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
+import classNames from 'classnames';
 
 import { icons as iconNames, NOTIFICATION_TIMEOUT } from '../const';
 
@@ -36,6 +37,8 @@ type Props = NotificationParam & {
     exit?: boolean,
     text: string,
     subText?: string,
+    isBottom?: Boolean,
+    isSmall?: Boolean,
 };
 
 export default function Notification(props: Props) {
@@ -48,12 +51,15 @@ export default function Notification(props: Props) {
         exit,
         text,
         subText,
+        isBottom,
+        isSmall,
     } = props;
     const button = callToAction ? <button onClick={onCallToAction}>{callToAction}</button> : null;
     const dismiss = dismissable ? (
         <CloseNotification aria-label="Dismiss" title="Dismiss" onClick={removeNotification} />
     ) : null;
     const role = dismissable ? 'status' : 'alert';
+    const classnames = classNames({ 'is-small': isSmall }, { 'is-bottom': isBottom });
     return (
         <CSSTransition
             appear={true}
@@ -62,22 +68,38 @@ export default function Notification(props: Props) {
             timeout={NOTIFICATION_TIMEOUT}
             unmountOnExit={true}
         >
-            <NotificationWrapper role={role}>
+            <NotificationWrapper role={role} className={classnames}>
                 <div>
-                    <div style={{ color: colors[icon] }}>
-                        <FontAwesomeIcon icon={icons[icon]} />
+                    <div>
+                        <span style={{ color: colors[icon] }}>
+                            <FontAwesomeIcon icon={icons[icon]} />
+                        </span>
+                        <div>
+                            <span>{text}</span>
+                            {subText && <p>{subText}</p>}
+                        </div>
                     </div>
-                    <span>{text}</span>
                     {button}
                     {dismiss}
                 </div>
-                {subText && <p>{subText}</p>}
             </NotificationWrapper>
         </CSSTransition>
     );
 }
 
-const slideIn = keyframes`
+const bottomSlideIn = keyframes`
+    from {
+        opacity: 0.15;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+
+const topSlideIn = keyframes`
     from {
         opacity: 0.15;
         transform: translateY(-100px);
@@ -94,12 +116,30 @@ const NotificationWrapper = styled.div`
     padding: ${theme.spacing.medium};
     font-size: ${theme.fontSizes.plus4};
 
-    &:not(:first-of-type) {
-        border-top: ${theme.borders.default};
+    &:not(.is-small):not(.is-bottom) {
+        &:not(:first-of-type) {
+            border-top: ${theme.borders.default};
+        }
+        &:last-of-type {
+            box-shadow: ${theme.shadows.down};
+        }
     }
 
-    &:last-of-type {
-        box-shadow: ${theme.shadows.down};
+    &.is-bottom:not(.is-small) {
+        &:not(:last-of-type) {
+            border-bottom: ${theme.borders.default};
+        }
+        &:first-of-type {
+            box-shadow: ${theme.shadows.up};
+            border-top: ${theme.borders.default};
+        }
+    }
+
+    &.is-small {
+        padding: ${theme.spacing.small};
+        font-size: ${theme.fontSizes.small};
+        margin-top: ${theme.spacing.small};
+        box-shadow: ${theme.shadows.shallow};
     }
 
     > div {
@@ -107,22 +147,38 @@ const NotificationWrapper = styled.div`
         display: flex;
         justify-content: space-between;
 
+        div:nth-child(1) {
+            display: flex;
+            flex: 1;
+        }
+
         > :nth-child(-n + 2) {
             text-align: left;
+        }
+
+        > div > div {
+            display: flex;
+            flex-direction: column;
+            padding-left: ${theme.spacing.small};
         }
     }
 
     p {
         margin: 0;
-        font-size: ${theme.fontSizes.normal};
+        font-size: ${theme.fontSizes.discrete};
         text-align: left;
+        color: ${theme.colors.grey.medium};
     }
 
     span {
-        flex-grow: 1;
-        margin-left: ${theme.spacing.medium};
-        font-size: ${theme.fontSizes.plus3};
+        flex-grow: 0;
+        font-size: ${theme.fontSizes.plus1};
         font-weight: 600;
+        margin-left: ${theme.spacing.small};
+
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 
     button {
@@ -134,7 +190,7 @@ const NotificationWrapper = styled.div`
         }
 
         &:first-of-type:not(:last-of-type) {
-            background-color: none;
+            background-color: white;
             border: ${theme.borders.default};
             border-radius: ${theme.borderRadius.small};
             color: ${theme.colors.blue.default};
@@ -142,21 +198,33 @@ const NotificationWrapper = styled.div`
         }
     }
 
-    &.notification-appear {
-        animation: ${slideIn} ${theme.animationDuration} ease-in forwards;
+    &.notification-appear:not(.is-bottom) {
+        animation: ${topSlideIn} ${theme.animationDuration} ease-in forwards;
     }
 
-    &.notification-exit {
-        animation: ${slideIn} ${theme.animationDuration} ease-in reverse forwards;
+    &.notification-exit:not(.is-bottom) {
+        animation: ${topSlideIn} ${theme.animationDuration} ease-in reverse forwards;
+    }
+
+    &.is-bottom.notification-appear {
+        animation: ${bottomSlideIn} ${theme.animationDuration} ease-in forwards;
+    }
+
+    &.is-bottom.notification-exit {
+        animation: ${bottomSlideIn} ${theme.animationDuration} ease-in reverse forwards;
     }
 `;
 
 const CloseNotification = styled(CloseButton)`
-    border-color: ${theme.colors.grey.light};
-    background-color: white;
+    background: white;
+    border: 1px solid ${theme.colors.grey.light};
+
+    &:hover {
+        background: ${theme.colors.grey.ultraLight};
+    }
 
     &:before,
     &:after {
-        background-color: ${theme.colors.grey.medium};
+        background: ${theme.colors.grey.medium};
     }
 `;

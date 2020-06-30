@@ -14,6 +14,8 @@ import { showNotification } from '../src/actions/notificationActions';
 type Props = {
     notification: any,
     removeNotification: number => void,
+    isSmall: Boolean,
+    isBottom: Boolean,
 };
 const Notifications = (props: Props) => <NotificationContainer {...props} />;
 
@@ -56,6 +58,46 @@ storiesOf('Notifications', module)
                     '2': checkNotification,
                     '3': exclamationNotification,
                 },
+            }}
+        />
+    ))
+    .add('All three notifications (bottom)', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': cancelNotification,
+                    '2': checkNotification,
+                    '3': exclamationNotification,
+                },
+                isBottom: true,
+            }}
+        />
+    ))
+    .add('All three notifications (small)', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': cancelNotification,
+                    '2': checkNotification,
+                    '3': exclamationNotification,
+                },
+                isSmall: true,
+            }}
+        />
+    ))
+    .add('All three notifications (small, bottom)', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': cancelNotification,
+                    '2': checkNotification,
+                    '3': exclamationNotification,
+                },
+                isSmall: true,
+                isBottom: true,
             }}
         />
     ))
@@ -109,6 +151,52 @@ storiesOf('Notifications', module)
                         onCallToAction: action('poke'),
                     },
                 },
+            }}
+        />
+    ))
+    .add('Small', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': {
+                        ...checkNotification,
+                        dismissable: true,
+                        subText: "I think there's a bear in my house.",
+                    },
+                },
+                isSmall: true,
+            }}
+        />
+    ))
+    .add('Small (bottom)', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': {
+                        ...checkNotification,
+                        dismissable: true,
+                        subText: "I think there's a bear in my house.",
+                    },
+                },
+                isSmall: true,
+                isBottom: true,
+            }}
+        />
+    ))
+    .add('Bottom', () => (
+        <Notifications
+            {...{
+                ...baseProps,
+                notification: {
+                    '1': {
+                        ...checkNotification,
+                        dismissable: true,
+                        subText: "I think there's a bear in my house.",
+                    },
+                },
+                isBottom: true,
             }}
         />
     ))
