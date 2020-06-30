@@ -43,7 +43,7 @@ export default function Pricing({
     return (
         <Wrapper>
             <div>
-                <Price isWaived={isWaived}>
+                <Price strikeThrough={isWaived && !nonNumerical}>
                     <Aural>Your price</Aural>{' '}
                     <Cost>
                         {nonNumerical
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
 
 const Price = styled.div`
     text-align: right;
-    ${({ isWaived }) => (isWaived ? 'text-decoration: line-through;' : '')}
+    ${({ strikeThrough }) => (strikeThrough ? 'text-decoration: line-through;' : '')}
 
     span {
         display: block;
@@ -116,4 +116,5 @@ const Percent = styled.div`
     font-size: ${theme.fonts.sizes.tiny};
     justify-content: flex-end;
     text-align: right;
+    white-space: nowrap;
 `;

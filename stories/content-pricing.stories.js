@@ -47,4 +47,20 @@ storiesOf('Content Pricing', module)
             </span>
         </Pricing>
     ))
+    .add('With waiver, child, and string offerPrice', () => (
+        <Pricing {...{ offerPrice: 'Bork bork bork', listPrice, isWaived: true }}>
+            <span
+                style={{
+                    background: 'purple',
+                    margin: '0 0 0 2px',
+                    padding: '2px 5px',
+                    color: 'white',
+                    borderRadius: '10px',
+                    fontSize: '10px',
+                }}
+            >
+                Child Element
+            </span>
+        </Pricing>
+    ))
     .add('Missing both prices (why do we allow this?)', () => <Pricing />);

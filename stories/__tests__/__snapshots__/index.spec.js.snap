@@ -109,7 +109,7 @@ exports[`Storyshots Content Pricing Free content 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -147,7 +147,7 @@ exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     />
   </div>
 </div>
@@ -174,7 +174,7 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -227,7 +227,7 @@ exports[`Storyshots Content Pricing Missing list price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     />
   </div>
 </div>
@@ -269,7 +269,7 @@ exports[`Storyshots Content Pricing Text as offer price 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -307,7 +307,7 @@ exports[`Storyshots Content Pricing With child 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -359,7 +359,7 @@ exports[`Storyshots Content Pricing With waiver 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -397,7 +397,7 @@ exports[`Storyshots Content Pricing With waiver and child 1`] = `
       </span>
     </div>
     <div
-      className="sc-gZMcBi hTBEUT"
+      className="sc-gZMcBi eiIlQ"
     >
       <span
         className="sc-iwsKbI icIUJf"
@@ -428,6 +428,58 @@ exports[`Storyshots Content Pricing With waiver and child 1`] = `
 </div>
 `;
 
+exports[`Storyshots Content Pricing With waiver, child, and string offerPrice 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw rtJcr"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        Bork bork bork
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi eiIlQ"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        100
+        % savings
+      </span>
+      <span
+        style={
+          Object {
+            "background": "purple",
+            "borderRadius": "10px",
+            "color": "white",
+            "fontSize": "10px",
+            "margin": "0 0 0 2px",
+            "padding": "2px 5px",
+          }
+        }
+      >
+        Child Element
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Future Dates < 13 hours 1`] = `
 <span>
   in 12 hours
@@ -436,7 +488,7 @@ exports[`Storyshots Future Dates < 13 hours 1`] = `
 
 exports[`Storyshots Future Dates < 24 hours 1`] = `
 <span>
-  at 8:43 AM
+  at 10:43 AM
 </span>
 `;
 
@@ -1449,7 +1501,7 @@ exports[`Storyshots Past Dates < 13 hours 1`] = `
 
 exports[`Storyshots Past Dates < 24 hours 1`] = `
 <span>
-  at 8:45 AM
+  at 10:45 AM
 </span>
 `;
 
