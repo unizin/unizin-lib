@@ -37,8 +37,8 @@ type Props = NotificationParam & {
     exit?: boolean,
     text: string,
     subText?: string,
-    isBottom?: Boolean,
-    isSmall?: Boolean,
+    isBottom?: boolean,
+    isSmall?: boolean,
 };
 
 export default function Notification(props: Props) {
@@ -137,7 +137,7 @@ const NotificationWrapper = styled.div`
 
     &.is-small {
         padding: ${theme.spacing.small};
-        font-size: ${theme.fontSizes.small};
+        font-size: ${theme.fontSizes.discrete};
         margin-top: ${theme.spacing.small};
         box-shadow: ${theme.shadows.shallow};
     }

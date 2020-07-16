@@ -6,19 +6,21 @@ import Aural from './aural';
 import theme from '../theme';
 
 export type Props = {
+    children?: Node,
+    isExempt?: boolean,
+    isPaid?: boolean,
+    isWaived?: boolean,
     listPrice?: string,
     offerPrice?: string,
-    isExempt?: Boolean,
-    isWaived?: boolean,
-    children?: Node,
 };
 
 export default function Pricing({
+    children,
+    isExempt,
+    isPaid,
+    isWaived,
     listPrice: listPriceString,
     offerPrice: offerPriceString,
-    isExempt,
-    isWaived,
-    children,
 }: Props) {
     if (!offerPriceString) {
         return (
@@ -46,7 +48,9 @@ export default function Pricing({
                 <Price strikeThrough={isWaived && !nonNumerical}>
                     <Aural>Your price</Aural>{' '}
                     <Cost>
-                        {nonNumerical
+                        {isPaid
+                            ? 'Paid'
+                            : nonNumerical
                             ? offerPriceString
                             : offerPrice
                             ? `$${offerPrice.toFixed(2)}`

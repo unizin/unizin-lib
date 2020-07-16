@@ -191,6 +191,44 @@ exports[`Storyshots Content Pricing Has all information 1`] = `
 </div>
 `;
 
+exports[`Storyshots Content Pricing Is Paid 1`] = `
+<div
+  className="sc-bZQynM Agekg"
+>
+  <div>
+    <div
+      className="sc-gzVnrw rtJcr"
+    >
+      <span
+        className="sc-ifAKCX izpMtP"
+      >
+        Your price
+      </span>
+       
+      <span
+        className="sc-dnqmqq cdIqsh"
+      >
+        Paid
+      </span>
+    </div>
+    <div
+      className="sc-gZMcBi eiIlQ"
+    >
+      <span
+        className="sc-iwsKbI icIUJf"
+      >
+        $
+        174.95
+      </span>
+      <span>
+        57
+        % savings
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Content Pricing Missing both prices (why do we allow this?) 1`] = `
 <div>
   <div
@@ -722,7 +760,7 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
   className="sc-kGXeez dTSNXF is-bottom"
 >
   <div
-    className="sc-chPdSV gpkoWi is-bottom"
+    className="sc-chPdSV iFkfRL is-bottom"
     role="status"
   >
     <div>
@@ -767,7 +805,7 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-bottom"
+    className="sc-chPdSV iFkfRL is-bottom"
     role="status"
   >
     <div>
@@ -812,7 +850,7 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-bottom"
+    className="sc-chPdSV iFkfRL is-bottom"
     role="status"
   >
     <div>
@@ -864,7 +902,7 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
   className="sc-kGXeez dTSNXF is-small"
 >
   <div
-    className="sc-chPdSV gpkoWi is-small"
+    className="sc-chPdSV iFkfRL is-small"
     role="status"
   >
     <div>
@@ -909,7 +947,7 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-small"
+    className="sc-chPdSV iFkfRL is-small"
     role="status"
   >
     <div>
@@ -954,7 +992,7 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-small"
+    className="sc-chPdSV iFkfRL is-small"
     role="status"
   >
     <div>
@@ -1006,7 +1044,7 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
   className="sc-kGXeez dTSNXF is-small is-bottom"
 >
   <div
-    className="sc-chPdSV gpkoWi is-small is-bottom"
+    className="sc-chPdSV iFkfRL is-small is-bottom"
     role="status"
   >
     <div>
@@ -1051,7 +1089,7 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-small is-bottom"
+    className="sc-chPdSV iFkfRL is-small is-bottom"
     role="status"
   >
     <div>
@@ -1096,7 +1134,7 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi is-small is-bottom"
+    className="sc-chPdSV iFkfRL is-small is-bottom"
     role="status"
   >
     <div>
@@ -1148,7 +1186,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
   className="sc-kGXeez dTSNXF"
 >
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>
@@ -1193,7 +1231,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>
@@ -1238,7 +1276,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>
@@ -1290,7 +1328,7 @@ exports[`Storyshots Notifications Bottom 1`] = `
   className="sc-kGXeez dTSNXF is-bottom"
 >
   <div
-    className="sc-chPdSV gpkoWi is-bottom"
+    className="sc-chPdSV iFkfRL is-bottom"
     role="status"
   >
     <div>
@@ -1345,7 +1383,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
   className="sc-kGXeez dTSNXF"
 >
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>
@@ -1403,7 +1441,7 @@ Array [
     className="sc-kGXeez dTSNXF"
   >
     <div
-      className="sc-chPdSV gpkoWi"
+      className="sc-chPdSV iFkfRL"
       role="status"
     >
       <div>
@@ -1461,7 +1499,7 @@ exports[`Storyshots Notifications No dismiss 1`] = `
   className="sc-kGXeez dTSNXF"
 >
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="alert"
   >
     <div>
@@ -1507,7 +1545,7 @@ exports[`Storyshots Notifications Small (bottom) 1`] = `
   className="sc-kGXeez dTSNXF is-small is-bottom"
 >
   <div
-    className="sc-chPdSV gpkoWi is-small is-bottom"
+    className="sc-chPdSV iFkfRL is-small is-bottom"
     role="status"
   >
     <div>
@@ -1562,7 +1600,7 @@ exports[`Storyshots Notifications Small 1`] = `
   className="sc-kGXeez dTSNXF is-small"
 >
   <div
-    className="sc-chPdSV gpkoWi is-small"
+    className="sc-chPdSV iFkfRL is-small"
     role="status"
   >
     <div>
@@ -1617,7 +1655,7 @@ exports[`Storyshots Notifications Subtext 1`] = `
   className="sc-kGXeez dTSNXF"
 >
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>
@@ -1672,7 +1710,7 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
   className="sc-kGXeez dTSNXF"
 >
   <div
-    className="sc-chPdSV gpkoWi"
+    className="sc-chPdSV iFkfRL"
     role="status"
   >
     <div>

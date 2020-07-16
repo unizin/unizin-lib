@@ -12,8 +12,8 @@ type Props = {
         [string]: NotificationParam & { id: number },
     },
     removeNotification: (id: number) => void,
-    isSmall?: Boolean,
-    isBottom?: Boolean,
+    isSmall?: boolean,
+    isBottom?: boolean,
 };
 
 export class NotificationContainer extends PureComponent<Props> {

@@ -14,14 +14,16 @@ import { showNotification } from '../src/actions/notificationActions';
 type Props = {
     notification: any,
     removeNotification: number => void,
-    isSmall: Boolean,
-    isBottom: Boolean,
+    isSmall: boolean,
+    isBottom: boolean,
 };
 const Notifications = (props: Props) => <NotificationContainer {...props} />;
 
 const baseProps = {
     notification: {},
     removeNotification: action('remove notification'),
+    isBottom: false,
+    isSmall: false,
 };
 
 const checkNotification = {

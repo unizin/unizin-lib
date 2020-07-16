@@ -9,6 +9,7 @@ const listPrice = '174.95';
 
 storiesOf('Content Pricing', module)
     .add('Has all information', () => <Pricing {...{ offerPrice, listPrice }} />)
+    .add('Is Paid', () => <Pricing {...{ offerPrice, listPrice, isPaid: true }} />)
     .add('Missing list price', () => <Pricing {...{ offerPrice }} />)
     .add('Missing offer price', () => <Pricing {...{ listPrice }} />)
     .add('Free content', () => <Pricing {...{ offerPrice: '0', listPrice }} />)
