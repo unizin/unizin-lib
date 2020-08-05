@@ -3,12 +3,12 @@ const commonjs = require('rollup-plugin-commonjs');
 const resolve = require('rollup-plugin-node-resolve');
 const { terser } = require('rollup-plugin-terser');
 
-export default ['cjs', 'esm'].map(format => ({
+export default {
     input: './src/index.js',
     external: ['react', 'react-dom', 'redux', 'react-redux', 'prop-types', 'styled-components'],
     output: {
-        dir: `./dist/${format}`,
-        format,
+        dir: `./dist`,
+        format: 'cjs',
         exports: 'named',
         sourcemap: true,
     },
@@ -25,4 +25,4 @@ export default ['cjs', 'esm'].map(format => ({
         }),
         terser(),
     ],
-}));
+};
