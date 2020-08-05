@@ -2560,8 +2560,7 @@ exports[`Storyshots Welcome to Storybook 1`] = `
     >
       stories
     </button>
-     for a component called
-     
+     for a component called 
     <code
       style={
         Object {
@@ -2600,8 +2599,7 @@ exports[`Storyshots Welcome to Storybook 1`] = `
     >
       Button
     </code>
-     stories located at
-     
+     stories located at 
     <code
       style={
         Object {
@@ -2615,15 +2613,14 @@ exports[`Storyshots Welcome to Storybook 1`] = `
         }
       }
     >
-      src/stories/index.js
+      src/stories/1-Button.stories.js
     </code>
     .)
   </p>
   <p>
     Usually we create stories with smaller UI components in the app.
     <br />
-    Have a look at the
-     
+    Have a look at the 
     <a
       href="https://storybook.js.org/basics/writing-stories"
       rel="noopener noreferrer"
@@ -2639,8 +2636,7 @@ exports[`Storyshots Welcome to Storybook 1`] = `
     >
       Writing Stories
     </a>
-     
-    section in our documentation.
+     section in our documentation.
   </p>
   <p
     style={
