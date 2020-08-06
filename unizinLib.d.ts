@@ -27,7 +27,6 @@ declare module 'unizin-lib' {
         handleOnClick?: () => void;
         title?: string;
     }> {}
-    export class ContentPricing extends React.Component<any> {}
     export class Pagination extends React.Component<{
         page: number;
         pageCount: number;
