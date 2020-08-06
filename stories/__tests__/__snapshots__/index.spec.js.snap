@@ -88,436 +88,6 @@ exports[`Storyshots Button with text 1`] = `
 </button>
 `;
 
-exports[`Storyshots Content Pricing Free content 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        Free
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        100
-        % savings
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Free content, missing list price 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        Free
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Has all information 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        $74.99
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        57
-        % savings
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Is Paid 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        Paid
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        57
-        % savings
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Missing both prices (why do we allow this?) 1`] = `
-<div>
-  <div
-    aria-hidden={true}
-  >
-    N/A
-  </div>
-  <div
-    className="aural"
-  >
-    Pricing not available
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Missing list price 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        $74.99
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Missing offer price 1`] = `
-<div>
-  <div
-    aria-hidden={true}
-  >
-    N/A
-  </div>
-  <div
-    className="aural"
-  >
-    Pricing not available
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing Text as offer price 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        Bork bork bork
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        100
-        % savings
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing With child 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        $74.99
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        57
-        % savings
-      </span>
-      <span
-        style={
-          Object {
-            "background": "purple",
-            "borderRadius": "10px",
-            "color": "white",
-            "fontSize": "10px",
-            "margin": "0 0 0 2px",
-            "padding": "2px 5px",
-          }
-        }
-      >
-        Child Element
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing With waiver 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw kFSDXH"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        $74.99
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        57
-        % savings
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing With waiver and child 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw kFSDXH"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        $74.99
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        57
-        % savings
-      </span>
-      <span
-        style={
-          Object {
-            "background": "purple",
-            "borderRadius": "10px",
-            "color": "white",
-            "fontSize": "10px",
-            "margin": "0 0 0 2px",
-            "padding": "2px 5px",
-          }
-        }
-      >
-        Child Element
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Content Pricing With waiver, child, and string offerPrice 1`] = `
-<div
-  className="sc-bZQynM Agekg"
->
-  <div>
-    <div
-      className="sc-gzVnrw rtJcr"
-    >
-      <span
-        className="sc-ifAKCX izpMtP"
-      >
-        Your price
-      </span>
-       
-      <span
-        className="sc-dnqmqq cdIqsh"
-      >
-        Bork bork bork
-      </span>
-    </div>
-    <div
-      className="sc-gZMcBi eiIlQ"
-    >
-      <span
-        className="sc-iwsKbI icIUJf"
-      >
-        $
-        174.95
-      </span>
-      <span>
-        100
-        % savings
-      </span>
-      <span
-        style={
-          Object {
-            "background": "purple",
-            "borderRadius": "10px",
-            "color": "white",
-            "fontSize": "10px",
-            "margin": "0 0 0 2px",
-            "padding": "2px 5px",
-          }
-        }
-      >
-        Child Element
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Future Dates < 13 hours 1`] = `
 <span>
   in 12 hours
@@ -562,7 +132,7 @@ exports[`Storyshots Future Dates 59 minutes 1`] = `
 
 exports[`Storyshots Loading Loading 1`] = `
 <div
-  className="sc-gqjmRU iecPLg"
+  className="sc-bZQynM dNpdPC"
 >
   Loading
   ...
@@ -571,20 +141,20 @@ exports[`Storyshots Loading Loading 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
 <div
-  className="sc-jTzLTM ccDZgE"
+  className="sc-htoDjs xbZJM"
   tabIndex="0"
 >
   <article
-    className="sc-fjdhpX bhRuQ"
+    className="sc-dnqmqq ctahTk"
     role="application"
   >
     <button
       aria-label="Close"
-      className="sc-VigVT sc-jzJRlG GtXiy"
+      className="sc-gzVnrw sc-iwsKbI csAVlJ"
       onClick={[Function]}
     />
     <div
-      className="sc-kAzzGY gDahZl"
+      className="sc-gqjmRU gvsBsK"
     >
       <h1>
         Would you like a cookie?
@@ -594,7 +164,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
       </p>
     </div>
     <div
-      className="sc-cSHVUG lcKYNk"
+      className="sc-gZMcBi dHgLJx"
     >
       <button
         onClick={[Function]}
@@ -613,20 +183,20 @@ exports[`Storyshots ModalPortal (Confirm modal) Base props 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
 <div
-  className="sc-jTzLTM ccDZgE"
+  className="sc-htoDjs xbZJM"
   tabIndex="0"
 >
   <article
-    className="sc-fjdhpX bhRuQ"
+    className="sc-dnqmqq ctahTk"
     role="application"
   >
     <button
       aria-label="Close"
-      className="sc-VigVT sc-jzJRlG GtXiy"
+      className="sc-gzVnrw sc-iwsKbI csAVlJ"
       onClick={[Function]}
     />
     <div
-      className="sc-kAzzGY gDahZl"
+      className="sc-gqjmRU gvsBsK"
     >
       <h1>
         Would you like a cookie?
@@ -636,7 +206,7 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
       </p>
     </div>
     <div
-      className="sc-cSHVUG lcKYNk"
+      className="sc-gZMcBi dHgLJx"
     >
       <button
         onClick={[Function]}
@@ -655,20 +225,20 @@ exports[`Storyshots ModalPortal (Confirm modal) With custom labeling 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) Without buttons 1`] = `
 <div
-  className="sc-jTzLTM ccDZgE"
+  className="sc-htoDjs xbZJM"
   tabIndex="0"
 >
   <article
-    className="sc-fjdhpX bhRuQ"
+    className="sc-dnqmqq ctahTk"
     role="application"
   >
     <button
       aria-label="Close"
-      className="sc-VigVT sc-jzJRlG GtXiy"
+      className="sc-gzVnrw sc-iwsKbI csAVlJ"
       onClick={[Function]}
     />
     <div
-      className="sc-kAzzGY gDahZl"
+      className="sc-gqjmRU gvsBsK"
     >
       <h1>
         Would you like a cookie?
@@ -683,20 +253,20 @@ exports[`Storyshots ModalPortal (Confirm modal) Without buttons 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
 <div
-  className="sc-jTzLTM ccDZgE"
+  className="sc-htoDjs xbZJM"
   tabIndex="0"
 >
   <article
-    className="sc-fjdhpX bhRuQ"
+    className="sc-dnqmqq ctahTk"
     role="application"
   >
     <button
       aria-label="Close"
-      className="sc-VigVT sc-jzJRlG GtXiy"
+      className="sc-gzVnrw sc-iwsKbI csAVlJ"
       onClick={[Function]}
     />
     <div
-      className="sc-kAzzGY gDahZl"
+      className="sc-gqjmRU gvsBsK"
     >
       <h1>
         Would you like a cookie?
@@ -706,7 +276,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
       </p>
     </div>
     <div
-      className="sc-cSHVUG lcKYNk"
+      className="sc-gZMcBi dHgLJx"
     >
       <button
         onClick={[Function]}
@@ -720,20 +290,20 @@ exports[`Storyshots ModalPortal (Confirm modal) Without cancel 1`] = `
 
 exports[`Storyshots ModalPortal (Confirm modal) Without confirm 1`] = `
 <div
-  className="sc-jTzLTM ccDZgE"
+  className="sc-htoDjs xbZJM"
   tabIndex="0"
 >
   <article
-    className="sc-fjdhpX bhRuQ"
+    className="sc-dnqmqq ctahTk"
     role="application"
   >
     <button
       aria-label="Close"
-      className="sc-VigVT sc-jzJRlG GtXiy"
+      className="sc-gzVnrw sc-iwsKbI csAVlJ"
       onClick={[Function]}
     />
     <div
-      className="sc-kAzzGY gDahZl"
+      className="sc-gqjmRU gvsBsK"
     >
       <h1>
         Would you like a cookie?
@@ -743,7 +313,7 @@ exports[`Storyshots ModalPortal (Confirm modal) Without confirm 1`] = `
       </p>
     </div>
     <div
-      className="sc-cSHVUG lcKYNk"
+      className="sc-gZMcBi dHgLJx"
     >
       <button
         onClick={[Function]}
@@ -757,10 +327,10 @@ exports[`Storyshots ModalPortal (Confirm modal) Without confirm 1`] = `
 
 exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-bottom"
+  className="sc-fjdhpX bMWqcP is-bottom"
 >
   <div
-    className="sc-chPdSV iFkfRL is-bottom"
+    className="sc-VigVT cJyEYl is-bottom"
     role="status"
   >
     <div>
@@ -798,14 +368,14 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-bottom"
+    className="sc-VigVT cJyEYl is-bottom"
     role="status"
   >
     <div>
@@ -843,14 +413,14 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-bottom"
+    className="sc-VigVT cJyEYl is-bottom"
     role="status"
   >
     <div>
@@ -888,7 +458,7 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -899,10 +469,10 @@ exports[`Storyshots Notifications All three notifications (bottom) 1`] = `
 
 exports[`Storyshots Notifications All three notifications (small) 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-small"
+  className="sc-fjdhpX bMWqcP is-small"
 >
   <div
-    className="sc-chPdSV iFkfRL is-small"
+    className="sc-VigVT cJyEYl is-small"
     role="status"
   >
     <div>
@@ -940,14 +510,14 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-small"
+    className="sc-VigVT cJyEYl is-small"
     role="status"
   >
     <div>
@@ -985,14 +555,14 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-small"
+    className="sc-VigVT cJyEYl is-small"
     role="status"
   >
     <div>
@@ -1030,7 +600,7 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1041,10 +611,10 @@ exports[`Storyshots Notifications All three notifications (small) 1`] = `
 
 exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-small is-bottom"
+  className="sc-fjdhpX bMWqcP is-small is-bottom"
 >
   <div
-    className="sc-chPdSV iFkfRL is-small is-bottom"
+    className="sc-VigVT cJyEYl is-small is-bottom"
     role="status"
   >
     <div>
@@ -1082,14 +652,14 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-small is-bottom"
+    className="sc-VigVT cJyEYl is-small is-bottom"
     role="status"
   >
     <div>
@@ -1127,14 +697,14 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL is-small is-bottom"
+    className="sc-VigVT cJyEYl is-small is-bottom"
     role="status"
   >
     <div>
@@ -1172,7 +742,7 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1183,10 +753,10 @@ exports[`Storyshots Notifications All three notifications (small, bottom) 1`] = 
 
 exports[`Storyshots Notifications All three notifications 1`] = `
 <div
-  className="sc-kGXeez dTSNXF"
+  className="sc-fjdhpX bMWqcP"
 >
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1224,14 +794,14 @@ exports[`Storyshots Notifications All three notifications 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1269,14 +839,14 @@ exports[`Storyshots Notifications All three notifications 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
     </div>
   </div>
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1314,7 +884,7 @@ exports[`Storyshots Notifications All three notifications 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1325,10 +895,10 @@ exports[`Storyshots Notifications All three notifications 1`] = `
 
 exports[`Storyshots Notifications Bottom 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-bottom"
+  className="sc-fjdhpX bMWqcP is-bottom"
 >
   <div
-    className="sc-chPdSV iFkfRL is-bottom"
+    className="sc-VigVT cJyEYl is-bottom"
     role="status"
   >
     <div>
@@ -1369,7 +939,7 @@ exports[`Storyshots Notifications Bottom 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1380,10 +950,10 @@ exports[`Storyshots Notifications Bottom 1`] = `
 
 exports[`Storyshots Notifications Call to action 1`] = `
 <div
-  className="sc-kGXeez dTSNXF"
+  className="sc-fjdhpX bMWqcP"
 >
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1426,7 +996,7 @@ exports[`Storyshots Notifications Call to action 1`] = `
       </button>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1438,10 +1008,10 @@ exports[`Storyshots Notifications Call to action 1`] = `
 exports[`Storyshots Notifications Connected notification 1`] = `
 Array [
   <div
-    className="sc-kGXeez dTSNXF"
+    className="sc-fjdhpX bMWqcP"
   >
     <div
-      className="sc-chPdSV iFkfRL"
+      className="sc-VigVT cJyEYl"
       role="status"
     >
       <div>
@@ -1479,7 +1049,7 @@ Array [
         </div>
         <button
           aria-label="Dismiss"
-          className="sc-VigVT sc-kgoBCf jckgGX"
+          className="sc-gzVnrw sc-jTzLTM jVuYmo"
           onClick={[Function]}
           title="Dismiss"
         />
@@ -1496,10 +1066,10 @@ Array [
 
 exports[`Storyshots Notifications No dismiss 1`] = `
 <div
-  className="sc-kGXeez dTSNXF"
+  className="sc-fjdhpX bMWqcP"
 >
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="alert"
   >
     <div>
@@ -1542,10 +1112,10 @@ exports[`Storyshots Notifications No dismiss 1`] = `
 
 exports[`Storyshots Notifications Small (bottom) 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-small is-bottom"
+  className="sc-fjdhpX bMWqcP is-small is-bottom"
 >
   <div
-    className="sc-chPdSV iFkfRL is-small is-bottom"
+    className="sc-VigVT cJyEYl is-small is-bottom"
     role="status"
   >
     <div>
@@ -1586,7 +1156,7 @@ exports[`Storyshots Notifications Small (bottom) 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1597,10 +1167,10 @@ exports[`Storyshots Notifications Small (bottom) 1`] = `
 
 exports[`Storyshots Notifications Small 1`] = `
 <div
-  className="sc-kGXeez dTSNXF is-small"
+  className="sc-fjdhpX bMWqcP is-small"
 >
   <div
-    className="sc-chPdSV iFkfRL is-small"
+    className="sc-VigVT cJyEYl is-small"
     role="status"
   >
     <div>
@@ -1641,7 +1211,7 @@ exports[`Storyshots Notifications Small 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1652,10 +1222,10 @@ exports[`Storyshots Notifications Small 1`] = `
 
 exports[`Storyshots Notifications Subtext 1`] = `
 <div
-  className="sc-kGXeez dTSNXF"
+  className="sc-fjdhpX bMWqcP"
 >
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1696,7 +1266,7 @@ exports[`Storyshots Notifications Subtext 1`] = `
       </div>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1707,10 +1277,10 @@ exports[`Storyshots Notifications Subtext 1`] = `
 
 exports[`Storyshots Notifications Subtext and C2A 1`] = `
 <div
-  className="sc-kGXeez dTSNXF"
+  className="sc-fjdhpX bMWqcP"
 >
   <div
-    className="sc-chPdSV iFkfRL"
+    className="sc-VigVT cJyEYl"
     role="status"
   >
     <div>
@@ -1756,7 +1326,7 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
       </button>
       <button
         aria-label="Dismiss"
-        className="sc-VigVT sc-kgoBCf jckgGX"
+        className="sc-gzVnrw sc-jTzLTM jVuYmo"
         onClick={[Function]}
         title="Dismiss"
       />
@@ -1767,11 +1337,11 @@ exports[`Storyshots Notifications Subtext and C2A 1`] = `
 
 exports[`Storyshots Pagination On Page 1 1`] = `
 <div
-  className="sc-kpOJdX kDrPtv"
+  className="sc-jzJRlG cDLGMY"
 >
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={true}
       onClick={[Function]}
     >
@@ -1799,7 +1369,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={true}
       onClick={[Function]}
     >
@@ -1835,7 +1405,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -1863,7 +1433,7 @@ exports[`Storyshots Pagination On Page 1 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -1898,11 +1468,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 1 1`] = `null`;
 
 exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX kDrPtv"
+  className="sc-jzJRlG cDLGMY"
 >
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -1930,7 +1500,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -1966,7 +1536,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={true}
       onClick={[Function]}
     >
@@ -1994,7 +1564,7 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={true}
       onClick={[Function]}
     >
@@ -2027,11 +1597,11 @@ exports[`Storyshots Pagination doensn't have next, on Page 2 1`] = `
 
 exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
 <div
-  className="sc-kpOJdX kDrPtv"
+  className="sc-jzJRlG cDLGMY"
 >
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -2059,7 +1629,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -2095,7 +1665,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
   </div>
   <div>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -2123,7 +1693,7 @@ exports[`Storyshots Pagination hasNext, on Page 2 1`] = `
       </span>
     </button>
     <button
-      className="sc-dxgOiQ dMgZIu"
+      className="sc-cSHVUG ehSeMT"
       disabled={false}
       onClick={[Function]}
     >
@@ -2198,26 +1768,26 @@ exports[`Storyshots Past Dates 59 minutes 1`] = `
 
 exports[`Storyshots Spinner Defaults 1`] = `
 <div
-  className="sc-hSdWYo bBJHEo"
+  className="sc-jKJlTe bPpmFT"
 >
   <div
-    className="sc-iAyFgw ejnHOj"
+    className="sc-ckVGcZ boShou"
   />
   <div
-    className="sc-eHgmQL eDkvEC"
+    className="sc-eNQAEJ emzxci"
   />
 </div>
 `;
 
 exports[`Storyshots Spinner Order tool version 1`] = `
 <div
-  className="sc-jWBwVP iMtSXN"
+  className="sc-kEYyzF eUkIkU"
 >
   <div
-    className="sc-cvbbAY hPlkcT"
+    className="sc-hMqMXs jutKHL"
   />
   <div
-    className="sc-brqgnP jvhnCI"
+    className="sc-kkGfuU eKneMA"
   />
 </div>
 `;
@@ -2227,7 +1797,7 @@ exports[`Storyshots Toggle Arbitrary props 1`] = `
   aria-checked={false}
   aria-label="An arbitrary label"
   checked={false}
-  className="sc-ckVGcZ fMfnUd"
+  className="sc-kAzzGY izjbNH"
   color="#45DC85"
   disabled={false}
   height="10px"
@@ -2248,7 +1818,7 @@ exports[`Storyshots Toggle Controlled (default checked) 1`] = `
   <div
     aria-checked={true}
     checked={true}
-    className="sc-ckVGcZ kCSQMk"
+    className="sc-kAzzGY UNIzJ"
     color="#45DC85"
     disabled={false}
     height="10px"
@@ -2269,7 +1839,7 @@ exports[`Storyshots Toggle Controlled (default unchecked) 1`] = `
   <div
     aria-checked={false}
     checked={false}
-    className="sc-ckVGcZ fMfnUd"
+    className="sc-kAzzGY izjbNH"
     color="#45DC85"
     disabled={false}
     height="10px"
@@ -2289,7 +1859,7 @@ exports[`Storyshots Toggle Custom attributes 1`] = `
 <div
   aria-checked={false}
   checked={false}
-  className="sc-ckVGcZ cfWAWy"
+  className="sc-kAzzGY bYfzMt"
   color="magenta"
   disabled={false}
   height="40px"
@@ -2305,7 +1875,7 @@ Array [
   <div
     aria-checked={true}
     checked={true}
-    className="sc-ckVGcZ cDMDwi"
+    className="sc-kAzzGY nuEfM"
     color="#45DC85"
     disabled={true}
     height="10px"
@@ -2316,7 +1886,7 @@ Array [
   <div
     aria-checked={false}
     checked={false}
-    className="sc-ckVGcZ gZyslV"
+    className="sc-kAzzGY fuwEOe"
     color="#45DC85"
     disabled={true}
     height="10px"
@@ -2331,7 +1901,7 @@ exports[`Storyshots Toggle Uncontrolled 1`] = `
 <div
   aria-checked={false}
   checked={false}
-  className="sc-ckVGcZ fMfnUd"
+  className="sc-kAzzGY izjbNH"
   color="#45DC85"
   disabled={false}
   height="10px"
@@ -2355,7 +1925,7 @@ exports[`Storyshots Toggle With label 1`] = `
     aria-checked={false}
     aria-labelledby="storybook-toggle"
     checked={false}
-    className="sc-ckVGcZ fMfnUd"
+    className="sc-kAzzGY izjbNH"
     color="#45DC85"
     disabled={false}
     height="10px"
@@ -2376,7 +1946,7 @@ exports[`Storyshots Toggle onChange return a Promise 1`] = `
 <div
   aria-checked={false}
   checked={false}
-  className="sc-ckVGcZ fMfnUd"
+  className="sc-kAzzGY izjbNH"
   color="#45DC85"
   disabled={false}
   height="10px"
@@ -2396,7 +1966,7 @@ exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
   }
 >
   <div
-    className="sc-jKJlTe bIZvWN"
+    className="sc-chPdSV hAzGVO"
     onClick={[Function]}
   />
 </div>
@@ -2404,10 +1974,10 @@ exports[`Storyshots ToggleHandle Toggleable handle 1`] = `
 
 exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
 <div
-  className="sc-kkGfuU kTtxxZ"
+  className="sc-dxgOiQ igWvyG"
 >
   <div
-    className="ra-tooltip-wrapper sc-kEYyzF kpqtWB"
+    className="ra-tooltip-wrapper sc-kpOJdX huSwRb"
     id="ra-tooltip-2"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -2416,10 +1986,10 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-hMqMXs bgzNCe"
+      className="bottom ra-tooltip sc-kGXeez esBVUx"
     >
       <div
-        className="sc-eNQAEJ jBoHMs ra-tooltip-message"
+        className="sc-kgoBCf hfhOcK ra-tooltip-message"
       >
         <span>
           &lt;span /&gt;
@@ -2451,10 +2021,10 @@ exports[`Storyshots Tooltip Tooltip with React element child 1`] = `
 
 exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
 <div
-  className="sc-kkGfuU kTtxxZ"
+  className="sc-dxgOiQ igWvyG"
 >
   <div
-    className="ra-tooltip-wrapper sc-kEYyzF kpqtWB"
+    className="ra-tooltip-wrapper sc-kpOJdX huSwRb"
     id="ra-tooltip-1"
     onFocus={[Function]}
     onMouseLeave={[Function]}
@@ -2463,10 +2033,10 @@ exports[`Storyshots Tooltip Tooltip with UA text 1`] = `
   >
     <div
       aria-hidden={true}
-      className="bottom ra-tooltip sc-hMqMXs bgzNCe"
+      className="bottom ra-tooltip sc-kGXeez esBVUx"
     >
       <div
-        className="sc-eNQAEJ jBoHMs ra-tooltip-message"
+        className="sc-kgoBCf hfhOcK ra-tooltip-message"
       >
         <p>
           UA text goes here.
