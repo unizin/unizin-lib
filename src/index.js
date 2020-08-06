@@ -34,7 +34,6 @@ module.exports = {
     AvatarOption,
     ButtonAddRemove,
     CloseButton,
-    ContentPricing,
     FocusTrap,
     Initials,
     Loading,
