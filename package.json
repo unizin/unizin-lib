@@ -3,6 +3,7 @@
   "version": "1.9.0",
   "description": "Shared component library for Unizin",
   "main": "dist/index.js",
+  "types": "./unizinLib.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
