@@ -12,7 +12,7 @@ export default function Tooltip({ message }: { message: string | Element<any> })
     return (
         <ToolTipContainer>
             <RATooltip eventType="hover" message={message} direction="bottom">
-                <FontAwesomeIcon icon={faQuestionCircle} tabIndex={0} />
+                <FontAwesomeIcon icon={faQuestionCircle} tabIndex={0} aria-hidden="false" aria-label="tooltip icon" />
             </RATooltip>
         </ToolTipContainer>
     );
