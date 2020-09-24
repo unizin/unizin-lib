@@ -29,7 +29,7 @@ import { differenceInMinutes, differenceInHours, differenceInDays, format } from
 
 const _pluralize = (unit: string) => (x: number = 0): string => {
     const absX = Math.abs(x);
-    return `${x < 0 ? 'in' : ''} ${absX} ${unit}${absX === 1 ? '' : 's'}${x > 0 ? ' ago' : ''}`;
+    return `${x < 0 ? 'in' : ''} ${absX} ${unit}${absX === 1 ? '' : 's'}${x >= 0 ? ' ago' : ''}`;
 };
 
 export const relativeDate = (target: string | Date, now: Date = new Date()): ?string => {
