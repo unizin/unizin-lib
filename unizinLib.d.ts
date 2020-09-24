@@ -2,6 +2,7 @@ declare module 'unizin-lib' {
     function openConfirmationModal(a: any): (d: Function, g: () => {}) => any;
     function addAural(s: string): any;
     function removeAural(): void;
+    function relativeDate(s: string | Date, now?: Date): string | null;
 
     declare namespace notificationActions {
         type NotificationParam = {
