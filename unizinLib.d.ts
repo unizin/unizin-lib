@@ -53,6 +53,11 @@ declare module 'unizin-lib' {
     }> {}
     export class CloseButton extends React.Component<any> {}
     export class Avatar extends React.Component<{ email: string; name: string }> {}
+    export class FocusTrap extends React.PureComponent<{
+        children: React.Node;
+        className?: string;
+        setModalOnClose?: (f: (e: HTMLElement) => void) => void;
+    }> {}
 
     function auralNotificationReducer<T>(s: T, a: any): T;
     function notificationReducer<T>(s: T, a: any): T;
