@@ -6,21 +6,24 @@ export default class FocusTrap extends PureComponent<{
     children: Node,
     className?: string,
     setModalOnClose?: ((HTMLElement) => void) => void,
+    scope?: HTMLElement,
 }> {
     pauseFocus: ?boolean;
 
     focusTrap = createRef<HTMLDivElement>();
 
     componentDidMount() {
-        document.addEventListener('keydown', this.tabListener);
-        document.addEventListener('focus', this.keepFocus, true);
+        const { scope = document } = this.props;
+        scope.addEventListener('keydown', this.tabListener);
+        scope.addEventListener('focus', this.keepFocus, true);
         this.focusTrap.current && this.focusTrap.current.focus();
         this.setFocusReturn();
     }
 
     componentWillUnmount() {
-        document.removeEventListener('keydown', this.tabListener);
-        document.removeEventListener('focus', this.keepFocus, true);
+        const { scope = document } = this.props;
+        scope.removeEventListener('keydown', this.tabListener);
+        scope.removeEventListener('focus', this.keepFocus, true);
     }
 
     setFocusReturn = () => {
