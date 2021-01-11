@@ -57,6 +57,7 @@ declare module 'unizin-lib' {
         children: React.Node;
         className?: string;
         setModalOnClose?: (f: (e: HTMLElement) => void) => void;
+	scope?: HTMLElement;
     }> {}
 
     function auralNotificationReducer<T>(s: T, a: any): T;
