@@ -51,8 +51,9 @@ export const ModalPortal = ({
     showConfirm = true,
     setModalOnClose,
 }: Props) => {
-    // For compatibility with react-aria-modal
-    const portalTarget = document.querySelector('#root ~ div > div') || document.body;
+    // #root ~ div > div is for compatibility with react-aria-modal
+    // div:not([id]) is for compatibility with Intercom. They inject some divs with IDs under certain circumstances.
+    const portalTarget = document.querySelector('#root ~ div:not([id]) > div') || document.body;
     return modalContent && portalTarget
         ? createPortal(
               <ModalWrapper onCancel={onCancel} setModalOnClose={setModalOnClose}>
