@@ -5,7 +5,7 @@ declare module 'unizin-lib' {
         cancelText?: string;
         confirmText?: string;
         element: HTMLElement | EventTarget | null;
-        modalContent: React.ReactNode;
+        modalContent: React.ReactNode | JSX.Element;
         onClose?: (e: HTMLElement) => void;
         showCancel?: boolean;
         showConfirm?: boolean;
