@@ -71,14 +71,8 @@ export function openGenericModal({
                 showCancel: false,
                 showConfirm: false,
                 type: OPEN_MODAL,
-                onConfirm: () => {
-                    dispatch(cancelModal());
-                    resolve();
-                },
-                onCancel: () => {
-                    dispatch(cancelModal());
-                    reject();
-                },
+                onConfirm,
+                onCancel,
             };
             dispatch(action);
         });

@@ -13,7 +13,7 @@ const Loading = require('./components/loading');
 const Modal = require('./components/modal');
 const ModalContainer = require('./components/modalContainer');
 const modalReducer = require('./reducers/modalReducer');
-const { openConfirmationModal } = require('./actions/modal');
+const { openConfirmationModal, openGenericModal } = require('./actions/modal');
 const Tooltip = require('./components/tooltip');
 const Pagination = require('./components/pagination');
 const ToggleHandle = require('./components/toggleHandle');
@@ -44,6 +44,7 @@ module.exports = {
     NotificationContainer,
     notificationReducer,
     openConfirmationModal,
+    openGenericModal,
     Pagination,
     relativeDate,
     Spinner,
