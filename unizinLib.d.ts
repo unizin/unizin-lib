@@ -4,7 +4,7 @@ declare module 'unizin-lib' {
     function openConfirmationModal(props: {
         cancelText?: string;
         confirmText?: string;
-        element: ?HTMLElement;
+        element: HTMLElement | null;
         modalContent: React.ReactNode;
         onCancel: () => void;
         onClose?: (e: HTMLElement) => void;
@@ -15,7 +15,7 @@ declare module 'unizin-lib' {
     function openGenericModal(props: {
         cancelText?: string;
         confirmText?: string;
-        element: ?HTMLElement;
+        element: HTMLElement | null;
         modalContent?: (props: { onCancel: () => void; onConfirm: () => void }) => React.ReactNode;
         onCancel: () => void;
         onClose?: (e: HTMLElement) => void;
@@ -27,7 +27,7 @@ declare module 'unizin-lib' {
     function removeAural(): void;
     function relativeDate(s: string | Date, now?: Date): string | null;
 
-    declare namespace notificationActions {
+    namespace notificationActions {
         type NotificationParam = {
             callToAction?: string;
             dismissable?: boolean;
@@ -77,7 +77,7 @@ declare module 'unizin-lib' {
     export class CloseButton extends React.Component<any> {}
     export class Avatar extends React.Component<{ email: string; name: string }> {}
     export class FocusTrap extends React.PureComponent<{
-        children: React.Node;
+        children: React.ReactNode;
         className?: string;
         setModalOnClose?: (f: (e: HTMLElement) => void) => void;
 	scope?: HTMLElement;
