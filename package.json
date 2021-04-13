@@ -1,6 +1,6 @@
 {
   "name": "unizin-lib",
-  "version": "1.12.3",
+  "version": "1.12.4",
   "description": "Shared component library for Unizin",
   "main": "dist/index.js",
   "types": "./unizinLib.d.ts",
