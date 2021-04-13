@@ -4,22 +4,18 @@ declare module 'unizin-lib' {
     function openConfirmationModal(props: {
         cancelText?: string;
         confirmText?: string;
-        element: HTMLElement | null;
+        element: HTMLElement | EventTarget | null;
         modalContent: React.ReactNode;
-        onCancel: () => void;
         onClose?: (e: HTMLElement) => void;
-        onConfirm: () => void;
         showCancel?: boolean;
         showConfirm?: boolean;
     }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
     function openGenericModal(props: {
         cancelText?: string;
         confirmText?: string;
-        element: HTMLElement | null;
+        element: HTMLElement | EventTarget | null;
         modalContent?: (props: { onCancel: () => void; onConfirm: () => void }) => React.ReactNode;
-        onCancel: () => void;
         onClose?: (e: HTMLElement) => void;
-        onConfirm: () => void;
         showCancel?: boolean;
         showConfirm?: boolean;
     }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
