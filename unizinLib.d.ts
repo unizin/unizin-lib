@@ -1,5 +1,28 @@
+import React from 'react'
+
 declare module 'unizin-lib' {
-    function openConfirmationModal(a: any): (d: Function, g: () => {}) => any;
+    function openConfirmationModal(props: {
+        cancelText?: string;
+        confirmText?: string;
+        element: ?HTMLElement;
+        modalContent: React.ReactNode;
+        onCancel: () => void;
+        onClose?: (e: HTMLElement) => void;
+        onConfirm: () => void;
+        showCancel?: boolean;
+        showConfirm?: boolean;
+    }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
+    function openGenericModal(props: {
+        cancelText?: string;
+        confirmText?: string;
+        element: ?HTMLElement;
+        modalContent?: (props: { onCancel: () => void; onConfirm: () => void }) => React.ReactNode;
+        onCancel: () => void;
+        onClose?: (e: HTMLElement) => void;
+        onConfirm: () => void;
+        showCancel?: boolean;
+        showConfirm?: boolean;
+    }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
     function addAural(s: string): any;
     function removeAural(): void;
     function relativeDate(s: string | Date, now?: Date): string | null;

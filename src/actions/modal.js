@@ -48,3 +48,39 @@ export function openConfirmationModal(
         });
     };
 }
+
+export function openGenericModal({
+    element,
+    modalContent,
+}: {
+    element: ?HTMLElement,
+    modalContent: ({
+        onCancel: () => void,
+        onConfirm: () => void,
+    }) => Node,
+}): ThunkAction<Promise<void>> {
+    return function(dispatch) {
+        return new Promise((resolve, reject) => {
+            const [onConfirm, onCancel] = [resolve, reject].map(outcome => () => {
+                dispatch(cancelModal());
+                outcome();
+            });
+            const action: Action<ConfirmationModal> = {
+                modalContent: modalContent({ onConfirm, onCancel }),
+                element,
+                showCancel: false,
+                showConfirm: false,
+                type: OPEN_MODAL,
+                onConfirm: () => {
+                    dispatch(cancelModal());
+                    resolve();
+                },
+                onCancel: () => {
+                    dispatch(cancelModal());
+                    reject();
+                },
+            };
+            dispatch(action);
+        });
+    };
+}
