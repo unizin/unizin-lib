@@ -61,9 +61,9 @@ export function openGenericModal({
 }): ThunkAction<Promise<void>> {
     return function(dispatch) {
         return new Promise((resolve, reject) => {
-            const [onConfirm, onCancel] = [resolve, reject].map(outcome => () => {
+            const [onConfirm, onCancel] = [resolve, reject].map(outcome => (r: any) => {
                 dispatch(cancelModal());
-                outcome();
+                outcome(r);
             });
             const action: Action<ConfirmationModal> = {
                 modalContent: modalContent({ onConfirm, onCancel }),
