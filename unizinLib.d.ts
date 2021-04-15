@@ -10,15 +10,15 @@ declare module 'unizin-lib' {
         showCancel?: boolean;
         showConfirm?: boolean;
     }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
-    function openGenericModal(props: {
+    function openGenericModal<T>(props: {
         cancelText?: string;
         confirmText?: string;
         element: HTMLElement | EventTarget | null;
-        modalContent?: (props: { onCancel: () => void; onConfirm: () => void }) => React.ReactNode;
+        modalContent?: (props: { onCancel: (r: T) => void; onConfirm: (r: T) => void }) => React.ReactNode;
         onClose?: (e: HTMLElement) => void;
         showCancel?: boolean;
         showConfirm?: boolean;
-    }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<any>;
+    }): (dispatch: (d: {[s: string]: any}) => any, getState: () => {}) => Promise<T>;
     function addAural(s: string): any;
     function removeAural(): void;
     function relativeDate(s: string | Date, now?: Date): string | null;
